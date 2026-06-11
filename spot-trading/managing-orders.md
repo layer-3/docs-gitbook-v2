@@ -1,13 +1,82 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  Track your activity with Open Orders, Order History, and Trade History,
+  understand reserved balances, and fix common order rejections.
 ---
 
 # Managing Orders
 
-{% hint style="info" %}
-**Placeholder — structure only.** Content to be written/migrated in a later pass.
+Yellow.pro provides three views to track your trading activity — **Open Orders**, **Order History**, and **Trade History** — plus clear rejection reasons when an order fails validation.
 
-**What to cover:** Open Orders vs Order History vs Trade History; cancelling/editing orders; why orders get rejected and common trading errors.
+## Open Orders
 
-**Source:** Merge: open orders & trade history + order rejections & errors. New — Notion KB §4a
-{% endhint %}
+Shows all orders currently **active in the order book** — submitted but not yet filled or cancelled. Here you'll see orders waiting for the market to reach your limit price, and triggered conditional orders that are now live.
+
+You can **cancel** any open order at any time; reserved funds are released back to **Available** immediately.
+
+## Order History
+
+A full log of all orders you've placed, regardless of outcome:
+
+| Status | Meaning |
+| --- | --- |
+| Filled | The order was completely matched and executed. |
+| Partially Filled | Some, but not all, of the order was executed. |
+| Cancelled | You or the system cancelled the order before it fully filled. |
+| Rejected | The order failed validation and was never placed in the book. |
+| Expired | The order expired due to time-in-force settings (e.g. IOC, FOK). |
+
+Check Order History to confirm an order's status, investigate why an order didn't fill, or review a rejection reason.
+
+## Trade History (Fill History)
+
+Records only actual **executions** — moments when your order matched another and a trade occurred. Each entry shows the timestamp, market and side, fill price and quantity, and the fee charged.
+
+**Key difference:** an order in Order History may have **zero fills** (if cancelled or rejected). Trade History only shows orders that actually executed. A partial fill produces one Order History entry and one or more Trade History entries.
+
+## Balances: Total, Available & Reserved
+
+| Balance type | Meaning |
+| --- | --- |
+| **Total** | All funds in your account (available + reserved). |
+| **Available** | Funds you can use right now — for new orders or withdrawals. |
+| **Reserved** | Funds locked in active open orders. |
+
+> **Example:** you have 1,000 USDT and place a buy limit for 500 USDT of ETH. Your balance shows **Total: 1,000 · Available: 500 · Reserved: 500**. When the order fills or you cancel it, Reserved returns to Available.
+
+Buy orders reserve the **quote** currency (e.g. USDT); sell orders reserve the **base** currency (e.g. BTC or ETH). This prevents you from spending the same funds on multiple orders at once.
+
+## Why Was My Order Rejected?
+
+A rejected order failed one or more validation checks and appears in Order History with a reason. Common causes:
+
+* **Price not aligned with tick size** — round your price to a valid increment (e.g. with tick size 0.10, `2,100.05` is invalid).
+* **Size not aligned with step size** — adjust your quantity to a valid increment.
+* **Below minimum order size** — increase the quantity.
+* **Below minimum order value** (price × size) — increase price or quantity to meet the minimum.
+* **Insufficient available balance** — reserved funds from other open orders don't count; cancel orders or deposit more.
+* **Invalid trigger settings** — for stop orders, ensure the trigger price is on the correct side of the market and required fields are set.
+* **Market temporarily unavailable** — wait and retry; contact support if it persists.
+
+### Checklist before placing an order
+
+* Correct market and side (Buy vs Sell)
+* Price aligned with tick size (limit orders)
+* Amount aligned with step size
+* Total order value meets the minimum
+* Available balance is sufficient
+* Trigger settings correct (stop orders)
+
+## Why Was My Order Not Executed?
+
+* **Limit price not reached** — the market never traded at your price.
+* **Insufficient liquidity** — not enough in the book to fill at your price.
+* **Cancelled** — by you, or by time-in-force settings (IOC/FOK that couldn't fill).
+* **Rejected** — see the reasons above.
+
+Check your Order History for the status and reason of any unfilled order. If everything looks correct and orders still fail, [contact support](../community-and-resources/contact-support.md) with the market, your order details, and a screenshot of the rejection reason.
+
+## Related Articles
+
+* [How to Place a Spot Trade](how-to-place-a-spot-trade.md)
+* [Order Types](order-types.md)

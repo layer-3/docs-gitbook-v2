@@ -30,6 +30,7 @@
 
 ## Spot Trading
 
+* [What is Spot Trading?](spot-trading/what-is-spot-trading.md)
 * [How to Place a Spot Trade](spot-trading/how-to-place-a-spot-trade.md)
 * [Order Types](spot-trading/order-types.md)
 * [Managing Orders](spot-trading/managing-orders.md)
