@@ -24,6 +24,7 @@
 
 * [How to Deposit](deposits-and-withdrawals/how-to-deposit.md)
 * [How to Withdraw](deposits-and-withdrawals/how-to-withdraw.md)
+* [Supported Networks, Assets & Limits](deposits-and-withdrawals/supported-networks-assets-limits.md)
 * [Deposit & Withdrawal Troubleshooting](deposits-and-withdrawals/troubleshooting.md)
 * [FAQ](deposits-and-withdrawals/faq.md)
 

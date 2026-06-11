@@ -1,37 +1,99 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  How to deposit funds on Yellow.pro — the direct flow for external wallets and
+  the two-step flow for Google Sign-in accounts.
 ---
 
 # How to Deposit
 
-{% hint style="info" %}
-**Placeholder — structure only.**
+How you deposit depends on how you signed in. Use the tab that matches your account type. For the supported network, assets, and confirmation requirements, see [Supported Networks, Assets & Limits](supported-networks-assets-limits.md).
 
-**What to cover:** External Wallet tab: direct deposit + approval-vs-deposit transactions. Gmail tab: two-step flow (funds land in Account Balance first). Include asset/network warnings.
-
-**Tabs are required — do not merge the flows.** The External Wallet and Gmail deposit flows differ, so they MUST stay in separate GitBook tabs (not one combined prose block, not two separate pages). Keep the `{% tabs %}` block below and write each flow inside its own `{% tab %}`. GitBook syntax:
-
-````
 {% tabs %}
 {% tab title="External Wallet" %}
-...flow for connected-wallet users...
+Deposits using an external wallet send funds **directly into your Trading Account (`Spot Account`)**. You do not use Account Balance (`Yellow Wallet`), and no extra transfer step is required before trading.
+
+**Before you start**
+
+* Your external wallet must be connected to your Yellow.pro account.
+* Ensure you have enough balance for the deposit, plus native gas (such as ETH) for the network fee.
+* Only the Ethereum network is supported.
+* ERC-20 token deposits may require both an **Approval** and a **Deposit** transaction (see below).
+* All deposits require **15 blockchain confirmations** before being credited.
+
+**Step 1 — Open the Deposit page**
+
+1. Open `yellow.pro/assets/deposit`.
+2. Your connected wallet appears automatically under **Select Wallet**.
+3. Select the asset under **Select Asset**.
+4. Confirm the network (Ethereum).
+5. Enter the amount, or click **MAX**.
+6. Review the estimated network fee shown below the amount field.
+
+**Step 2 — Approve or Deposit**
+
+Depending on whether you've previously approved this token, the button shows either **Approve** or **Deposit**.
+
+* **Approve** — authorises Yellow.pro to access the selected token. No funds move. Once confirmed, the button changes to **Deposit**.
+* **Deposit** — the actual transfer of funds into your Trading Account (`Spot Account`). Confirm it in your wallet. After 15 confirmations, your funds appear and are ready for Spot trading.
+
+**To trade Perpetuals,** transfer funds from Trading Account (`Spot Account`) → Perpetual Account on the Assets page (internal, instant).
 {% endtab %}
 
-{% tab title="Gmail / Email Account" %}
-...flow for Gmail/email users...
-{% endtab %}
-{% endtabs %}
-````
+{% tab title="Google Sign-in" %}
+With Google Sign-in, Yellow.pro creates a Yellow Wallet for you. Deposits arrive first in your **Account Balance (`Yellow Wallet`)** and must then be moved to your Trading Account (`Spot Account`) before trading.
 
-**Source:** Merge of external-wallet + gmail deposit + approval-vs-deposit + two-step flow. Migrate: v1 fund-your-account.md, quick-start.md
+**Before you start**
+
+* Your deposit address is shown on the Deposit page as both a QR code and a copyable address.
+* Only the Ethereum network is supported — deposits sent on the wrong network cannot be recovered.
+* Funds do not go directly to your Trading Account; they arrive in Account Balance first.
+
+**Step 1 — Deposit to your Account Balance**
+
+1. Open `yellow.pro/assets/deposit`.
+2. Select the asset and confirm the network (Ethereum).
+3. Copy your deposit address or scan the QR code.
+4. Send funds from your external wallet or exchange to that address.
+5. Wait for the transaction to confirm (15 blockchain confirmations).
+
+Once confirmed, your funds appear under **Account Balance** on the Assets page.
+
+{% hint style="warning" %}
+Always confirm the network shown on Yellow.pro matches the network you're sending from. Deposits sent on the wrong network may not be credited and cannot be reversed.
 {% endhint %}
 
-{% tabs %}
-{% tab title="External Wallet" %}
-TODO: direct deposit flow from a connected wallet; include the approval vs deposit transaction distinction.
-{% endtab %}
+**Step 2 — Move funds to your Trading Account**
 
-{% tab title="Gmail / Email Account" %}
-TODO: two-step deposit flow — funds arrive in Account Balance first, then transfer to Trading Account.
+1. Open `yellow.pro/assets`.
+2. Click **Transfer**.
+3. Select **Account Balance** as the source and **Trading Account (`Spot Account`)** as the destination.
+4. Choose the asset and amount, then confirm.
+
+Once completed, your funds are available for trading. **To trade Perpetuals,** transfer again from Trading Account → Perpetual Account (internal, instant).
 {% endtab %}
 {% endtabs %}
+
+## Understanding Approval vs Deposit Transactions
+
+When depositing ERC-20 tokens such as USDT or WBTC from an external wallet, you may be asked for two separate wallet confirmations. They serve different purposes:
+
+| | Approval | Deposit |
+| --- | --- | --- |
+| Purpose | Grants token access permission | Transfers funds into Trading Account |
+| Do funds move? | No | Yes |
+| Always required? | Only if no active approval exists | Yes |
+| Deposit completed after this step? | No | Yes |
+
+* If only the **Approval** is completed, your funds stay in your wallet — return to the Deposit page and complete the **Deposit** transaction.
+* If you've previously approved a token and the approval is still active, the Approval step is skipped.
+* **Native ETH deposits don't require an Approval** — only the Deposit transaction.
+
+## Why Google Sign-in Uses a Two-Step Flow
+
+Google Sign-in users operate through a smart contract wallet (the Yellow Wallet). Deposits arrive there first as **Account Balance (`Yellow Wallet`)** — stored securely but not yet tradable — and must be transferred to the **Trading Account (`Spot Account`)** before Spot trading. This gives clear visibility of where funds are, and lets the Yellow Wallet be managed independently on Yellow.com. External wallet users skip this step entirely. See [Understanding Your Balances](../account-and-balance/understanding-your-balances.md) for the full model.
+
+## Related Articles
+
+* [Supported Networks, Assets & Limits](supported-networks-assets-limits.md)
+* [How to Transfer Funds Between Accounts](../account-and-balance/transfer-funds-between-accounts.md)
+* [Deposit & Withdrawal Troubleshooting](troubleshooting.md)
