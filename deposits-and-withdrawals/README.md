@@ -1,5 +1,5 @@
 ---
-icon: arrow-right-arrow-left
+icon: compass
 description: Add funds to your account and withdraw them to your wallet.
 ---
 

@@ -1,5 +1,5 @@
 ---
-icon: wallet
+icon: compass
 description: Understand your balances and how to move funds between them.
 ---
 

@@ -1,5 +1,5 @@
 ---
-icon: store
+icon: compass
 description: Buy and sell crypto at market price on Yellow.pro.
 ---
 

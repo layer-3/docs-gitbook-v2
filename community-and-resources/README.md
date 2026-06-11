@@ -1,5 +1,5 @@
 ---
-icon: users
+icon: compass
 description: Connect with the Yellow community and get support.
 ---
 

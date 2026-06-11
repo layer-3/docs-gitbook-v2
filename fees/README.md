@@ -1,5 +1,5 @@
 ---
-icon: money-bill
+icon: compass
 description: Trading fees, VIP tiers, funding, network fees, and the $YELLOW token.
 ---
 

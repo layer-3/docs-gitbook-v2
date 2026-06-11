@@ -1,5 +1,5 @@
 ---
-icon: chart-line
+icon: compass
 description: Trade perpetual futures with leverage on Yellow.pro.
 ---
 
