@@ -20,6 +20,8 @@ Closing a position locks in your **Realized PnL** and releases its margin back t
 
 Once filled, your realized PnL updates and the position's margin returns to your **Available Balance**.
 
+![Closing a position from the Positions panel](../../.gitbook/assets/perp-close-position.png)
+
 ## Closing Partially
 
 1. Open the **Positions** panel and click **Close** on the target position.
@@ -27,6 +29,8 @@ Once filled, your realized PnL updates and the position's margin returns to your
 3. Choose market or limit, then confirm.
 
 Only the specified amount is closed; the rest stays open at the original entry price, and margin adjusts proportionally.
+
+![Partially closing a position](../../.gitbook/assets/perp-close-partial.png)
 
 > **Example:** you hold 2 ETH long and close 1 ETH with a market order → your position becomes 1 ETH long, and half the margin is released.
 

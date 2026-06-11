@@ -21,6 +21,8 @@ There's no separate "add margin to position X" control in cross margin — you i
 
 You can withdraw only your **Available Balance** — not funds committed to open positions. To free up more, **close or reduce** positions first.
 
+![Available vs withdrawable balance with an open position](../../.gitbook/assets/perp-adjust-margin.png)
+
 {% hint style="info" %}
 Adding funds buys you more time if the market moves against you. You'll receive a [margin warning](../risk-and-liquidation/margin-warnings-and-risk-management.md) as your account approaches liquidation.
 {% endhint %}
@@ -31,6 +33,8 @@ Adding funds buys you more time if the market moves against you. You'll receive 
 2. Find the leverage setting for the market.
 3. Adjust the multiplier with the selector.
 4. Confirm the change.
+
+![The leverage selector on an open position](../../.gitbook/assets/perp-change-leverage.png)
 
 | Action | Liquidation price | Margin required |
 | --- | --- | --- |
