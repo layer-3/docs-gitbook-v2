@@ -88,17 +88,17 @@ Your Account Balance (Yellow Wallet) is also accessible on Yellow.com. Once fund
 
 ## Main Differences
 
-| Comparison | External Wallet Users | Google Sign-in Users |
-| --- | --- | --- |
-| Wallet setup | User connects their own wallet | Yellow Wallet is created automatically |
-| Deposit destination | Trading Account | Account Balance (Yellow Wallet) |
-| Trading requirement | Funds can usually be traded immediately | Funds must first be transferred to the Trading Account |
-| Withdrawal source | Trading Account (direct to connected wallet) | Account Balance (Yellow Wallet) |
-| Account Balance usage | Not used | Required for deposits and withdrawals |
-| Recipient address on withdrawal | Connected wallet used automatically | User must enter recipient address manually |
-| Account Balance ↔ Trading Account transfers | Not applicable | Processed on-chain |
-| Spot ↔ Perpetual transfers | Internal and normally instant | Internal and normally instant |
-| Yellow Wallet access | Not applicable | Also accessible on Yellow.com |
+| Comparison                                  | External Wallet Users                        | Google Sign-in Users                                   |
+| ------------------------------------------- | -------------------------------------------- | ------------------------------------------------------ |
+| Wallet setup                                | User connects their own wallet               | Yellow Wallet is created automatically                 |
+| Deposit destination                         | Trading Account                              | Account Balance (Yellow Wallet)                        |
+| Trading requirement                         | Funds can usually be traded immediately      | Funds must first be transferred to the Trading Account |
+| Withdrawal source                           | Trading Account (direct to connected wallet) | Account Balance (Yellow Wallet)                        |
+| Account Balance usage                       | Not used                                     | Required for deposits and withdrawals                  |
+| Recipient address on withdrawal             | Connected wallet used automatically          | User must enter recipient address manually             |
+| Account Balance ↔ Trading Account transfers | Not applicable                               | Processed on-chain                                     |
+| Spot ↔ Perpetual transfers                  | Internal and normally instant                | Internal and normally instant                          |
+| Yellow Wallet access                        | Not applicable                               | Also accessible on Yellow.com                          |
 
 ## Important Things to Know
 
@@ -113,7 +113,7 @@ Your Account Balance (Yellow Wallet) is also accessible on Yellow.com. Once fund
 For Google Sign-in users, withdrawals can be sent to any external wallet address on a supported blockchain. There are two separate things to keep in mind:
 
 * **Wrong address or unsupported blockchain — possible loss of funds.** If assets are withdrawn to an incorrect address, or to a blockchain Yellow.pro doesn't support, the funds may be permanently unrecoverable. Always double-check the destination address and network before confirming a withdrawal.
-* **Account-abstraction detection — a display limitation, not a loss.** Your Yellow Wallet is a smart (account-abstraction) wallet. External apps or wallets that don't support account abstraction may not automatically detect its balance, so your funds can appear "missing" in those apps even though they are safe. View and manage the balance through Yellow.pro or Yellow.com.
+* **Account-abstraction detection — a display limitation, not a loss.** Your Yellow Wallet is a smart (account-abstraction) wallet. External apps or wallets that don't support account abstraction may not automatically detect its balance, so your funds can appear "missing" in those apps even though they are safe.
 {% endhint %}
 
 ## Which Option Should You Choose?
