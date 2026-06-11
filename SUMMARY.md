@@ -56,16 +56,18 @@
 
 ## API & Programmatic Access
 
-* [Getting Started with the API](api/getting-started.md)
-* [Authentication](api/authentication.md)
-* [API Key Management](api/api-keys.md)
-* [Signing Requests With API Keys](api/signing-requests.md)
+* [Overview](api/README.md)
+* [Getting Started with API](api/getting-started-with-api.md)
+* [Authentication Service API](api/authentication-service-api.md)
+* [API Key Managment](api/api-key-managment.md)
+* [Signing Requests With API Keys](api/signing-requests-with-api-keys.md)
+* [Trading API Service](api/trading-api-service.md)
 * [Market Data API](api/market-data-api.md)
 * [Spot Trading API](api/spot-trading-api.md)
-* [Perpetuals Trading API](api/perpetuals-trading-api.md)
 * [Account Transfers API](api/account-transfers-api.md)
-* [WebSocket API](api/websocket-api.md)
-* [Error Handling](api/error-handling.md)
+* [Perpetuals Trading API](api/perpetuals-trading-api.md)
+* [WebSocket Api](api/websocket-api.md)
+* [Error Handling API](api/error-handling-api.md)
 * [Reference](api/reference.md)
 
 ## Community & Resources

@@ -1,13 +1,19 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  Join the conversation and connect with other Yellow users and our team on our
+  official community channels.
 ---
 
 # Community Channels
 
-{% hint style="info" %}
-**Placeholder — structure only.** Content to be written/migrated in a later pass.
+* **X**: [@yellow](https://x.com/yellow)
+* **Telegram**: [@yellow\_org](https://t.me/yellow_org)
+* **Discord**: [discord.com/invite/yellownetwork](https://discord.com/invite/yellownetwork)
 
-**What to cover:** Official, verified community links (Discord, Telegram, X, etc.).
+These channels are a great place to:
 
-**Source:** Migrate: v1 community-and-resources/community-channels.md
-{% endhint %}
+* Ask questions and get help from the community.
+* Stay up-to-date on the latest news and announcements.
+* Provide feedback and suggestions for improving the platform.
+
+We look forward to seeing you there!&#x20;
