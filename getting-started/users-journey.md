@@ -86,7 +86,7 @@ Withdrawal flows depend on your account type. For complete instructions, see [Ho
 
 ## Important Reminders
 
-* Yellow.pro currently supports blockchains that use smart wallet abstraction (including Ethereum).
+* Yellow.pro currently supports the Ethereum blockchain only. This is a temporary limitation — more chains will be added over time.
 * Spot ↔ Perpetual transfers are internal and instant.
 * Account Balance (`Yellow Wallet`) ↔ Trading Account (`Spot Account`) transfers are processed on-chain.
 * Funds locked in open orders or active positions may not be transferable.

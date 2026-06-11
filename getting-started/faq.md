@@ -48,7 +48,7 @@ For more details, see [How Yellow.pro Works](how-yellow-works.md) and [External 
 
 <summary>What networks does Yellow.pro support?</summary>
 
-Yellow.pro currently operates on Ethereum-compatible infrastructure, and more blockchain networks will be supported over time as the platform grows. Always verify that the selected asset and network match before depositing or withdrawing — using the wrong network may result in permanent loss of assets.
+Yellow.pro currently supports the Ethereum blockchain only. This is a temporary limitation — more networks will be added over time as the platform grows. Always verify that the selected asset and network match before depositing or withdrawing — using the wrong network may result in permanent loss of assets.
 
 For more details, see [Users Journey on Yellow.pro](users-journey.md)
 
