@@ -73,5 +73,4 @@
 ## Community & Resources
 
 * [Community Channels](community-and-resources/community-channels.md)
-* [Brand Assets](community-and-resources/brand-assets.md)
 * [Contact Support](community-and-resources/contact-support.md)
