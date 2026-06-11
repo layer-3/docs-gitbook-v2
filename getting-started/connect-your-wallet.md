@@ -29,6 +29,8 @@ Go to [yellow.pro](https://yellow.pro) and click the **Connect** button in the t
 Select the wallet you want to use. Most users connect through MetaMask, Rabby, Phantom, or WalletConnect.
 
 If your wallet is not directly shown, use **WalletConnect** to search from 560+ supported wallets.
+
+![Choosing a login method](../.gitbook/assets/connect-wallet-login.gif)
 {% endstep %}
 
 {% step %}
@@ -133,6 +135,18 @@ If your wallet extension is installed but not detected:
 * temporarily disable conflicting wallet extensions
 
 </details>
+
+## Disconnect or Log Out
+
+To disconnect from Yellow:
+
+1. Go to the top-right corner of the screen.
+2. Click on your balance.
+3. In the pop-up window, click **Disconnect**.
+
+You don't need to sign any transaction to disconnect from the platform.
+
+![Disconnecting from Yellow.pro](../.gitbook/assets/connect-wallet-disconnect.gif)
 
 ## Important Things to Know
 
