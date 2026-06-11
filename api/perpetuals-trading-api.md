@@ -1,4 +1,5 @@
 ---
+icon: chart-line
 description: "Perpetuals API: positions, orders, leverage, margin, funding, and history."
 ---
 

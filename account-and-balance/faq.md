@@ -1,4 +1,5 @@
 ---
+icon: circle-question
 description: Quick answers about Yellow.pro balances, transfers, and locked funds.
 ---
 

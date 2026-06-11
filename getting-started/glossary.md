@@ -1,4 +1,5 @@
 ---
+icon: book-open
 description: Definitions of key terms used across Yellow.pro.
 ---
 

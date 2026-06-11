@@ -1,4 +1,5 @@
 ---
+icon: rocket
 description: Authenticate with the Yellow API and start calling endpoints.
 ---
 

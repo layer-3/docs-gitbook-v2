@@ -1,4 +1,5 @@
 ---
+icon: plug
 description: Real-time WebSocket streams for market data, orders, and account updates.
 ---
 

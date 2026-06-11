@@ -1,4 +1,5 @@
 ---
+icon: circle-question
 description: Quick answers to common spot trading questions on Yellow.pro.
 ---
 

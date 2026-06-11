@@ -1,4 +1,5 @@
 ---
+icon: signature
 description: Sign authenticated API requests with HMAC-SHA256 using your API key.
 ---
 

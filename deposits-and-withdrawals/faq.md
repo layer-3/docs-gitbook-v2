@@ -1,4 +1,5 @@
 ---
+icon: circle-question
 description: Quick answers to common deposit and withdrawal questions on Yellow.pro.
 ---
 

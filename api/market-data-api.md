@@ -1,4 +1,5 @@
 ---
+icon: chart-simple
 description: Public market-data endpoints for prices, indicators, and market analysis.
 ---
 

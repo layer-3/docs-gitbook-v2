@@ -1,4 +1,5 @@
 ---
+icon: circle-info
 description: >-
   Yellow.pro is a hybrid crypto trading platform that pairs centralized-exchange
   speed with the self-custody and transparency of DeFi.

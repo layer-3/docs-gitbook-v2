@@ -1,4 +1,5 @@
 ---
+icon: wallet
 description: >-
   Step-by-step guide to connecting a supported wallet to Yellow.pro, plus
   WalletConnect tips and common connection troubleshooting.

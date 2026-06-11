@@ -1,4 +1,5 @@
 ---
+icon: arrow-up-from-line
 description: >-
   How to withdraw funds on Yellow.pro — directly from your Trading Account
   (external wallet) or via Account Balance (Google Sign-in).

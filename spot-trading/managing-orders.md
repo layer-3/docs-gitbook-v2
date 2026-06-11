@@ -1,4 +1,5 @@
 ---
+icon: rectangle-list
 description: >-
   Track your activity with Open Orders, Order History, and Trade History,
   understand reserved balances, and fix common order rejections.

@@ -1,4 +1,5 @@
 ---
+icon: money-bill-transfer
 description: >-
   How to move funds between Account Balance, Trading Account, and Perpetual
   Account, and which transfers apply to your account type.

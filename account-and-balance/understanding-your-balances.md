@@ -1,4 +1,5 @@
 ---
+icon: coins
 description: >-
   How Yellow.pro's balance areas work — Account Balance, Trading Account, and
   Perpetual Account — and how funds flow between them.

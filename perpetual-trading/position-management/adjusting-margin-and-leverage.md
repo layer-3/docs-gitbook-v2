@@ -1,4 +1,5 @@
 ---
+icon: sliders
 description: >-
   How to add or remove margin and change leverage on an open perpetual position,
   and how each affects your liquidation price.

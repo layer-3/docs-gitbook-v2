@@ -1,4 +1,5 @@
 ---
+icon: coins
 description: >-
   Spot trading on Yellow.pro — the direct exchange of one crypto asset for
   another at the current market price.

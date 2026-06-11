@@ -1,4 +1,5 @@
 ---
+icon: money-bill
 description: >-
   How trading fees work on Yellow.pro for Spot and Perpetuals, and the
   difference between maker and taker orders.

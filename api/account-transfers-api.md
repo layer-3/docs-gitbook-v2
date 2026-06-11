@@ -1,4 +1,5 @@
 ---
+icon: money-bill-transfer
 description: Transfer funds between spot and perpetuals accounts via the API.
 ---
 

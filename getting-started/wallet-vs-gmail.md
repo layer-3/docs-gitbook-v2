@@ -1,4 +1,5 @@
 ---
+icon: scale-balanced
 description: >-
   How the two ways to access Yellow.pro — external wallet vs Google sign-in —
   differ in balance structure and deposit, transfer, and withdrawal flow.

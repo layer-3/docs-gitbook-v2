@@ -1,4 +1,5 @@
 ---
+icon: network-wired
 description: >-
   Supported network and assets, blockchain confirmations, minimum withdrawal
   amounts, network fees, and irreversibility rules for deposits and withdrawals.

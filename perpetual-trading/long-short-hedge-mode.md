@@ -1,4 +1,5 @@
 ---
+icon: arrows-up-down
 description: >-
   Going long or short on Yellow.pro perpetuals, and using two-way (hedge) mode
   to hold both directions on the same pair at once.

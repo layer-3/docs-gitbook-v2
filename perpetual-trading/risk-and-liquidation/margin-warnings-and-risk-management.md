@@ -1,4 +1,5 @@
 ---
+icon: bell
 description: >-
   What margin warning emails mean and how to enable them, plus core
   risk-management principles for leveraged trading.

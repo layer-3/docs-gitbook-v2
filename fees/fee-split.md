@@ -1,4 +1,5 @@
 ---
+icon: chart-pie
 description: >-
   How every trading fee collected on Yellow.pro is divided internally between
   $YELLOW buybacks and platform operations.

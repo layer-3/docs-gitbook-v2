@@ -1,4 +1,5 @@
 ---
+icon: network-wired
 description: >-
   Why a blockchain network fee applies to withdrawals, why it changes, and how
   it's deducted from your withdrawal amount.

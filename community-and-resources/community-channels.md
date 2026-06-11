@@ -1,4 +1,5 @@
 ---
+icon: users
 description: >-
   Join the conversation and connect with other Yellow users and our team on our
   official community channels.

@@ -1,4 +1,5 @@
 ---
+icon: fire
 description: >-
   What triggers liquidation on Yellow.pro, the liquidation process and price,
   and why the mark price (not the last traded price) determines it.

@@ -1,4 +1,5 @@
 ---
+icon: lock
 description: >-
   Common reasons funds may appear in your balance but can't be transferred or
   withdrawn — and what to check before contacting support.

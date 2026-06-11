@@ -1,4 +1,5 @@
 ---
+icon: triangle-exclamation
 description: Error response formats, codes, and HTTP statuses across the Yellow API.
 ---
 

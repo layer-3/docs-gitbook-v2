@@ -1,4 +1,5 @@
 ---
+icon: key
 description: Create, list, and revoke API keys, with scopes and IP allow-lists.
 ---
 

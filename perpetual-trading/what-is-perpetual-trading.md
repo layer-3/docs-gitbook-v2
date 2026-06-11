@@ -1,4 +1,5 @@
 ---
+icon: chart-line
 description: >-
   Perpetual trading on Yellow.pro — speculate on crypto prices with leverage,
   long or short, without owning the underlying asset.

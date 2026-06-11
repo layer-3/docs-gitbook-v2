@@ -1,4 +1,5 @@
 ---
+icon: circle-question
 description: >-
   Quick answers about perpetual trading on Yellow.pro — basics, position
   management, and risk & liquidation.

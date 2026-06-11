@@ -1,4 +1,5 @@
 ---
+icon: server
 description: "Trading API service: health, fee tiers, and exchange market data."
 ---
 

@@ -1,4 +1,5 @@
 ---
+icon: list-check
 description: >-
   Market and limit orders, plus conditional orders (stop market and stop limit)
   on Yellow.pro — how each works and when to use it.

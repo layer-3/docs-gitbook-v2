@@ -1,4 +1,5 @@
 ---
+icon: clock
 description: >-
   What funding fees are, when they're charged, and how funding rates work on
   Yellow.pro perpetual markets.

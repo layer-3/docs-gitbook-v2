@@ -1,4 +1,5 @@
 ---
+icon: headset
 description: How to reach Yellow.pro support by email or in-app chat.
 ---
 

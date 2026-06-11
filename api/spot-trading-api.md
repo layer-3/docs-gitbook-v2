@@ -1,4 +1,5 @@
 ---
+icon: coins
 description: "Spot trading API: accounts, orders, trades, and fee rates."
 ---
 

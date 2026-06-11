@@ -1,4 +1,5 @@
 ---
+icon: circle-question
 description: Quick answers about trading fees, VIP tiers, $YELLOW, funding, and network fees.
 ---
 

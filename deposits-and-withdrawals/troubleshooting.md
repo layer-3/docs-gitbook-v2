@@ -1,4 +1,5 @@
 ---
+icon: screwdriver-wrench
 description: >-
   Identify and resolve common deposit and withdrawal issues before contacting
   support.

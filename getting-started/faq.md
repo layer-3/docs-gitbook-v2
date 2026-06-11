@@ -1,4 +1,5 @@
 ---
+icon: circle-question
 description: Quick answers to the most common questions about getting started on Yellow.pro.
 ---
 

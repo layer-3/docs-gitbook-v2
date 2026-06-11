@@ -1,4 +1,5 @@
 ---
+icon: money-bill-trend-up
 description: >-
   Unrealized vs realized PnL in perpetual trading — how each is calculated and
   how the mark price drives your unrealized PnL.

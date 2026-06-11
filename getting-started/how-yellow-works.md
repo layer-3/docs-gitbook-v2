@@ -1,4 +1,5 @@
 ---
+icon: gears
 description: >-
   How Yellow.pro combines fast trading with flexible account access — the two
   ways to sign in, the balance areas, and the products you can trade.

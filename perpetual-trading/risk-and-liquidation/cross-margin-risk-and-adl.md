@@ -1,4 +1,5 @@
 ---
+icon: diagram-project
 description: >-
   How cross margin aggregates risk across all your positions, and how
   auto-deleveraging (ADL) works as a last-resort backstop.

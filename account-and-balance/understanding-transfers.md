@@ -1,4 +1,5 @@
 ---
+icon: arrow-right-arrow-left
 description: >-
   Why some transfers are instant and others take time, how to check transfer
   status, and what to do if a transfer stays pending.

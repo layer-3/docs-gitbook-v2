@@ -1,4 +1,5 @@
 ---
+icon: hand-wave
 description: >-
   Yellow combines fast trading infrastructure with user-controlled custody —
   performance, clarity, and control in one place.
@@ -59,11 +60,7 @@ That may sound simple, but it reflects something bigger: markets work better whe
 
 If you are new to Yellow, this is the best order to follow:
 
-1. [How to Connect Your Wallet](getting-started/connect-your-wallet.md)
-2. [How to Deposit](deposits-and-withdrawals/how-to-deposit.md)
-3. [How to Transfer Funds Between Accounts](account-and-balance/transfer-funds-between-accounts.md)
-4. [How to Place a Spot Trade](spot-trading/how-to-place-a-spot-trade.md)
-5. [How to Withdraw](deposits-and-withdrawals/how-to-withdraw.md)
+<table data-view="cards"><thead><tr><th></th><th></th><th data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>1. Connect</strong></td><td>Connect your wallet or sign in with Google.</td><td><a href="getting-started/connect-your-wallet.md">connect-your-wallet.md</a></td></tr><tr><td><strong>2. Fund</strong></td><td>Deposit funds into your account.</td><td><a href="deposits-and-withdrawals/how-to-deposit.md">how-to-deposit.md</a></td></tr><tr><td><strong>3. Transfer</strong></td><td>Move funds to your Trading Account.</td><td><a href="account-and-balance/transfer-funds-between-accounts.md">transfer-funds-between-accounts.md</a></td></tr><tr><td><strong>4. Trade</strong></td><td>Place your first spot trade.</td><td><a href="spot-trading/how-to-place-a-spot-trade.md">how-to-place-a-spot-trade.md</a></td></tr><tr><td><strong>5. Withdraw</strong></td><td>Withdraw funds to your wallet.</td><td><a href="deposits-and-withdrawals/how-to-withdraw.md">how-to-withdraw.md</a></td></tr></tbody></table>
 
 ### The Idea Behind It
 

@@ -1,4 +1,5 @@
 ---
+icon: book
 description: "API reference: rate limits, data types, and implementation notes."
 ---
 

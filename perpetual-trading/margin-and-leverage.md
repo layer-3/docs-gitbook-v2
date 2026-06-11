@@ -1,4 +1,5 @@
 ---
+icon: gauge-high
 description: >-
   How cross margin, leverage, initial and maintenance margin, and the margin
   ratio work for perpetual trading on Yellow.pro.

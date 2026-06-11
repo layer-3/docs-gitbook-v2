@@ -1,4 +1,5 @@
 ---
+icon: triangle-exclamation
 description: >-
   How liquidation works on Yellow.pro perpetuals — mark price, cross-margin
   risk, ADL, margin warnings, and how to manage risk.
@@ -14,6 +15,4 @@ Liquidation closes your position automatically when your account can no longer m
 
 ## In This Section
 
-* [Liquidation & Mark Price](liquidation-and-mark-price.md) — what triggers liquidation, the process, and why mark price (not last price) decides it
-* [Cross-Margin Risk & ADL](cross-margin-risk-and-adl.md) — how shared collateral aggregates risk, and the auto-deleveraging backstop
-* [Margin Warnings & Risk Management](margin-warnings-and-risk-management.md) — warning emails and practical risk-management principles
+<table data-view="cards"><thead><tr><th></th><th></th><th data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Liquidation & Mark Price</strong></td><td>What triggers liquidation, the process, and why mark price (not last price) decides it.</td><td><a href="liquidation-and-mark-price.md">liquidation-and-mark-price.md</a></td></tr><tr><td><strong>Cross-Margin Risk & ADL</strong></td><td>How shared collateral aggregates risk, and the auto-deleveraging backstop.</td><td><a href="cross-margin-risk-and-adl.md">cross-margin-risk-and-adl.md</a></td></tr><tr><td><strong>Margin Warnings & Risk Management</strong></td><td>Warning emails and practical risk-management principles.</td><td><a href="margin-warnings-and-risk-management.md">margin-warnings-and-risk-management.md</a></td></tr></tbody></table>

@@ -1,4 +1,5 @@
 ---
+icon: arrow-down-to-line
 description: >-
   How to deposit funds on Yellow.pro — the direct flow for external wallets and
   the two-step flow for Google Sign-in accounts.

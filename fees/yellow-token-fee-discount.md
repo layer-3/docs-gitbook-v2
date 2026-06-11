@@ -1,4 +1,5 @@
 ---
+icon: coins
 description: >-
   What the $YELLOW token is and how holding it qualifies you for higher VIP
   tiers and lower trading fees on Yellow.pro.

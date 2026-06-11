@@ -1,4 +1,5 @@
 ---
+icon: cart-shopping
 description: A step-by-step guide to placing and cancelling a spot trade on Yellow.pro.
 ---
 

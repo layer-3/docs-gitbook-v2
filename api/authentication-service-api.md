@@ -1,4 +1,5 @@
 ---
+icon: key
 description: "Authentication service endpoints: challenge, verify, refresh, login, logout, and /auth/me."
 ---
 

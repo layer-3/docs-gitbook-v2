@@ -1,4 +1,5 @@
 ---
+icon: crown
 description: >-
   How VIP tiers determine your trading fees on Yellow.pro, how to qualify, and
   the complete fee schedule by tier.

@@ -1,4 +1,5 @@
 ---
+icon: route
 description: >-
   The five-step Yellow.pro journey — connect, fund, transfer, trade, withdraw —
   and what to expect based on your account type.

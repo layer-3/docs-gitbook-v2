@@ -1,4 +1,5 @@
 ---
+icon: circle-xmark
 description: >-
   How to close a perpetual position fully or partially on Yellow.pro, and what
   happens to your margin and realized PnL.
