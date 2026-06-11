@@ -1,5 +1,5 @@
 ---
-icon: code
+icon: compass
 description: Overview of the Yellow.pro REST and WebSocket APIs, base URLs, and authentication.
 ---
 
