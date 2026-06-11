@@ -1,17 +1,55 @@
 ---
-description: 'TODO: FAQ answers to be written'
+description: Quick answers to the most common questions about getting started on Yellow.pro.
 ---
 
 # Getting Started — FAQ
 
-{% hint style="info" %}
-**Placeholder — structure only.** Each question below is sourced from the Notion KB and needs an answer (use collapsible `<details>` blocks, matching live FAQ style).
-{% endhint %}
+<details>
 
-## Questions to cover
+<summary>What is Yellow.pro and what can I trade on it?</summary>
 
-- [ ] What is Yellow.pro and what can I trade on it?
-- [ ] What is the difference between signing up with Gmail vs connecting an external wallet?
-- [ ] What wallets are supported on Yellow.pro?
-- [ ] What networks does Yellow.pro support?
-- [ ] What is a Yellow wallet?
+Yellow.pro is a hybrid crypto trading platform that pairs the speed of a centralized exchange with the self-custody and transparency of DeFi, giving you fast, professional-grade order execution without handing over full control of your assets. You can trade **Spot** (buy and sell assets at live market prices) and **Perpetual Futures** (trade with leverage, go long or short, and manage positions with real-time P&L and margin tracking).
+
+For more details, see [What is Yellow.pro?](what-is-yellow.md)
+
+</details>
+
+<details>
+
+<summary>What is the difference between signing up with Google and connecting an external wallet?</summary>
+
+External wallet users deposit and withdraw directly through their connected wallet without any additional balance layers. Google Sign-in users have their deposits first arrive in an Account Balance (`Yellow Wallet`) that must be transferred to their Trading Account (`Spot Account`) before trading. This means Google Sign-in users have a few extra transfer steps compared to external wallet users.
+
+For more details, see [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+
+</details>
+
+<details>
+
+<summary>What wallets are supported on Yellow.pro?</summary>
+
+Yellow.pro supports MetaMask, Rabby, Phantom, and WalletConnect (which supports 560+ additional wallets). If you sign in with Google, Yellow.pro automatically creates a Yellow Wallet for you.
+
+For more details, see [How to Connect Your Wallet](connect-your-wallet.md)
+
+</details>
+
+<details>
+
+<summary>What is a Yellow Wallet?</summary>
+
+A Yellow Wallet is automatically created when you sign in using Google, serving as your Account Balance (`Yellow Wallet`) for deposits, withdrawals, and fund management. Your Yellow Wallet is also accessible and manageable on Yellow.com, giving you flexible control over your funds across both platforms.
+
+For more details, see [How Yellow.pro Works](how-yellow-works.md) and [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+
+</details>
+
+<details>
+
+<summary>What networks does Yellow.pro support?</summary>
+
+Yellow.pro currently operates on Ethereum-compatible infrastructure, and more blockchain networks will be supported over time as the platform grows. Always verify that the selected asset and network match before depositing or withdrawing — using the wrong network may result in permanent loss of assets.
+
+For more details, see [Users Journey on Yellow.pro](users-journey.md)
+
+</details>

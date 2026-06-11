@@ -1,0 +1,114 @@
+---
+description: >-
+  The five-step Yellow.pro journey — connect, fund, transfer, trade, withdraw —
+  and what to expect based on your account type.
+---
+
+# Users Journey on Yellow.pro
+
+Yellow.pro is designed to make trading simple while giving you full control over your assets. Whether you connect your own wallet or sign in using Google, the platform follows the same general journey.
+
+## The Yellow.pro Trading Flow
+
+1. **Connect** your account
+2. **Fund** your balance
+3. **Transfer** funds (if needed)
+4. **Trade**
+5. **Withdraw** your assets
+
+This guide explains how each step works and what to expect based on your account type.
+
+{% stepper %}
+{% step %}
+### Connect your account
+
+Go to [yellow.pro](https://yellow.pro) and connect using one of these methods:
+
+* MetaMask
+* Rabby
+* Phantom
+* WalletConnect (supports 560+ wallets)
+* Google Sign-in
+
+**If you connect an external wallet,** Yellow.pro uses that wallet directly for deposits and trading.
+
+**If you sign in with Google,** Yellow.pro automatically creates a Yellow Wallet linked to your account, so you can use the platform without manually connecting a wallet.
+
+Once connected, your wallet and balance become visible on the **Assets** page.
+{% endstep %}
+
+{% step %}
+### Fund your balance
+
+Funding works differently depending on your account type:
+
+* **External wallet users** — Deposits go directly from your connected wallet into your Trading Account (`Spot Account`).
+* **Google Sign-in users** — Deposits first arrive in your Account Balance (`Yellow Wallet`), then must be transferred to your Trading Account (`Spot Account`) before trading.
+
+For detailed instructions, see [How to Deposit](../deposits-and-withdrawals/how-to-deposit.md).
+{% endstep %}
+
+{% step %}
+### Transfer funds between accounts
+
+Both account types may need to move funds between balances.
+
+* Transfers between Trading Account (`Spot Account`) and Perpetual Account are internal and normally instant.
+* Transfers involving Account Balance (`Yellow Wallet`) are processed on-chain and may take time.
+* Funds locked in open orders or active positions may not be transferable.
+
+{% hint style="warning" %}
+**Perpetual trading currently uses only USDT as collateral.** To open perpetual positions, transfer USDT into your Perpetual Account — transferring other assets alone will not provide collateral.
+{% endhint %}
+
+For complete instructions, see [How to Transfer Funds Between Accounts](../account-and-balance/transfer-funds-between-accounts.md).
+{% endstep %}
+
+{% step %}
+### Place a trade
+
+Once funds are available in your Trading Account (`Spot Account`), you can begin trading. On the trading interface you can:
+
+* select a trading pair
+* choose between a Market or Limit order
+* enter the trade amount
+* place Buy or Sell orders
+
+Placed orders appear in **Open Orders** until they are completed or cancelled. Perpetual trading requires funds to be available inside the Perpetual Account.
+{% endstep %}
+
+{% step %}
+### Withdraw your assets
+
+Withdrawal flows depend on your account type. For complete instructions, see [How to Withdraw](../deposits-and-withdrawals/how-to-withdraw.md).
+{% endstep %}
+{% endstepper %}
+
+## Important Reminders
+
+* Yellow.pro currently supports blockchains that use smart wallet abstraction (including Ethereum).
+* Spot ↔ Perpetual transfers are internal and instant.
+* Account Balance (`Yellow Wallet`) ↔ Trading Account (`Spot Account`) transfers are processed on-chain.
+* Funds locked in open orders or active positions may not be transferable.
+* Blockchain transactions cannot be reversed once completed.
+* Always verify the recipient wallet address before withdrawing.
+
+{% hint style="danger" %}
+**For Google Sign-in users especially:** if assets are withdrawn to the wrong wallet address, or to a blockchain that doesn't support smart wallet detection, the withdrawal may complete successfully on-chain but the funds may not be recoverable. Your Account Balance (`Yellow Wallet`) can also be managed on Yellow.com for flexible fund management.
+{% endhint %}
+
+## Summary
+
+Yellow.pro supports two main user flows:
+
+* **External wallet users** interact directly through their connected wallet and Trading Account (`Spot Account`).
+* **Google Sign-in users** use an additional Account Balance (`Yellow Wallet`) layer for deposits and withdrawals.
+
+Understanding how balances and transfers work helps avoid the most common deposit, transfer, and withdrawal issues on the platform.
+
+## Related Articles
+
+* [What is Yellow.pro?](what-is-yellow.md)
+* [How Yellow.pro Works](how-yellow-works.md)
+* [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+* [How to Connect Your Wallet](connect-your-wallet.md)

@@ -1,13 +1,130 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  How the two ways to access Yellow.pro — external wallet vs Google sign-in —
+  differ in balance structure and deposit, transfer, and withdrawal flow.
 ---
 
 # External Wallet vs Gmail Account
 
+Yellow.pro supports two ways to access the platform:
+
+1. Connecting an external wallet
+2. Signing in using Google
+
+Both methods let you trade on the platform, but the balance structure and transfer flow work differently. This guide explains the main differences and gives the complete deposit, transfer, and withdrawal flow for each account type.
+
+{% tabs %}
+{% tab title="External Wallet" %}
+You can connect supported wallets such as MetaMask, Rabby, Phantom, or WalletConnect directly to Yellow.pro. Deposits and withdrawals happen directly through the connected wallet. **External wallet users do NOT use Account Balance.**
+
+**Deposit flow**
+
+`External Wallet → Trading Account → Perpetual Account`
+
+Deposits go directly into the Trading Account. If you want to use funds for Perpetual trading, transfer them internally to the Perpetual Account.
+
+1. Initiate a deposit from Yellow.pro.
+2. Approve the transaction in your connected wallet.
+3. Funds appear in your Trading Account.
+4. Transfer to the Perpetual Account if needed for perpetual trading.
+
+**Withdrawal flow**
+
+`Trading Account ← Perpetual Account` (if needed) `→ External Wallet`
+
+If funds are currently inside the Perpetual Account, they must first be transferred back to the Trading Account before withdrawal.
+
+1. Go to the Withdrawal page.
+2. Select the asset and amount.
+3. Funds are sent directly to your connected wallet.
+4. No recipient address needed — your wallet is already connected.
+
+**Transfer flow**
+
+`Trading Account ↔ Perpetual Account`
+
+Transfers between the Trading Account and Perpetual Account are internal platform transfers and normally reflect instantly.
+{% endtab %}
+
+{% tab title="Google Sign-in" %}
+If you sign in using Google, Yellow.pro automatically creates a Yellow Wallet linked to your account. Deposits first arrive in your Account Balance (your Yellow Wallet) before they can be used for trading.
+
+**Deposit flow**
+
+`Account Balance (Yellow Wallet) → Trading Account → Perpetual Account`
+
+After depositing, funds must first be transferred from Account Balance to the Trading Account before trading is possible.
+
+1. Initiate a deposit to your Account Balance.
+2. Funds arrive in your Account Balance (Yellow Wallet).
+3. Transfer funds from Account Balance to the Trading Account.
+4. Once in the Trading Account, you can trade or transfer to the Perpetual Account.
+
+**Withdrawal flow**
+
+`Perpetual Account → Trading Account → Account Balance (Yellow Wallet) → External Wallet`
+
+Withdrawals can only be processed through Account Balance. You must manually enter a recipient wallet address.
+
+1. If funds are in the Perpetual Account, transfer them to the Trading Account first.
+2. Transfer funds from the Trading Account to Account Balance.
+3. Go to the Withdrawal page.
+4. Enter the recipient wallet address (can be any external wallet).
+5. Select the asset and amount.
+6. Confirm the withdrawal.
+
+**Transfer flow**
+
+`Account Balance ↔ Trading Account` and `Trading Account ↔ Perpetual Account`
+
+* Transfers between Account Balance and the Trading Account are processed on-chain and may take additional time depending on blockchain conditions.
+* Transfers between the Trading Account and Perpetual Account are internal and normally reflect instantly.
+
 {% hint style="info" %}
-**Placeholder — structure only.** Content to be written/migrated in a later pass.
-
-**What to cover:** The two sign-in methods compared — external wallet vs Gmail/email — and how custody, deposits, and fund flow differ.
-
-**Source:** New — Notion KB §1
+Your Account Balance (Yellow Wallet) is also accessible on Yellow.com. Once funds reach your Account Balance, you have full control through either Yellow.pro or Yellow.com.
 {% endhint %}
+{% endtab %}
+{% endtabs %}
+
+## Main Differences
+
+| Comparison | External Wallet Users | Google Sign-in Users |
+| --- | --- | --- |
+| Wallet setup | User connects their own wallet | Yellow Wallet is created automatically |
+| Deposit destination | Trading Account | Account Balance (Yellow Wallet) |
+| Trading requirement | Funds can usually be traded immediately | Funds must first be transferred to the Trading Account |
+| Withdrawal source | Trading Account (direct to connected wallet) | Account Balance (Yellow Wallet) |
+| Account Balance usage | Not used | Required for deposits and withdrawals |
+| Recipient address on withdrawal | Connected wallet used automatically | User must enter recipient address manually |
+| Account Balance ↔ Trading Account transfers | Not applicable | Processed on-chain |
+| Spot ↔ Perpetual transfers | Internal and normally instant | Internal and normally instant |
+| Yellow Wallet access | Not applicable | Also accessible on Yellow.com |
+
+## Important Things to Know
+
+* External wallet users interact directly through their connected wallet. They do not use Account Balance.
+* Google Sign-in users have an additional Account Balance layer (Yellow Wallet) for deposits and withdrawals.
+* Spot ↔ Perpetual transfers are internal and normally instant for both account types.
+* Account Balance ↔ Trading Account transfers are processed on-chain and may take time.
+* Funds locked in active orders or positions may not be transferable.
+* Blockchain transactions cannot be reversed once completed.
+
+{% hint style="danger" %}
+For Google Sign-in users, withdrawals can be sent to any external wallet address on supported blockchains. Always verify that the destination address is correct and that the receiving platform supports smart wallet detection. If assets are withdrawn to an unsupported blockchain or an incorrect address, recovery may not be possible — often because other platforms don't auto-detect Yellow Wallet balances due to how smart wallet abstraction works.
+{% endhint %}
+
+## Which Option Should You Choose?
+
+* **External wallet connection** is generally better for users already familiar with crypto wallets and direct wallet interaction. It's more straightforward since there's no Account Balance layer.
+* **Google Sign-in** is designed for users who want a simpler onboarding experience without manually connecting a wallet first. Your Yellow Wallet is created automatically and is also accessible on Yellow.com.
+
+Both methods provide access to the same trading platform and features. Choose whichever feels most comfortable for your workflow.
+
+## Related Articles
+
+* [What is Yellow.pro?](what-is-yellow.md)
+* [Users Journey on Yellow.pro](users-journey.md)
+* [Understanding Your Balances](../account-and-balance/understanding-your-balances.md)
+* [How to Transfer Funds Between Accounts](../account-and-balance/transfer-funds-between-accounts.md)
+* [How to Deposit](../deposits-and-withdrawals/how-to-deposit.md)
+* [How to Withdraw](../deposits-and-withdrawals/how-to-withdraw.md)
