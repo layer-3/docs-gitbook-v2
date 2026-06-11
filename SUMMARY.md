@@ -15,6 +15,7 @@
 ## Account & Balance
 
 * [Understanding Your Balances](account-and-balance/understanding-your-balances.md)
+* [Understanding Transfers on Yellow.pro](account-and-balance/understanding-transfers.md)
 * [How to Transfer Funds Between Accounts](account-and-balance/transfer-funds-between-accounts.md)
 * [Why Funds May Not Be Transferable](account-and-balance/why-funds-not-transferable.md)
 * [FAQ](account-and-balance/faq.md)

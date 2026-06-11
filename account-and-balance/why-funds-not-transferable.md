@@ -1,13 +1,85 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  Common reasons funds may appear in your balance but can't be transferred or
+  withdrawn — and what to check before contacting support.
 ---
 
 # Why Funds May Not Be Transferable
 
-{% hint style="info" %}
-**Placeholder — structure only.** Content to be written/migrated in a later pass.
+Sometimes funds appear in your balance but are not available for transfer or withdrawal. This usually happens because the funds are currently being used elsewhere on the platform or are still processing. This guide explains the most common reasons and what to check before contacting support.
 
-**What to cover:** Why transferable balance can be lower than total: locked margin, open orders, closing-fee reserve, cross-margin 80% cap, pending transfers.
+## Before You Start
 
-**Source:** New — Notion KB §2; v1 troubleshooting.md
-{% endhint %}
+* Funds locked in open orders or positions cannot be transferred.
+* Perpetual trading uses a separate balance from Spot trading.
+* Google Sign-in users must use Account Balance (`Yellow Wallet`) for withdrawals.
+* Account Balance ↔ Trading Account transfers are blockchain-based and may take time; Trading Account ↔ Perpetual Account transfers are instant.
+
+For how balances work, see [Understanding Your Balances](understanding-your-balances.md).
+
+## Funds Locked in Spot Orders
+
+If you have active Spot trading orders, part of your balance may be locked for those orders. Locked funds cannot be transferred, withdrawn, or used elsewhere until the order is cancelled or completed.
+
+**To make the funds transferable:**
+
+1. Cancel the active order from the Spot trading page.
+2. Wait for the balance to update (should be immediate).
+3. Retry the transfer or withdrawal.
+
+## Funds Locked as Perpetual Margin
+
+Funds being used as margin for perpetual positions are not available for transfer or withdrawal. This includes active perpetual positions that require margin, and margin reserved for open perpetual orders.
+
+**To release the funds:**
+
+1. Close the open perpetual position.
+2. Cancel the open perpetual order.
+3. Wait for the margin balance to update.
+4. Retry the transfer.
+
+Once the margin is released, the funds can be transferred back to the Trading Account (`Spot Account`).
+
+## Funds Still Processing Between Accounts
+
+For Google Sign-in users, transfers between Account Balance (`Yellow Wallet`) and Trading Account (`Spot Account`) are blockchain-based. During processing, the transfer shows as "Pending," and the funds may temporarily not appear as available in either account. This is expected behavior during blockchain processing.
+
+**To check transfer status:**
+
+1. Go to the Transfer page (`yellow.pro/assets/deposit/transfer`).
+2. Look for your recent transfer and check its status.
+3. Or check transaction history (`yellow.pro/assets/history`).
+
+If the transfer remains "Pending" for more than 1 hour, see [Understanding Transfers on Yellow.pro](understanding-transfers.md) for troubleshooting steps.
+
+## Funds in the Wrong Account
+
+Sometimes funds are available but stored in a different balance than expected. Common scenarios:
+
+* Funds in the Perpetual Account cannot be withdrawn directly.
+* Funds in Account Balance (`Yellow Wallet`) cannot be used for Spot trading.
+* Funds in the Trading Account (`Spot Account`) cannot be withdrawn directly by Google Sign-in users.
+
+**To fix this:** make sure the funds are in the correct account before attempting the next action. Use the Transfer feature to move them — see [How to Transfer Funds Between Accounts](transfer-funds-between-accounts.md).
+
+## Minimum Withdrawal Requirements
+
+Each asset has a minimum withdrawal amount. Withdrawals below the minimum cannot be initiated, and the withdrawal option may remain unavailable if your available balance is below the required minimum. For minimum amounts by asset, see the [How to Withdraw](../deposits-and-withdrawals/how-to-withdraw.md) guide.
+
+## Summary
+
+Funds may not be transferable if they are:
+
+* locked in active Spot orders
+* being used as perpetual margin
+* still processing during a blockchain transfer
+* stored in a different account type than needed
+* below the minimum withdrawal amount
+
+Checking the balance location, transfer status, and open trading activity usually resolves most transfer-related confusion.
+
+## Related Articles
+
+* [Understanding Your Balances](understanding-your-balances.md)
+* [How to Transfer Funds Between Accounts](transfer-funds-between-accounts.md)
+* [Understanding Transfers on Yellow.pro](understanding-transfers.md)
