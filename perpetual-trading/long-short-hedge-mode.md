@@ -38,6 +38,8 @@ By default, Yellow.pro operates in **One-Way Mode**: you hold only one direction
 
 **Two-Way Mode (Hedge Mode)** lets you hold a **long and a short on the same pair simultaneously**, independently of each other.
 
+![Switching between One-Way and Two-Way (Hedge) mode](../.gitbook/assets/perp-two-way-mode.png)
+
 | | One-Way Mode | Two-Way Mode |
 | --- | --- | --- |
 | Long + short on same pair | Not allowed | Allowed |

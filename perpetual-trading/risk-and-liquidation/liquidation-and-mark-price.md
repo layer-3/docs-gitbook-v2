@@ -27,6 +27,8 @@ In **cross margin mode** (used on Yellow.pro), this is calculated across **all**
 4. **Settlement** — any remaining balance after losses and liquidation fees is returned (often small or zero).
 5. **Record** — the liquidation is logged in your Trade History.
 
+![A liquidation entry in trade history](../../.gitbook/assets/perp-liquidation-history.png)
+
 ## Liquidation Price
 
 Your **Liquidation Price** is the estimated Mark Price at which your account would be liquidated, shown in the positions panel. In cross margin it is **not fixed** — it moves with your unrealized PnL, positions you open or close, and deposits or withdrawals.

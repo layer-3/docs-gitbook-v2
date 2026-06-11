@@ -30,6 +30,10 @@ Warnings are sent to the email linked to your Yellow account.
 * **Signed up via Yellow.com (email/social):** your email may already be linked — verify at `yellow.pro/settings`.
 * **Connected via a wallet (MetaMask, etc.):** go to `yellow.pro/settings` → **Linked Socials** → **Link** next to Email, then verify it.
 
+![Email settings on Yellow.pro](../../.gitbook/assets/perp-margin-email-settings.png)
+
+![Linking an email under Linked Socials for wallet users](../../.gitbook/assets/perp-link-email-wallet.png)
+
 {% hint style="warning" %}
 If you trade with a wallet connection and haven't linked an email, you will **not** receive margin warning alerts. We strongly recommend linking one.
 {% endhint %}

@@ -9,6 +9,8 @@ description: >-
 
 **PnL** (Profit and Loss) measures how much you've gained or lost on a position. In perpetual trading there are two types: **Unrealized** and **Realized**.
 
+![Unrealized and realized PnL shown on a position](../.gitbook/assets/perp-pnl.png)
+
 ## Unrealized PnL (uPnL)
 
 The current gain or loss on an **open** position. It updates in real time as the market moves and affects your account equity and liquidation risk — but isn't locked in until you close.
