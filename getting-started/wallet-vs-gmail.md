@@ -110,7 +110,10 @@ Your Account Balance (Yellow Wallet) is also accessible on Yellow.com. Once fund
 * Blockchain transactions cannot be reversed once completed.
 
 {% hint style="danger" %}
-For Google Sign-in users, withdrawals can be sent to any external wallet address on supported blockchains. Always verify that the destination address is correct and that the receiving platform supports smart wallet detection. If assets are withdrawn to an unsupported blockchain or an incorrect address, recovery may not be possible — often because other platforms don't auto-detect Yellow Wallet balances due to how smart wallet abstraction works.
+For Google Sign-in users, withdrawals can be sent to any external wallet address on a supported blockchain. There are two separate things to keep in mind:
+
+* **Wrong address or unsupported blockchain — possible loss of funds.** If assets are withdrawn to an incorrect address, or to a blockchain Yellow.pro doesn't support, the funds may be permanently unrecoverable. Always double-check the destination address and network before confirming a withdrawal.
+* **Account-abstraction detection — a display limitation, not a loss.** Your Yellow Wallet is a smart (account-abstraction) wallet. External apps or wallets that don't support account abstraction may not automatically detect its balance, so your funds can appear "missing" in those apps even though they are safe. View and manage the balance through Yellow.pro or Yellow.com.
 {% endhint %}
 
 ## Which Option Should You Choose?
