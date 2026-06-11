@@ -20,6 +20,8 @@ Make sure you have:
 ### Select a market
 
 On the left panel of the trading interface, browse or search for the market you want to trade (for example, `ETH-USDT`). The order book, chart, and order form load for that market.
+
+![Selecting a market on the Yellow.pro trading interface](../.gitbook/assets/spot-select-market.png)
 {% endstep %}
 
 {% step %}
@@ -30,6 +32,8 @@ In the order form, select your order type:
 * **Market order** — executes immediately at the best available price. No price input needed.
 * **Limit order** — executes at your specified price or better. Requires a price input.
 * **Stop Limit / Stop Market** — conditional orders that activate when a trigger price is reached.
+
+![The order form with the order-type selector](../.gitbook/assets/spot-order-type.png)
 
 Not sure which to choose? See [Order Types](order-types.md).
 {% endstep %}
@@ -66,6 +70,14 @@ After submission:
 * your order appears in **Open Orders** at the bottom of the screen
 * if it fills immediately, your balance updates and the trade appears in **Trade History**
 * if it's a limit order waiting to be filled, it stays in **Open Orders** until matched or cancelled
+
+**Open order:**
+
+![An open order shown in the Open Orders panel](../.gitbook/assets/spot-open-order.png)
+
+**Filled order:**
+
+![A filled order shown in trade history](../.gitbook/assets/spot-filled-order.png)
 {% endstep %}
 {% endstepper %}
 
@@ -76,6 +88,8 @@ After submission:
 3. Click the **Cancel** (X) button next to it.
 
 Funds reserved for the cancelled order return to your **Available** balance immediately.
+
+![Cancelling an open order from the Open Orders tab](../.gitbook/assets/spot-cancel-order.png)
 
 ## Tips for New Traders
 
