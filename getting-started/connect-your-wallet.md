@@ -144,6 +144,6 @@ If your wallet extension is installed but not detected:
 ## Related Articles
 
 * [What is Yellow.pro?](what-is-yellow.md)
-* [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+* [External Wallet vs Google Account](wallet-vs-gmail.md)
 * [Users Journey on Yellow.pro](users-journey.md)
 * [How to Deposit](../deposits-and-withdrawals/how-to-deposit.md)

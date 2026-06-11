@@ -1,3 +1,7 @@
+---
+description: API reference: rate limits, data types, and implementation notes.
+---
+
 # Reference
 
 ## Rate Limiting

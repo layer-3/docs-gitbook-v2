@@ -1,3 +1,7 @@
+---
+description: Authenticate with the Yellow API and start calling endpoints.
+---
+
 # Getting Started with API
 
 This guide walks you through authenticating with the Yellow API so you can start calling endpoints.

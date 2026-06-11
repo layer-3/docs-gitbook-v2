@@ -1,3 +1,7 @@
+---
+description: How to reach Yellow.pro support by email or in-app chat.
+---
+
 # Contact Support
 
 If you can't find the answer you're looking for in our FAQs and troubleshooting guides, you can reach our support team in one of these ways:

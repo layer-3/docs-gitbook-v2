@@ -20,7 +20,7 @@ For more details, see [What is Yellow.pro?](what-is-yellow.md)
 
 External wallet users deposit and withdraw directly through their connected wallet without any additional balance layers. Google Sign-in users have their deposits first arrive in an Account Balance (`Yellow Wallet`) that must be transferred to their Trading Account (`Spot Account`) before trading. This means Google Sign-in users have a few extra transfer steps compared to external wallet users.
 
-For more details, see [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+For more details, see [External Wallet vs Google Account](wallet-vs-gmail.md)
 
 </details>
 
@@ -40,7 +40,7 @@ For more details, see [How to Connect Your Wallet](connect-your-wallet.md)
 
 A Yellow Wallet is automatically created when you sign in using Google, serving as your Account Balance (`Yellow Wallet`) for deposits, withdrawals, and fund management. Your Yellow Wallet is also accessible and manageable on Yellow.com, giving you flexible control over your funds across both platforms.
 
-For more details, see [How Yellow.pro Works](how-yellow-works.md) and [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+For more details, see [How Yellow.pro Works](how-yellow-works.md) and [External Wallet vs Google Account](wallet-vs-gmail.md)
 
 </details>
 

@@ -1,3 +1,7 @@
+---
+description: Perpetuals API: positions, orders, leverage, margin, funding, and history.
+---
+
 # Perpetuals Trading API
 
 The perpetuals trading API provides endpoints for managing cross-margin perpetual futures accounts, placing and canceling orders, monitoring positions, and retrieving trade history. All perpetuals accounts use cross-margin model where collateral is shared across all positions.

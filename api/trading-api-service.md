@@ -1,3 +1,7 @@
+---
+description: Trading API service: health, fee tiers, and exchange market data.
+---
+
 # Trading API Service
 
 ## Health & System Endpoints

@@ -1,3 +1,7 @@
+---
+description: Create, list, and revoke API keys, with scopes and IP allow-lists.
+---
+
 # API Key Managment
 
 API keys let you call authenticated endpoints from servers and scripts. You create and manage keys through these endpoints, then sign each request as described in [Signing Requests With API Keys](signing-requests-with-api-keys.md).

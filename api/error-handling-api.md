@@ -1,3 +1,7 @@
+---
+description: Error response formats, codes, and HTTP statuses across the Yellow API.
+---
+
 # Error Handling API
 
 All endpoints return consistent error responses with the following structure:

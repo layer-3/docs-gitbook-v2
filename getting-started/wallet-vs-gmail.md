@@ -4,7 +4,7 @@ description: >-
   differ in balance structure and deposit, transfer, and withdrawal flow.
 ---
 
-# External Wallet vs Gmail Account
+# External Wallet vs Google Account
 
 Yellow.pro supports two ways to access the platform:
 

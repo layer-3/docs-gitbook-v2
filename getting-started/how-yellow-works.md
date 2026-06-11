@@ -43,5 +43,5 @@ Understanding where your funds are located is important, because deposits, trans
 
 * [What is Yellow.pro?](what-is-yellow.md)
 * [Users Journey on Yellow.pro](users-journey.md)
-* [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+* [External Wallet vs Google Account](wallet-vs-gmail.md)
 * [Understanding Your Balances](../account-and-balance/understanding-your-balances.md)

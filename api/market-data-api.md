@@ -1,3 +1,7 @@
+---
+description: Public market-data endpoints for prices, indicators, and market analysis.
+---
+
 # Market Data API
 
 These endpoints provide real-time market data for prices, technical indicators, and market analysis. Base URL: see [Base URLs](./#base-urls).

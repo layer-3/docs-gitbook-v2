@@ -33,7 +33,7 @@ Either path gives you a clean, beginner-friendly interface while keeping enough 
 
 * [How Yellow.pro Works](how-yellow-works.md)
 * [Users Journey on Yellow.pro](users-journey.md)
-* [External Wallet vs Gmail Account](wallet-vs-gmail.md)
+* [External Wallet vs Google Account](wallet-vs-gmail.md)
 * [Understanding Your Balances](../account-and-balance/understanding-your-balances.md)
 * [How to Transfer Funds Between Accounts](../account-and-balance/transfer-funds-between-accounts.md)
 * [How to Deposit](../deposits-and-withdrawals/how-to-deposit.md)

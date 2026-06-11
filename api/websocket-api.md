@@ -1,3 +1,7 @@
+---
+description: Real-time WebSocket streams for market data, orders, and account updates.
+---
+
 # WebSocket Api
 
 The Yellow WebSocket API provides real-time data streams, order notifications, account updates, and authenticated subscription access. All connections use a single endpoint:

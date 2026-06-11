@@ -1,3 +1,7 @@
+---
+description: Spot trading API: accounts, orders, trades, and fee rates.
+---
+
 # Spot Trading API
 
 The spot trading API provides endpoints for managing spot trading accounts, placing and canceling orders, and retrieving trade history.

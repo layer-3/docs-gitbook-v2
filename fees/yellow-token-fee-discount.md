@@ -28,7 +28,7 @@ The only fee benefit of $YELLOW is **VIP tier qualification**. There is **no sep
 
 * Hold a **24-hour average** of $YELLOW to qualify.
 * Only your **Trading Account (`Spot Account`)** balance counts.
-* For Gmail/Email users, $YELLOW in Account Balance (`Yellow Wallet`) does **not** qualify.
+* For Google Sign-in users, $YELLOW in Account Balance (`Yellow Wallet`) does **not** qualify.
 * $YELLOW in external wallets does **not** count.
 
 For example, a 24-hour average of 10,000 $YELLOW qualifies for VIP 1. See [VIP Tiers & Fee Discounts](vip-tiers.md) for all amounts.

@@ -7,7 +7,7 @@
 * [What is Yellow.pro?](getting-started/what-is-yellow.md)
 * [How Yellow.pro Works](getting-started/how-yellow-works.md)
 * [Users Journey on Yellow.pro](getting-started/users-journey.md)
-* [External Wallet vs Gmail Account](getting-started/wallet-vs-gmail.md)
+* [External Wallet vs Google Account](getting-started/wallet-vs-gmail.md)
 * [How to Connect Your Wallet](getting-started/connect-your-wallet.md)
 * [Glossary of Terms](getting-started/glossary.md)
 * [FAQ](getting-started/faq.md)

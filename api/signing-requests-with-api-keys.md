@@ -1,3 +1,7 @@
+---
+description: Sign authenticated API requests with HMAC-SHA256 using your API key.
+---
+
 # Signing Requests With API Keys
 
 API key authentication lets you call authenticated endpoints from servers and scripts without the interactive wallet signing flow. Every authenticated request carries three headers, and the signature is recomputed per request from the request contents.

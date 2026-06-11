@@ -1,3 +1,7 @@
+---
+description: Transfer funds between spot and perpetuals accounts via the API.
+---
+
 # Account Transfers API
 
 The account transfer API provides an endpoint for transferring funds between spot and perpetuals accounts. A transfer request returns `202 Accepted` when the request is accepted; you are notified of completion on the `transfer_updates` WebSocket channel.
