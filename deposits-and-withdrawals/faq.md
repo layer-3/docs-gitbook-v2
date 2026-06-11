@@ -11,7 +11,7 @@ description: Quick answers to common deposit and withdrawal questions on Yellow.
 
 <summary>What assets and networks does Yellow.pro support for deposits?</summary>
 
-Deposits are supported on the **Ethereum network only**. Supported assets: ETH, WBTC, USDT, BNB, WSOL, and YELLOW. See [Supported Networks, Assets & Limits](supported-networks-assets-limits.md) for confirmations and tracking.
+Deposits are supported on the **Ethereum network only**. Supported assets: ETH, WBTC, USDT, and YELLOW. See [Supported Networks, Assets & Limits](supported-networks-assets-limits.md) for confirmations and tracking.
 
 </details>
 

@@ -24,8 +24,6 @@ Funds sent on any other network will not be credited and **cannot be recovered**
 | ETH | Ether (native token) | 0.005 |
 | WBTC | Wrapped Bitcoin | 0.00015 |
 | USDT | Tether | 5 |
-| BNB | Binance token | 0.015 |
-| WSOL | Wrapped Solana | 0.1 |
 | YELLOW | Platform token | 1,000 |
 
 When depositing, select the asset from the deposit form — the network is automatically set to Ethereum. Always confirm the asset and network before sending funds.
