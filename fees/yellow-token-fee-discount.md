@@ -31,7 +31,7 @@ The only fee benefit of $YELLOW is **VIP tier qualification**. There is **no sep
 * For Gmail/Email users, $YELLOW in Account Balance (`Yellow Wallet`) does **not** qualify.
 * $YELLOW in external wallets does **not** count.
 
-For example, a 24-hour average of 20,000 $YELLOW qualifies for VIP 1. See [VIP Tiers & Fee Discounts](vip-tiers.md) for all amounts.
+For example, a 24-hour average of 10,000 $YELLOW qualifies for VIP 1. See [VIP Tiers & Fee Discounts](vip-tiers.md) for all amounts.
 
 ## How $YELLOW Supports the Platform
 

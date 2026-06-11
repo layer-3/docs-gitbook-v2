@@ -25,8 +25,8 @@ For $YELLOW qualification, only your **24-hour average** balance in the **Tradin
 | Tier | Spot Maker | Spot Taker | Perp Maker | Perp Taker | 30d Spot Vol | 30d Perp Vol | $YELLOW Balance |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Base | 0.08% | 0.10% | 0.01% | 0.04% | — | — | — |
-| VIP 1 | 0.06% | 0.08% | 0.008% | 0.035% | 100K | 1M | 20,000 |
-| VIP 2 | 0.05% | 0.07% | 0.005% | 0.03% | 500K | 5M | 100K |
+| VIP 1 | 0.06% | 0.08% | 0.008% | 0.035% | 100K | 1M | 10,000 |
+| VIP 2 | 0.05% | 0.07% | 0.005% | 0.03% | 500K | 5M | 50,000 |
 | VIP 3 | 0.04% | 0.055% | 0.002% | 0.025% | 2.5M | 25M | 350K |
 | VIP 4 | 0.03% | 0.045% | 0% | 0.02% | 10M | 100M | 2M |
 | VIP 5 | 0.02% | 0.035% | 0% | 0.015% | 50M | 500M | 5M |
@@ -34,9 +34,9 @@ For $YELLOW qualification, only your **24-hour average** balance in the **Tradin
 
 Volumes are in USDT. $YELLOW balance is the 24-hour average required in your Trading Account.
 
-## Perpetual Maker Rebates (VIP 4+)
+## Zero Perpetual Maker Fees (VIP 4+)
 
-From **VIP 4**, Perpetual maker orders charge **0%**. At **VIP 5+** you receive **maker rebates** — earning rewards for providing liquidity instead of paying fees. This is one of the highest benefits for active perpetual traders.
+From **VIP 4**, Perpetual maker orders charge **0%** — no maker fee on perpetual markets. This is one of the highest benefits for active perpetual traders.
 
 ## How Your Tier Is Evaluated
 

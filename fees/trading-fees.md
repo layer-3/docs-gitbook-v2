@@ -26,7 +26,7 @@ Your rate depends on whether your order adds or removes liquidity:
 Order type doesn't always decide this: a limit order placed away from the market is usually a maker, but a limit order placed at a matching price fills instantly as a taker.
 
 {% hint style="info" %}
-At higher VIP tiers, some Perpetual markets offer **maker rebates** — you earn rewards instead of paying fees for providing liquidity. See [VIP Tiers & Fee Discounts](vip-tiers.md).
+At higher VIP tiers, Perpetual maker fees fall — reaching **0%** at VIP 4 and above. See [VIP Tiers & Fee Discounts](vip-tiers.md).
 {% endhint %}
 
 ## Spot vs Perpetual

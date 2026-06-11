@@ -60,15 +60,7 @@ Your VIP tier determines your trading fees — higher tiers pay less. It's evalu
 
 <summary>How do I qualify for higher VIP tiers?</summary>
 
-Meet any one requirement: 30-day Spot volume, 30-day Perpetual volume, or a 24-hour average $YELLOW balance in your Trading Account (`Spot Account`). VIP 1 needs 100K USDT Spot volume, 1M USDT Perp volume, or 20,000 $YELLOW. See [VIP Tiers & Fee Discounts](vip-tiers.md).
-
-</details>
-
-<details>
-
-<summary>What is a maker rebate?</summary>
-
-At VIP 4+, Perpetual maker orders charge 0%. At VIP 5+, you earn rewards for providing liquidity. See [VIP Tiers & Fee Discounts](vip-tiers.md).
+Meet any one requirement: 30-day Spot volume, 30-day Perpetual volume, or a 24-hour average $YELLOW balance in your Trading Account (`Spot Account`). VIP 1 needs 100K USDT Spot volume, 1M USDT Perp volume, or 10,000 $YELLOW. See [VIP Tiers & Fee Discounts](vip-tiers.md).
 
 </details>
 
