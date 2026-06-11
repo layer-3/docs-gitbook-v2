@@ -9,6 +9,8 @@ description: >-
 
 Spot trading is the most straightforward way to trade on Yellow.pro. It is the direct exchange of one cryptocurrency for another at the current market price — you buy or sell an asset and receive it immediately in your account balance.
 
+![The Yellow.pro spot trading interface](../.gitbook/assets/spot-trading-interface.gif)
+
 A spot market is always quoted as a pair, such as `ETH-USDT` or `BTC-USDT`, where:
 
 * the asset on the **left** is the **base currency** (what you are buying or selling)
