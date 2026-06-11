@@ -11,7 +11,7 @@ This guide walks you through authenticating with the Yellow API so you can start
 All trading, account, and transfer endpoints require authentication. Market data endpoints are public and need no credentials.
 {% endhint %}
 
-For API base URLs, see [Base URLs](./#base-urls).
+For API base URLs, see [Base URLs](overview.md#base-urls).
 
 ## Authentication Flow
 

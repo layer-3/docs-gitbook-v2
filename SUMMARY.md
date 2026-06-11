@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Overview](getting-started/README.md)
+* [Overview](getting-started/overview.md)
 * [What is Yellow.pro?](getting-started/what-is-yellow.md)
 * [How Yellow.pro Works](getting-started/how-yellow-works.md)
 * [Users Journey on Yellow.pro](getting-started/users-journey.md)
@@ -15,7 +15,7 @@
 
 ## Account & Balance
 
-* [Overview](account-and-balance/README.md)
+* [Overview](account-and-balance/overview.md)
 * [Understanding Your Balances](account-and-balance/understanding-your-balances.md)
 * [Understanding Transfers on Yellow.pro](account-and-balance/understanding-transfers.md)
 * [How to Transfer Funds Between Accounts](account-and-balance/transfer-funds-between-accounts.md)
@@ -24,7 +24,7 @@
 
 ## Deposits & Withdrawals
 
-* [Overview](deposits-and-withdrawals/README.md)
+* [Overview](deposits-and-withdrawals/overview.md)
 * [How to Deposit](deposits-and-withdrawals/how-to-deposit.md)
 * [How to Withdraw](deposits-and-withdrawals/how-to-withdraw.md)
 * [Supported Networks, Assets & Limits](deposits-and-withdrawals/supported-networks-assets-limits.md)
@@ -33,7 +33,7 @@
 
 ## Spot Trading
 
-* [Overview](spot-trading/README.md)
+* [Overview](spot-trading/overview.md)
 * [What is Spot Trading?](spot-trading/what-is-spot-trading.md)
 * [How to Place a Spot Trade](spot-trading/how-to-place-a-spot-trade.md)
 * [Order Types](spot-trading/order-types.md)
@@ -42,7 +42,7 @@
 
 ## Perpetual Trading
 
-* [Overview](perpetual-trading/README.md)
+* [Overview](perpetual-trading/overview.md)
 * [What is Perpetual Trading?](perpetual-trading/what-is-perpetual-trading.md)
 * [Long, Short & Hedge Mode](perpetual-trading/long-short-hedge-mode.md)
 * [Margin & Leverage](perpetual-trading/margin-and-leverage.md)
@@ -58,7 +58,7 @@
 
 ## Fees
 
-* [Overview](fees/README.md)
+* [Overview](fees/overview.md)
 * [Trading Fees (Maker & Taker)](fees/trading-fees.md)
 * [VIP Tiers & Fee Discounts](fees/vip-tiers.md)
 * [Funding Fees Explained](fees/funding-fees-explained.md)
@@ -69,7 +69,7 @@
 
 ## API & Programmatic Access
 
-* [Overview](api/README.md)
+* [Overview](api/overview.md)
 * [Getting Started with API](api/getting-started-with-api.md)
 * [Authentication Service API](api/authentication-service-api.md)
 * [API Key Managment](api/api-key-managment.md)
@@ -85,6 +85,6 @@
 
 ## Community & Resources
 
-* [Overview](community-and-resources/README.md)
+* [Overview](community-and-resources/overview.md)
 * [Community Channels](community-and-resources/community-channels.md)
 * [Contact Support](community-and-resources/contact-support.md)
