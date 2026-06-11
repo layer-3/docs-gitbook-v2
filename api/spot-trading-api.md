@@ -1,5 +1,5 @@
 ---
-description: Spot trading API: accounts, orders, trades, and fee rates.
+description: "Spot trading API: accounts, orders, trades, and fee rates."
 ---
 
 # Spot Trading API

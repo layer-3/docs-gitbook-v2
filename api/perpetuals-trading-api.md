@@ -1,5 +1,5 @@
 ---
-description: Perpetuals API: positions, orders, leverage, margin, funding, and history.
+description: "Perpetuals API: positions, orders, leverage, margin, funding, and history."
 ---
 
 # Perpetuals Trading API

@@ -1,5 +1,5 @@
 ---
-description: Trading API service: health, fee tiers, and exchange market data.
+description: "Trading API service: health, fee tiers, and exchange market data."
 ---
 
 # Trading API Service

@@ -1,5 +1,5 @@
 ---
-description: API reference: rate limits, data types, and implementation notes.
+description: "API reference: rate limits, data types, and implementation notes."
 ---
 
 # Reference

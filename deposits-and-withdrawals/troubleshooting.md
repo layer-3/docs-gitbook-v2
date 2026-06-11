@@ -50,8 +50,6 @@ Deposits sent on an unsupported network or to an incorrect address cannot be cre
 The funds were not transferred and remain in your wallet. Retry from the Deposit page. For ETH, no Approval is required — just retry the Deposit transaction.
 
 </details>
-
-</details>
 {% endtab %}
 
 {% tab title="Withdrawals" %}
@@ -100,8 +98,6 @@ Blockchain transactions are irreversible. Funds sent to an incorrect address or 
 <summary>Received less than expected</summary>
 
 The Ethereum network fee is deducted from the withdrawal amount. Compare the withdrawal amount, network fee, and final received amount in your history. Fees are shown before you confirm.
-
-</details>
 
 </details>
 {% endtab %}
