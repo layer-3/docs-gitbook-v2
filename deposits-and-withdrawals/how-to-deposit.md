@@ -9,6 +9,8 @@ description: >-
 
 How you deposit depends on how you signed in. Use the tab that matches your account type. For the supported network, assets, and confirmation requirements, see [Supported Networks, Assets & Limits](supported-networks-assets-limits.md).
 
+![Depositing funds on Yellow.pro](../.gitbook/assets/deposit-flow.gif)
+
 {% tabs %}
 {% tab title="External Wallet" %}
 Deposits using an external wallet send funds **directly into your Trading Account (`Spot Account`)**. You do not use Account Balance (`Yellow Wallet`), and no extra transfer step is required before trading.

@@ -17,6 +17,8 @@ Yellow.pro lets you transfer funds between different account balances depending 
 * Transfers involving Account Balance are processed on the blockchain and may take time.
 * Funds locked in open orders or active positions may not be available for transfer.
 
+![Transferring funds between accounts on Yellow.pro](../.gitbook/assets/transfer-flow.gif)
+
 {% tabs %}
 {% tab title="Google Sign-in" %}
 ### Account Balance → Trading Account (`Spot Account`)

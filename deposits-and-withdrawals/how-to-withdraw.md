@@ -13,6 +13,8 @@ How you withdraw depends on how you signed in. Use the tab that matches your acc
 Before withdrawing, review [Supported Networks, Assets & Limits](supported-networks-assets-limits.md) for the supported network, minimum amounts, network fees, and the rule that **withdrawals are final and cannot be reversed**.
 {% endhint %}
 
+![Withdrawing funds on Yellow.pro](../.gitbook/assets/withdraw-flow.gif)
+
 {% tabs %}
 {% tab title="External Wallet" %}
 External wallet users withdraw funds **directly from the Trading Account (`Spot Account`)** to their connected wallet. No Account Balance step is involved.
