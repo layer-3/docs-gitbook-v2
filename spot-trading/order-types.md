@@ -45,6 +45,8 @@ If your limit price matches existing orders already in the book, the order may f
 
 Conditional orders **do not activate immediately**. They wait for the market to reach a specified **trigger price**, then automatically submit a new order. This lets you set up automated entry or exit strategies without watching the market continuously.
 
+![The order form with a conditional (stop) order selected](../.gitbook/assets/spot-conditional-order-form.png)
+
 ### Stop Market
 
 Triggers at your trigger price, then submits a **market order** immediately.
@@ -74,6 +76,8 @@ Triggers at your trigger price, then submits a **limit order** at your specified
 {% hint style="info" %}
 Take Profit and Stop Loss must currently be created **manually** through the order form — they are not automatically linked to an existing position or order. After placing a TP/SL order, verify the trigger price, the order side, and that your available balance covers the order if it activates.
 {% endhint %}
+
+![Setting a Take Profit / Stop Loss order in the order form](../.gitbook/assets/spot-take-profit-stop-loss.png)
 
 ## Maker vs Taker
 

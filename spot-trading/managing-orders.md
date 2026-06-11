@@ -15,6 +15,8 @@ Shows all orders currently **active in the order book** — submitted but not ye
 
 You can **cancel** any open order at any time; reserved funds are released back to **Available** immediately.
 
+![The Open Orders panel](../.gitbook/assets/spot-open-order.png)
+
 ## Order History
 
 A full log of all orders you've placed, regardless of outcome:
@@ -29,11 +31,15 @@ A full log of all orders you've placed, regardless of outcome:
 
 Check Order History to confirm an order's status, investigate why an order didn't fill, or review a rejection reason.
 
+![The Order History view](../.gitbook/assets/spot-order-history.png)
+
 ## Trade History (Fill History)
 
 Records only actual **executions** — moments when your order matched another and a trade occurred. Each entry shows the timestamp, market and side, fill price and quantity, and the fee charged.
 
 **Key difference:** an order in Order History may have **zero fills** (if cancelled or rejected). Trade History only shows orders that actually executed. A partial fill produces one Order History entry and one or more Trade History entries.
+
+![The Trade History (fill history) view](../.gitbook/assets/spot-trade-history.png)
 
 ## Balances: Total, Available & Reserved
 
