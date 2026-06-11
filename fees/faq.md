@@ -122,7 +122,7 @@ The network fee is deducted from your withdrawal — e.g. a 100 USDT withdrawal 
 
 <summary>How is my trading fee used, and does the split increase my fees?</summary>
 
-Your fee is divided internally — 85% toward $YELLOW buybacks and 15% toward platform operations (standard split); referred users have allocations that include referral commissions and rewards. The split does **not** increase your fee — the amount you pay is unchanged. See [Fee Split Explained](fee-split.md).
+Your fee is divided internally — 85% toward $YELLOW buybacks and 15% toward platform operations. The split does **not** increase your fee — the amount you pay is unchanged. See [Fee Split Explained](fee-split.md).
 
 </details>
 

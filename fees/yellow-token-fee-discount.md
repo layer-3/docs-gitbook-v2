@@ -35,7 +35,7 @@ For example, a 24-hour average of 10,000 $YELLOW qualifies for VIP 1. See [VIP T
 
 ## How $YELLOW Supports the Platform
 
-A large portion of collected trading fees (85% standard) is allocated toward **$YELLOW buybacks**, connecting platform activity to the token's value. See [Fee Split Explained](fee-split.md).
+A large portion of collected trading fees (85%) is allocated toward **$YELLOW buybacks**, connecting platform activity to the token's value. See [Fee Split Explained](fee-split.md).
 
 ## Where to Get $YELLOW
 
