@@ -38,6 +38,7 @@
 
 ## Perpetual Trading
 
+* [What is Perpetual Trading?](perpetual-trading/what-is-perpetual-trading.md)
 * [Long, Short & Hedge Mode](perpetual-trading/long-short-hedge-mode.md)
 * [Margin & Leverage](perpetual-trading/margin-and-leverage.md)
 * [Understanding PnL](perpetual-trading/pnl.md)

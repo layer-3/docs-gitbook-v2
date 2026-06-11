@@ -1,13 +1,14 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  Actively manage your open perpetual positions on Yellow.pro — adjust margin,
+  change leverage, and close positions fully or partially.
 ---
 
 # Position Management
 
-{% hint style="info" %}
-**Placeholder — structure only.** Content to be written/migrated in a later pass.
+This section covers how to manage your open perpetual positions: adjusting your margin buffer, changing leverage, and closing positions fully or partially.
 
-**What to cover:** Managing open perpetual positions; cards to the pages below.
+## In This Section
 
-**Source:** Overview — Notion KB §4c
-{% endhint %}
+* [Adjusting Margin & Leverage](adjusting-margin-and-leverage.md) — add margin and change leverage, and how each affects your liquidation price
+* [Closing a Position](closing-a-position.md) — close fully or partially, and what happens to margin and realized PnL

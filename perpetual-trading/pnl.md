@@ -1,13 +1,52 @@
 ---
-description: 'TODO: add page description'
+description: >-
+  Unrealized vs realized PnL in perpetual trading — how each is calculated and
+  how the mark price drives your unrealized PnL.
 ---
 
 # Understanding PnL
 
+**PnL** (Profit and Loss) measures how much you've gained or lost on a position. In perpetual trading there are two types: **Unrealized** and **Realized**.
+
+## Unrealized PnL (uPnL)
+
+The current gain or loss on an **open** position. It updates in real time as the market moves and affects your account equity and liquidation risk — but isn't locked in until you close.
+
+* **Long:** `uPnL = (Current Mark Price − Entry Price) × Position Quantity`
+* **Short:** `uPnL = (Entry Price − Current Mark Price) × Position Quantity`
+
+> **Long example:** entry 2,000, mark 2,200, size 1 ETH → `(2,200 − 2,000) × 1 = +200 USDT`.
+> **Short example:** entry 2,000, mark 1,800, size 1 ETH → `(2,000 − 1,800) × 1 = +200 USDT`.
+
 {% hint style="info" %}
-**Placeholder — structure only.** Content to be written/migrated in a later pass.
-
-**What to cover:** Unrealized vs realized PnL — definitions, how each is calculated, and how mark price drives unrealized PnL.
-
-**Source:** New — Notion KB §4b (unrealized & realized PnL)
+Yellow.pro uses the **Mark Price** (not the last traded price) to calculate uPnL, which protects against price manipulation. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
 {% endhint %}
+
+## Realized PnL
+
+The profit or loss **locked in** when you close a position fully or partially. Once realized, it becomes part of your balance and no longer changes with the market. Triggered by closing a position or by liquidation. Trading fees are deducted from realized PnL, so your net may be slightly less than the gross calculation.
+
+## PnL and Your Account Balance
+
+| Component | What it includes |
+| --- | --- |
+| Total Balance | All funds + unrealized PnL |
+| Available Balance | Funds not committed to open positions |
+| Unrealized PnL | Changes constantly with the market |
+| Realized PnL | Fixed after a position is closed |
+
+If your unrealized PnL is negative, your Total Balance appears lower than your deposited funds — this is normal; the loss is only confirmed when you close.
+
+<details>
+
+<summary>My position shows a profit but my available balance is low — why?</summary>
+
+Open positions tie up allocated margin and any open orders lock funds, reducing available balance. Unrealized PnL does adjust available balance (profit raises it, loss lowers it), but the collateral keeping positions open isn't free to use until you reduce or close them.
+
+</details>
+
+## Related Articles
+
+* [Long, Short & Hedge Mode](long-short-hedge-mode.md)
+* [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md)
+* [Position Management](position-management/README.md)

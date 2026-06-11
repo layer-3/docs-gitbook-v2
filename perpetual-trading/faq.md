@@ -1,49 +1,173 @@
 ---
-description: 'TODO: FAQ answers to be written'
+description: >-
+  Quick answers about perpetual trading on Yellow.pro — basics, position
+  management, and risk & liquidation.
 ---
 
 # Perpetual Trading — FAQ
 
-{% hint style="info" %}
-**Placeholder — structure only.** Single FAQ for the whole Perpetual Trading section (covers perpetual basics, position management, and risk & liquidation). Questions are sourced from the Notion KB — answer each using collapsible `<details>` blocks, grouped under the headings below.
-{% endhint %}
+## Perpetual Basics
 
-## Questions to cover
+<details>
 
-### Perpetual Basics
+<summary>What is a perpetual contract and how is it different from spot trading?</summary>
 
-- [ ] What is a perpetual contract and how is it different from spot trading?
-- [ ] What does it mean to go long or short?
-- [ ] What is cross margin and how does it work on Yellow.pro?
-- [ ] What is two-way mode (hedge mode)?
-- [ ] Can I hold a long and short position on the same trading pair at the same time?
-- [ ] What is leverage and how does it affect my position?
-- [ ] What is Unrealized PnL and how is it calculated?
-- [ ] What is Realized PnL?
-- [ ] Why is my available balance lower than my total balance?
+A perpetual contract is a derivative — you trade a contract that tracks an asset's price, not the asset itself, so you never own the cryptocurrency. Unlike spot, perpetuals offer leverage, can lose more than your initial margin, and have **no expiry** (they stay open until you close them or are liquidated). See [What is Perpetual Trading?](what-is-perpetual-trading.md).
 
-### Position Management
+</details>
 
-- [ ] Can I add or remove margin on an open position?
-- [ ] Can I change my leverage after a position is already open?
-- [ ] How do I partially close a position?
-- [ ] How is margin calculated when I have opposing positions open?
-- [ ] Why did my liquidation price change after I adjusted margin or opened a new position?
-- [ ] What happens to my open positions if my balance drops critically?
+<details>
 
-### Risk & Liquidation
+<summary>What does it mean to go long or short?</summary>
 
-- [ ] What triggers a liquidation on Yellow.pro?
-- [ ] Why was my position liquidated?
-- [ ] What is Mark Price and why is it different from the last traded price?
-- [ ] Why was my position liquidated before the market price reached my liquidation price?
-- [ ] How does cross margin affect my liquidation risk across multiple positions?
-- [ ] Does using higher leverage increase my liquidation risk?
-- [ ] What happens to my funds when I get liquidated?
-- [ ] What is ADL and when does it get triggered?
-- [ ] How do I know if I am at risk of ADL?
-- [ ] I received a margin warning email — what should I do?
-- [ ] How do I add my email address to receive margin warning alerts?
-- [ ] How can I reduce my liquidation risk?
-- [ ] What risk management practices should I follow as a trader?
+Going **long** means you expect the price to rise (you profit if it rises, lose if it falls). Going **short** means you expect it to fall (you profit if it falls, lose if it rises). This lets you profit in both bull and bear markets. See [Long, Short & Hedge Mode](long-short-hedge-mode.md).
 
+</details>
+
+<details>
+
+<summary>What is cross margin and how does it work on Yellow.pro?</summary>
+
+Cross margin uses your **entire account balance** as shared collateral for all open positions. A profitable position can buffer a losing one, but a single bad position can draw from your whole balance. Yellow.pro uses cross margin as the primary mode. See [Margin & Leverage](margin-and-leverage.md).
+
+</details>
+
+<details>
+
+<summary>What is two-way mode (hedge mode), and can I hold a long and short on the same pair at once?</summary>
+
+Yes — with **Two-Way (Hedge) Mode** enabled, you can hold independent long and short positions on the same pair simultaneously. In the default **One-Way Mode**, opening the opposite side reduces or closes your existing position. See [Long, Short & Hedge Mode](long-short-hedge-mode.md).
+
+</details>
+
+<details>
+
+<summary>What is leverage and how does it affect my position?</summary>
+
+Leverage lets you control a position larger than your balance (e.g. 100 USDT at 10x = a 1,000 USDT position). Profit and loss are calculated on the full position size, so higher leverage means higher reward potential **and** higher liquidation risk. See [Margin & Leverage](margin-and-leverage.md).
+
+</details>
+
+<details>
+
+<summary>What is Unrealized PnL and how is it calculated?</summary>
+
+Unrealized PnL is the current profit/loss on an open position; it changes as the mark price moves. Long: `(Mark − Entry) × Quantity`. Short: `(Entry − Mark) × Quantity`. It's "unrealized" because it's not locked in until you close. See [Understanding PnL](pnl.md).
+
+</details>
+
+<details>
+
+<summary>What is Realized PnL?</summary>
+
+The profit or loss locked in when you fully or partially close a position. Once realized it's added to or subtracted from your balance and isn't affected by future price movements. See [Understanding PnL](pnl.md).
+
+</details>
+
+<details>
+
+<summary>Why is my available balance lower than my total balance?</summary>
+
+Open positions and orders reserve a portion of your balance as margin. **Total Balance** is all funds; **Available Balance** is what isn't committed to positions or orders. In cross margin this is calculated across all positions together.
+
+</details>
+
+## Position Management
+
+<details>
+
+<summary>Can I add or remove margin on an open position?</summary>
+
+Yes. In cross margin you add to your buffer by adding funds to your account — this benefits all positions at once. You can withdraw only your available balance, not margin committed to open positions. See [Adjusting Margin & Leverage](position-management/adjusting-margin-and-leverage.md).
+
+</details>
+
+<details>
+
+<summary>Can I change my leverage after a position is already open?</summary>
+
+If supported, yes — but it changes your required margin and liquidation price. **Increasing leverage moves your liquidation price closer to the current price.** Always check the new liquidation price afterwards. See [Adjusting Margin & Leverage](position-management/adjusting-margin-and-leverage.md).
+
+</details>
+
+<details>
+
+<summary>How do I partially close a position?</summary>
+
+In the Positions panel, click Close on the position, enter a quantity **less than** your full size, choose market or limit, and confirm. The rest stays open at the original entry price. See [Closing a Position](position-management/closing-a-position.md).
+
+</details>
+
+<details>
+
+<summary>How is margin calculated when I have opposing positions open?</summary>
+
+In Two-Way Mode, long and short on the same pair are independent and margin is calculated separately for each. In cross margin both draw from the same balance, so the combined requirement is the sum of both positions' maintenance margins.
+
+</details>
+
+<details>
+
+<summary>Why did my liquidation price change after I adjusted margin or opened a new position?</summary>
+
+In cross margin your liquidation price is dynamic — based on total balance, total unrealized PnL, and total maintenance margin. Any change (adding margin, opening a position, price moves) recalculates it for all positions. This is expected.
+
+</details>
+
+<details>
+
+<summary>What happens to my open positions if my balance drops critically?</summary>
+
+If your margin ratio approaches 100%, liquidation triggers and one or all positions may be closed automatically. Prevent it by monitoring your margin ratio, keeping free margin, and using stop-losses. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
+
+</details>
+
+## Risk & Liquidation
+
+<details>
+
+<summary>What triggers a liquidation, and what happens to my funds?</summary>
+
+Liquidation triggers when your account margin ratio reaches 100% (equity at the maintenance margin level). Your position(s) are closed at the mark price; any balance left after losses and fees is returned. You never owe more than you deposited. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
+
+</details>
+
+<details>
+
+<summary>What is Mark Price, and why was I liquidated before the market reached my liquidation price?</summary>
+
+The mark price is a fair-value price from external reference data, used for liquidation and PnL instead of the last traded price. The chart (last traded price) can differ from the mark price — if the mark price reaches your liquidation level, you're liquidated even if the chart hasn't moved as far. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
+
+</details>
+
+<details>
+
+<summary>How does cross margin affect my liquidation risk across multiple positions?</summary>
+
+All positions share one collateral pool, so liquidation is assessed on your whole account. A large loss on one position can raise the account margin ratio and liquidate everything — including profitable positions. See [Cross-Margin Risk & ADL](risk-and-liquidation/cross-margin-risk-and-adl.md).
+
+</details>
+
+<details>
+
+<summary>What is ADL, and how do I know if I'm at risk?</summary>
+
+Auto-Deleveraging (ADL) is a last-resort backstop that reduces opposite-side traders' positions when a liquidation can't be covered by the insurance fund. The ADL indicator next to your position shows your priority — more bars lit (high profit + high leverage) means higher priority. Take profit or reduce leverage to lower it. See [Cross-Margin Risk & ADL](risk-and-liquidation/cross-margin-risk-and-adl.md).
+
+</details>
+
+<details>
+
+<summary>I received a margin warning email — what should I do, and how do I enable alerts?</summary>
+
+Act immediately: log in, check your margin ratio, add funds or reduce exposure. Alerts go to the email linked to your account — wallet users must link an email under `yellow.pro/settings` → Linked Socials, or they won't receive warnings. See [Margin Warnings & Risk Management](risk-and-liquidation/margin-warnings-and-risk-management.md).
+
+</details>
+
+<details>
+
+<summary>How can I reduce my liquidation risk?</summary>
+
+Use stop-losses, add margin, reduce position size or leverage, keep free margin, and monitor your margin ratio. See [Margin Warnings & Risk Management](risk-and-liquidation/margin-warnings-and-risk-management.md).
+
+</details>
