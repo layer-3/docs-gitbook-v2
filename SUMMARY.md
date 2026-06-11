@@ -54,9 +54,11 @@
 ## Fees
 
 * [Trading Fees (Maker & Taker)](fees/trading-fees.md)
+* [VIP Tiers & Fee Discounts](fees/vip-tiers.md)
 * [Funding Fees Explained](fees/funding-fees-explained.md)
 * [Withdrawal Network Fees Explained](fees/withdrawal-network-fees.md)
 * [$YELLOW Token & Fee Discounts](fees/yellow-token-fee-discount.md)
+* [Fee Split Explained](fees/fee-split.md)
 * [FAQ](fees/faq.md)
 
 ## API & Programmatic Access
