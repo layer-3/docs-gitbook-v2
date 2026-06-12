@@ -48,6 +48,8 @@ Take Profit orders must currently be set manually — they are not automatically
 * The position leaves the Positions panel and the closed trade appears in **Trade History**.
 * In cross margin, closing one position can affect the others — always check your remaining balance.
 
+![Closing a position returns its margin to your Available (withdrawable) balance](../../.gitbook/assets/perp-close-position-balance.png)
+
 **Tip:** use **market close** to exit quickly (e.g. to avoid liquidation); use **limit close** when you have a target price and aren't in a rush.
 
 ## Related Articles

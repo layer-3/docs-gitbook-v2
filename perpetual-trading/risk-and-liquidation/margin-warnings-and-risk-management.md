@@ -48,7 +48,6 @@ Effective risk management is the difference between long-term trading and rapid 
 7. **Take profits regularly** — unrealized profit isn't yours until you close.
 8. **Understand the market** — know volatility, key levels, and upcoming events.
 9. **Keep a trading journal** — record entries, exits, size, leverage, and reasoning.
-10. **Know when not to trade** — sometimes the best position is none.
 
 ## Related Articles
 
