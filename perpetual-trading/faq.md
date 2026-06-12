@@ -153,7 +153,7 @@ All positions share one collateral pool, so liquidation is assessed on your whol
 
 <summary>What is ADL, and how do I know if I'm at risk?</summary>
 
-Auto-Deleveraging (ADL) is a last-resort backstop that reduces opposite-side traders' positions when a liquidation can't be covered by the insurance fund. The ADL indicator next to your position shows your priority — more bars lit (high profit + high leverage) means higher priority. Take profit or reduce leverage to lower it. See [Cross-Margin Risk & ADL](risk-and-liquidation/cross-margin-risk-and-adl.md).
+Auto-Deleveraging (ADL) is how liquidations are settled: a liquidated position is matched against opposing traders, whose positions are partially closed. Your ADL priority rises with high unrealized profit and high leverage — so take profit or reduce leverage to lower it. Being ADL'd is not a penalty: you realize your PnL up to the settlement price. See [Cross-Margin Risk & ADL](risk-and-liquidation/cross-margin-risk-and-adl.md).
 
 </details>
 

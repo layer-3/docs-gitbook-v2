@@ -19,7 +19,7 @@ For Google Sign-in users, the main balance where deposits first arrive and from 
 
 <summary>ADL (Auto-Deleveraging)</summary>
 
-A last-resort risk mechanism that reduces opposite-side traders' positions when a liquidation can't be covered by the insurance fund. Priority is highest for the most profitable, highest-leverage positions. See [Cross-Margin Risk & ADL](../perpetual-trading/risk-and-liquidation/cross-margin-risk-and-adl.md).
+The mechanism that settles liquidations on Yellow.pro: a liquidated position is matched against opposing traders, whose positions are partially closed. Priority is highest for the most profitable, highest-leverage positions on the opposite side. See [Cross-Margin Risk & ADL](../perpetual-trading/risk-and-liquidation/cross-margin-risk-and-adl.md).
 
 </details>
 
@@ -28,6 +28,14 @@ A last-resort risk mechanism that reduces opposite-side traders' positions when 
 <summary>Available Balance</summary>
 
 Funds you can use right now — for new orders or withdrawals. Equals total balance minus funds reserved by open orders or committed as position margin.
+
+</details>
+
+<details>
+
+<summary>Bankruptcy Price</summary>
+
+The mark price at which your account equity reaches zero. It sits just beyond your liquidation price, and is the price your position is force-settled at during liquidation. See [Liquidation & Mark Price](../perpetual-trading/risk-and-liquidation/liquidation-and-mark-price.md).
 
 </details>
 
@@ -81,9 +89,17 @@ The automatic closure of a position when your account can no longer meet mainten
 
 <details>
 
+<summary>Liquidation Price</summary>
+
+The estimated mark price at which your account would be liquidated — where your equity falls to the maintenance margin level. In cross margin it moves with your PnL, positions, and balance. See [Liquidation & Mark Price](../perpetual-trading/risk-and-liquidation/liquidation-and-mark-price.md).
+
+</details>
+
+<details>
+
 <summary>Maintenance Margin</summary>
 
-The minimum margin required to keep a position open. If your effective margin falls below it, liquidation is triggered.
+The minimum margin required to keep a position open. If your effective margin falls below it, liquidation is triggered. On current markets the maintenance margin rate is a flat 0.5% of position notional.
 
 </details>
 

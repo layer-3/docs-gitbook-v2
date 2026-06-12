@@ -2,7 +2,7 @@
 icon: diagram-project
 description: >-
   How cross margin aggregates risk across all your positions, and how
-  auto-deleveraging (ADL) works as a last-resort backstop.
+  auto-deleveraging (ADL) settles liquidations against opposing traders.
 ---
 
 # Cross-Margin Risk & ADL
@@ -26,21 +26,21 @@ In extreme conditions, one position's losses can threaten the whole account: the
 
 ## Auto-Deleveraging (ADL)
 
-**ADL** is a last-resort risk mechanism used when a liquidated position cannot be covered by the platform's **insurance fund** (for example, when the market moves too fast to close it at the bankruptcy price). It should not occur under normal conditions.
+When an account is liquidated, its positions are matched against **real opposing positions** held by other traders. This matching mechanism is **Auto-Deleveraging (ADL)** — a liquidation and an ADL are two sides of the same trade.
 
 ### How ADL works
 
-1. A position is liquidated and can't be fully covered by the insurance fund.
-2. The ADL engine ranks traders on the **opposite side** by profit percentage and leverage (highest profit + highest leverage = highest priority).
-3. Top-ranked traders' positions are automatically reduced by the amount needed to cover the shortfall.
+1. An account is liquidated and its remaining position is taken over for settlement.
+2. The ADL engine ranks traders on the **opposite side** of that market by a priority score combining **profit and position size** (higher unrealized profit relative to size = higher priority).
+3. Top-ranked counterparties have part of their position closed to absorb the liquidated position. The match settles at the liquidated account's **liquidation price**, falling back to its **bankruptcy price** if the liquidation price can't be applied.
 4. Affected traders are notified and can re-enter the market immediately.
 
-### The ADL indicator
+### Managing ADL risk
 
-Yellow.pro shows an **ADL indicator** (a series of bars/lights) next to your open positions — more bars lit means higher ADL priority. Priority rises with high profit and high leverage. To reduce it: take some profit (partially close) or reduce leverage.
+Your ADL priority rises with **high unrealized profit and high leverage** on a position. If you're holding a large, highly profitable, highly leveraged position, part of it may be used to close out a liquidated trader on the opposite side. To lower the chance of being deleveraged, take some profit (partially close) or reduce leverage.
 
 {% hint style="info" %}
-If you're ADL'd, the closed portion is settled at the **Mark Price** at the time — not a penalty price — and your realized PnL is credited. ADL is rare and typically only happens in severe crashes, very low liquidity, or black-swan events.
+Being ADL'd is not a penalty. The closed portion realizes your PnL up to the settlement price, and you keep the proceeds. It simply means one of your winning positions was used to close out a liquidated trader on the other side.
 {% endhint %}
 
 ## Related Articles

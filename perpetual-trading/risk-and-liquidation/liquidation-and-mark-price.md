@@ -19,19 +19,59 @@ Liquidation triggers when your **Margin Ratio reaches 100%** — your account eq
 
 In **cross margin mode** (used on Yellow.pro), this is calculated across **all** your open positions together, not per individual position.
 
+The **Maintenance Margin Rate (MMR)** is the fraction of position notional you must keep as a buffer. On current markets (BTC and ETH perpetuals) the MMR is a flat **0.5%**:
+
+`Maintenance Margin Required = Position Notional × 0.5%`
+
+{% hint style="info" %}
+To protect you from brief price wicks, liquidation is evaluated on the **worst-case mark price** seen in each scan window — the lowest price for longs and the highest for shorts — not on a single instantaneous tick.
+{% endhint %}
+
 ## The Liquidation Process
 
-1. **Detection** — the system continuously monitors margin ratios.
-2. **Trigger** — when your ratio hits the threshold, the liquidation engine activates.
-3. **Closure** — your position(s) are closed using the **Mark Price**.
-4. **Settlement** — any remaining balance after losses and liquidation fees is returned (often small or zero).
+1. **Detection** — the system continuously monitors your account's margin ratio.
+2. **Trigger** — when the ratio hits 100%, the liquidation engine takes over your account.
+3. **Netting** — if you hold both a long and a short in the same market, they are closed against each other first to reduce exposure.
+4. **Takeover & settlement** — your remaining position(s) are taken over and matched against opposing traders through [auto-deleveraging (ADL)](cross-margin-risk-and-adl.md), settled at your **Liquidation Price** (or the **Bankruptcy Price** as a fallback — both explained below).
 5. **Record** — the liquidation is logged in your Trade History.
 
 ![A liquidation entry in trade history](../../.gitbook/assets/perp-liquidation-history.png)
 
 ## Liquidation Price
 
-Your **Liquidation Price** is the estimated Mark Price at which your account would be liquidated, shown in the positions panel. In cross margin it is **not fixed** — it moves with your unrealized PnL, positions you open or close, and deposits or withdrawals.
+Your **Liquidation Price** is the estimated Mark Price at which your account would be liquidated — the price at which your equity falls to the maintenance margin level. It's shown in the positions panel. In cross margin it is **not fixed**: it moves with your unrealized PnL, positions you open or close, and deposits or withdrawals.
+
+For a single position with balance `B`, the simplified formula is:
+
+```
+Long:  Liquidation Price = (Amount × Entry − B) / (Amount × (1 − MMR))
+Short: Liquidation Price = (Amount × Entry + B) / (Amount × (1 + MMR))
+```
+
+In practice the engine also folds in the unrealized PnL and maintenance margin of your *other* open positions, since cross margin shares one collateral pool. You don't need to compute this by hand — the platform displays your live liquidation price — but the formula shows what moves it.
+
+<details>
+
+<summary>Worked example</summary>
+
+You open a long of **0.1 BTC at 50,000**, with a balance of **1,000 USDT** and no other positions. At MMR = 0.5%:
+
+`(0.1 × 50,000 − 1,000) / (0.1 × (1 − 0.005)) = 4,000 / 0.0995 ≈ 40,201`
+
+Your liquidation price is about **40,201**. Adding margin lowers it; opening more positions or taking losses elsewhere raises it.
+
+</details>
+
+## Bankruptcy Price
+
+The **Bankruptcy Price** is the Mark Price at which your account equity reaches **zero**. It sits *beyond* your liquidation price (lower for a long, higher for a short) — liquidation is triggered first, leaving a thin buffer before bankruptcy.
+
+```
+Long:  Bankruptcy Price = Entry − (Account Equity / Position Size)
+Short: Bankruptcy Price = Entry + (Account Equity / Position Size)
+```
+
+A liquidation normally settles at your liquidation price. The bankruptcy price is the **fallback** used when the liquidation price can't be applied — it's the worst-case floor for what a position can settle at. Any value between your liquidation price and bankruptcy price is consumed by the liquidation; whatever remains (often little or nothing) stays in your balance.
 
 ## Mark Price vs Last Traded Price
 
