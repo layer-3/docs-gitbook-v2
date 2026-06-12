@@ -13,9 +13,9 @@ Yellow.pro lets you transfer funds between different account balances depending 
 
 * Google Sign-in users can transfer between Account Balance (`Yellow Wallet`), Trading Account (`Spot Account`), and Perpetual Account.
 * External wallet users only transfer between Trading Account (`Spot Account`) and Perpetual Account.
-* Transfers between Trading Account and Perpetual Account are instant.
-* Transfers involving Account Balance are processed on the blockchain and may take time.
-* Funds locked in open orders or active positions may not be available for transfer.
+* Funds locked in open orders or active positions may not be available — see [Why Funds May Not Be Transferable](why-funds-not-transferable.md).
+
+For how long each transfer takes and how to track it, see [Understanding Transfers on Yellow.pro](understanding-transfers.md).
 
 ![Transferring funds between accounts on Yellow.pro](../.gitbook/assets/transfer-flow.gif)
 
@@ -68,22 +68,9 @@ This transfer is internal and normally completes instantly.
 {% endtab %}
 {% endtabs %}
 
-## Transfer Processing Times
+## If a Transfer Doesn't Complete
 
-| Transfer type | How it works | Typical time |
-| --- | --- | --- |
-| Account Balance ↔ Trading Account | Blockchain-based | Varies with network congestion |
-| Trading Account ↔ Perpetual Account | Internal transfer | Instant |
-
-## Important Information
-
-If a Trading Account ↔ Perpetual Account transfer doesn't complete instantly:
-
-1. Refresh the page.
-2. Disconnect and reconnect your wallet.
-3. Retry the transfer.
-
-If an Account Balance ↔ Trading Account transfer remains pending for an unusually long time, check the transfer status and TxID on the History page (`yellow.pro/assets/history`). See [Understanding Transfers on Yellow.pro](understanding-transfers.md) for troubleshooting.
+Internal Trading Account ↔ Perpetual Account transfers should be instant; blockchain-based Account Balance ↔ Trading Account transfers can stay pending during network congestion. For processing times, statuses, and step-by-step troubleshooting, see [Understanding Transfers on Yellow.pro](understanding-transfers.md).
 
 ## Related Articles
 

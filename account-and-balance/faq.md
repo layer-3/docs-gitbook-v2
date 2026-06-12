@@ -105,17 +105,7 @@ For Google Sign-in users, ensure the funds are not locked in open orders or posi
 
 <summary>How does the complete fund flow work?</summary>
 
-**Google Sign-in users**
-
-* Deposits: External wallet → Account Balance (`Yellow Wallet`) → Trading Account (`Spot Account`) → Perpetual Account
-* Withdrawals: Perpetual Account → Trading Account (`Spot Account`) → Account Balance (`Yellow Wallet`) → External wallet
-
-**External wallet users**
-
-* Deposits: External wallet → Trading Account (`Spot Account`) → Perpetual Account
-* Withdrawals: Perpetual Account → Trading Account (`Spot Account`) → External wallet
-
-See [Understanding Your Balances](understanding-your-balances.md) for the detailed flow.
+It depends on your account type. Google Sign-in users route deposits through Account Balance (`Yellow Wallet`) before trading — and back through it to withdraw — while external wallet users deposit straight to the Trading Account (`Spot Account`). See the full deposit and withdrawal paths for both account types in [Understanding Your Balances](understanding-your-balances.md#how-funds-flow-through-your-balances).
 
 </details>
 

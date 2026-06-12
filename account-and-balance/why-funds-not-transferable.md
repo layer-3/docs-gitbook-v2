@@ -14,9 +14,8 @@ Sometimes funds appear in your balance but are not available for transfer or wit
 * Funds locked in open orders or positions cannot be transferred.
 * Perpetual trading uses a separate balance from Spot trading.
 * Google Sign-in users must use Account Balance (`Yellow Wallet`) for withdrawals.
-* Account Balance ↔ Trading Account transfers are blockchain-based and may take time; Trading Account ↔ Perpetual Account transfers are instant.
 
-For how balances work, see [Understanding Your Balances](understanding-your-balances.md).
+For how balances work, see [Understanding Your Balances](understanding-your-balances.md). For transfer timing and statuses, see [Understanding Transfers on Yellow.pro](understanding-transfers.md).
 
 ## Funds Locked in Spot Orders
 

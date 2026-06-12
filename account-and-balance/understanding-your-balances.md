@@ -78,30 +78,9 @@ Funds in the Perpetual Account cannot be withdrawn directly. They must be transf
 {% endtab %}
 {% endtabs %}
 
-## Understanding Transfer Types
+## Moving Funds Between Balances
 
-Yellow.pro supports two different types of transfers. Which type applies depends on which balances are involved.
-
-### Blockchain-based transfers (not instant)
-
-**Account Balance ↔ Trading Account** transfers are processed through the blockchain and are not instant. These transfers:
-
-* generate a blockchain transaction with a TxID
-* take time to process depending on network congestion
-* may include a network fee (sometimes sponsored by Yellow — you'll see this on the Transfer page)
-* show as "Pending" until completed, then "Completed"
-* can be tracked in your transaction history at `yellow.pro/assets/history`
-
-### Internal transfers (instant)
-
-**Trading Account (`Spot Account`) ↔ Perpetual Account** transfers are internal platform transfers and normally reflect instantly. These transfers:
-
-* do not generate blockchain transactions
-* complete immediately after confirmation
-* have no network fees
-* should not show as "Pending"
-
-If a Trading Account ↔ Perpetual Account transfer doesn't complete instantly, refresh the page, disconnect and reconnect your wallet, then retry. If the issue persists, [contact support](../community-and-resources/contact-support.md).
+How a transfer behaves depends on which balances are involved: **Account Balance ↔ Trading Account** transfers are blockchain-based and not instant, while **Trading Account ↔ Perpetual Account** transfers are internal and instant. For timing, statuses, and troubleshooting, see [Understanding Transfers on Yellow.pro](understanding-transfers.md); for step-by-step instructions, see [How to Transfer Funds Between Accounts](transfer-funds-between-accounts.md).
 
 ## Quick Comparison: Google Sign-in vs External Wallet
 
@@ -117,10 +96,8 @@ If a Trading Account ↔ Perpetual Account transfer doesn't complete instantly, 
 
 ## Important Things to Know
 
-* Funds locked in open orders or active positions may not be available for transfer until those orders or positions are closed.
-* Transfers between Account Balance and Trading Account should be treated like standard blockchain transactions in terms of timing.
-* Trading Account ↔ Perpetual Account transfers are internal and normally instant for both account types.
-* Network fees for Account Balance ↔ Trading Account transfers may apply — check the Transfer page to see if a fee applies.
+* Funds locked in open orders or active positions may not be available for transfer — see [Why Funds May Not Be Transferable](why-funds-not-transferable.md).
+* Account Balance ↔ Trading Account transfers may carry a network fee (sometimes sponsored by Yellow) — you'll see this on the Transfer page.
 * Blockchain transactions cannot be reversed once completed.
 
 ## Related Articles
