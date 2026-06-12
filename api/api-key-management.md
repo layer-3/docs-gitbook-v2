@@ -3,7 +3,7 @@ icon: key
 description: Create, list, and revoke API keys, with scopes and IP allow-lists.
 ---
 
-# API Key Managment
+# API Key Management
 
 API keys let you call authenticated endpoints from servers and scripts. You create and manage keys through these endpoints, then sign each request as described in [Signing Requests With API Keys](signing-requests-with-api-keys.md).
 
@@ -112,7 +112,7 @@ Create a new API key. The **secret is returned only once**, in this response —
 
 | Parameter      | Type   | Required | Options | Description                                                                   |
 | -------------- | ------ | -------- | ------- | ----------------------------------------------------------------------------- |
-| `scopes`       | array  | Yes      | —       | Scopes to grant (see [Scopes](api-key-managment.md#scopes))                   |
+| `scopes`       | array  | Yes      | —       | Scopes to grant (see [Scopes](api-key-management.md#scopes))                   |
 | `ip_whitelist` | array  | No       | —       | Source IPs allowed to use the key. Omit or leave empty for no IP restriction. |
 | `expires_at`   | string | No       | RFC3339 | Expiry timestamp. Omit for a non-expiring key.                                |
 | `description`  | string | No       | —       | A label to help you identify the key                                          |

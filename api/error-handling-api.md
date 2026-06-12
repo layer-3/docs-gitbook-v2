@@ -1,6 +1,6 @@
 ---
 icon: triangle-exclamation
-description: Error response formats, codes, and HTTP statuses across the Yellow API.
+description: Error response formats, codes, and HTTP statuses across the Yellow.pro API.
 ---
 
 # Error Handling API

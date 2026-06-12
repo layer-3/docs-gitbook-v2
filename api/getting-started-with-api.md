@@ -1,11 +1,11 @@
 ---
 icon: rocket
-description: Authenticate with the Yellow API and start calling endpoints.
+description: Authenticate with the Yellow.pro API and start calling endpoints.
 ---
 
 # Getting Started with API
 
-This guide walks you through authenticating with the Yellow API so you can start calling endpoints.
+This guide walks you through authenticating with the Yellow.pro API so you can start calling endpoints.
 
 {% hint style="info" %}
 All trading, account, and transfer endpoints require authentication. Market data endpoints are public and need no credentials.
@@ -15,7 +15,7 @@ For API base URLs, see [Base URLs](overview.md#base-urls).
 
 ## Authentication Flow
 
-Yellow uses Ethereum wallet-based authentication with a challenge-response mechanism:
+Yellow.pro uses Ethereum wallet-based authentication with a challenge-response mechanism:
 
 {% stepper %}
 {% step %}
@@ -101,12 +101,12 @@ Never commit API keys or secrets to version control. Store them in environment v
 
 ## Next Steps
 
-<a href="api-key-managment.md" class="button primary" data-icon="key">Create an API key</a>
+<a href="api-key-management.md" class="button primary" data-icon="key">Create an API key</a>
 
 | Section                            | Description                               | Target                                                   |
 | ---------------------------------- | ----------------------------------------- | -------------------------------------------------------- |
-| **API Key Management**             | Create, list, and revoke API keys         | [api-keys.md](api-key-managment.md)                      |
-| **Signing Requests with API Keys** | HMAC-SHA256 signing with code examples    | [signing-requests.md](signing-requests-with-api-keys.md) |
-| **Market Data API**                | Prices and indicators (no auth required)  | [market-data.md](market-data-api.md)                     |
-| **Spot Trading**                   | Place and manage spot orders              | [spot-trading.md](spot-trading-api.md)                   |
-| **Perpetuals Trading**             | Positions, leverage, and perpetual orders | [perpetuals-trading.md](perpetuals-trading-api.md)       |
+| **API Key Management**             | Create, list, and revoke API keys         | [API Key Management](api-key-management.md)                      |
+| **Signing Requests with API Keys** | HMAC-SHA256 signing with code examples    | [Signing Requests with API Keys](signing-requests-with-api-keys.md) |
+| **Market Data API**                | Prices and indicators (no auth required)  | [Market Data API](market-data-api.md)                     |
+| **Spot Trading**                   | Place and manage spot orders              | [Spot Trading API](spot-trading-api.md)                   |
+| **Perpetuals Trading**             | Positions, leverage, and perpetual orders | [Perpetuals Trading API](perpetuals-trading-api.md)       |

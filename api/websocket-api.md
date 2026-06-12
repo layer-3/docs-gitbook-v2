@@ -3,9 +3,9 @@ icon: plug
 description: Real-time WebSocket streams for market data, orders, and account updates.
 ---
 
-# WebSocket Api
+# WebSocket API
 
-The Yellow WebSocket API provides real-time data streams, order notifications, account updates, and authenticated subscription access. All connections use a single endpoint:
+The Yellow.pro WebSocket API provides real-time data streams, order notifications, account updates, and authenticated subscription access. All connections use a single endpoint:
 
 ```
 wss://trade.api.yellow.pro/ws
