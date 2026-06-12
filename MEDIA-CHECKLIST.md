@@ -81,7 +81,7 @@ Capture these **first**. Each path needs **end-to-end** coverage — a short vid
 | --- | --- | --- | --- | --- |
 | ☐ | `spot-trading-interface.gif` | gif → video | Main spot trading interface overview — **still needed** (the prior file was actually an external-wallet withdraw flow, now relocated) | `spot-trading/what-is-spot-trading.md` |
 | ☐ | `perp-trading-interface-annotated.png` | png (annotated) | Perp UI overview: positions, leverage, PnL, liquidation price | `perpetual-trading/what-is-perpetual-trading.md` |
-| ☐ | `account-balances-panel.png` | png | Balances UI: Available vs Reserved, both account types | `account-and-balance/understanding-your-balances.md` |
+| ☐ | `account-balances-panel.png` | png | Balances UI: Available vs In Orders, both account types | `account-and-balance/understanding-your-balances.md` |
 | ☐ | `perp-leverage-margin-selector.png` | png | Leverage slider + cross / isolated selector | `perpetual-trading/margin-and-leverage.md` |
 | ☐ | `connect-login-options.png` | png | Login modal: external wallet vs Google | `getting-started/wallet-vs-gmail.md` |
 | ☐ | `perp-liquidation-price-panel.png` | png | Live liquidation price in the positions panel | `perpetual-trading/risk-and-liquidation/liquidation-and-mark-price.md` |

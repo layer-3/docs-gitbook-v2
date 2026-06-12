@@ -39,7 +39,7 @@ A stop market order also activates at a trigger price, but submits a **market or
 
 <summary>Why are my funds locked while I have an open order?</summary>
 
-When you place an order, Yellow.pro reserves the funds needed to fill it — buy orders reserve the quote currency (e.g. USDT), sell orders reserve the base currency (e.g. BTC or ETH). They show as **Reserved** and return to **Available** when the order is filled, cancelled, or rejected. This stops you from spending the same funds on multiple orders at once.
+When you place an order, Yellow.pro locks the funds needed to fill it — buy orders lock the quote currency (e.g. USDT), sell orders lock the base currency (e.g. BTC or ETH). They show as **In Orders** and return to **Available** when the order is filled, cancelled, or rejected. (Funds for a withdrawal that's still processing also show as In Orders.) This stops you from spending the same funds twice.
 
 </details>
 

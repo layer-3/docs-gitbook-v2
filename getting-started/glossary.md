@@ -27,7 +27,7 @@ The mechanism that settles liquidations on Yellow.pro: a liquidated position is 
 
 <summary>Available Balance</summary>
 
-Funds you can use right now — for new orders or withdrawals. Equals total balance minus funds reserved by open orders or committed as position margin.
+Funds you can use right now — for new orders or withdrawals. Equals total balance minus funds locked **In Orders** or committed as position margin.
 
 </details>
 
@@ -177,9 +177,9 @@ Going **long** profits when the price rises; going **short** profits when it fal
 
 <details>
 
-<summary>Reserved Balance</summary>
+<summary>In Orders</summary>
 
-Funds locked by active open orders. They return to Available when the order is filled or cancelled.
+The balance state for funds locked by active open orders (and, on Spot, by a withdrawal that's still processing). They return to Available when the order is filled or cancelled. On Perpetuals, funds can be In Orders too, but there is no withdrawal step.
 
 </details>
 

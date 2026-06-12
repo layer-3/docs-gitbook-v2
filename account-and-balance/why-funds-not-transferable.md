@@ -29,7 +29,7 @@ If you have active Spot trading orders, part of your balance may be locked for t
 
 ## Funds Locked as Perpetual Margin
 
-Funds being used as margin for perpetual positions are not available for transfer or withdrawal. This includes active perpetual positions that require margin, and margin reserved for open perpetual orders.
+Funds being used as margin for perpetual positions are not available for transfer or withdrawal. This includes active perpetual positions that require margin, and margin committed to open perpetual orders (shown as **In Orders**).
 
 **To release the funds:**
 

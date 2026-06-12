@@ -2,7 +2,7 @@
 icon: rectangle-list
 description: >-
   Track your activity with Open Orders, Order History, and Trade History,
-  understand reserved balances, and fix common order rejections.
+  understand the In Orders balance, and fix common order rejections.
 ---
 
 # Managing Orders
@@ -13,7 +13,7 @@ Yellow.pro provides three views to track your trading activity — **Open Orders
 
 Shows all orders currently **active in the order book** — submitted but not yet filled or cancelled. Here you'll see orders waiting for the market to reach your limit price, and triggered conditional orders that are now live.
 
-You can **cancel** any open order at any time; reserved funds are released back to **Available** immediately.
+You can **cancel** any open order at any time; the funds held **In Orders** are released back to **Available** immediately.
 
 ![The Open Orders panel](../.gitbook/assets/spot-open-order.png)
 
@@ -41,15 +41,15 @@ Records only actual **executions** — moments when your order matched another a
 
 ![The Trade History (fill history) view](../.gitbook/assets/spot-trade-history.png)
 
-## Balances: Total, Available & Reserved
+## Balances: Total, Available & In Orders
 
 | Balance type | Meaning |
 | --- | --- |
-| **Total** | All funds in your account (available + reserved). |
+| **Total** | All funds in your account (Available + In Orders). |
 | **Available** | Funds you can use right now — for new orders or withdrawals. |
-| **Reserved** | Funds locked in active open orders. |
+| **In Orders** | Funds locked for active open orders and for withdrawals that are still processing. |
 
-> **Example:** you have 1,000 USDT and place a buy limit for 500 USDT of ETH. Your balance shows **Total: 1,000 · Available: 500 · Reserved: 500**. When the order fills or you cancel it, Reserved returns to Available.
+> **Example:** you have 1,000 USDT and place a buy limit for 500 USDT of ETH. Your balance shows **Total: 1,000 · Available: 500 · In Orders: 500**. When the order fills or you cancel it, the In Orders amount returns to Available.
 
 Buy orders reserve the **quote** currency (e.g. USDT); sell orders reserve the **base** currency (e.g. BTC or ETH). This prevents you from spending the same funds on multiple orders at once.
 
@@ -62,7 +62,7 @@ A rejected order failed one or more validation checks and appears in Order Histo
 * **Below minimum order size** — increase the quantity.
 * **Below minimum order value** (price × size) — increase price or quantity to meet the minimum.
 * **Limit price outside the price band** — your limit price is more than 25% from the current market price; move it closer.
-* **Insufficient available balance** — reserved funds from other open orders don't count; cancel orders or deposit more.
+* **Insufficient available balance** — funds already committed to other open orders (shown as In Orders) don't count; cancel orders or deposit more.
 * **Invalid trigger settings** — for stop orders, ensure the trigger price is on the correct side of the market and required fields are set.
 * **Market temporarily unavailable** — wait and retry; contact support if it persists.
 

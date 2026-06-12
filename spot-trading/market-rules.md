@@ -20,7 +20,7 @@ Every spot order is validated against the rules of its market before it's accept
 | **Minimum notional** | The smallest order *value* (price × amount, in USDT). | Order value is below the minimum notional. |
 | **Price band** | A limit order's price must stay within a percentage band around the current reference price. | A limit (or trigger) price is more than **25%** above or below the reference price. |
 | **Slippage tolerance** | Market orders are rejected if they would fill too far from the current price (protects you in thin liquidity). | A market order would fill beyond **5%** from the reference price. |
-| **Available balance** | You must have enough unreserved balance to cover the order. | Available balance is insufficient. |
+| **Available balance** | You must have enough Available balance (not already committed In Orders) to cover the order. | Available balance is insufficient. |
 
 ## Spot Market Specifications
 

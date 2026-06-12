@@ -13,7 +13,7 @@ Make sure you have:
 * deposited funds into your account
 * sufficient **Available** balance in the relevant currency
 
-> If your balance shows as **Reserved**, those funds are locked in open orders. Cancel an open order to release them.
+> If part of your balance shows as **In Orders**, those funds are locked by open orders (or a withdrawal in progress). Cancel an open order to release them.
 
 {% stepper %}
 {% step %}
@@ -87,7 +87,7 @@ After submission:
 2. Find the order you want to cancel.
 3. Click the **Cancel** (X) button next to it.
 
-Funds reserved for the cancelled order return to your **Available** balance immediately.
+Funds held **In Orders** for the cancelled order return to your **Available** balance immediately.
 
 ![Cancelling an open order from the Open Orders tab](../.gitbook/assets/spot-cancel-order.png)
 
