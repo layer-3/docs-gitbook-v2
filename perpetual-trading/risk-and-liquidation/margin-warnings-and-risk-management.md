@@ -25,17 +25,14 @@ Yellow.pro sends **margin warning emails** when your margin ratio rises above a 
 
 ### How to enable margin warning emails
 
-Warnings are sent to the email linked to your Yellow account.
+Margin warnings are sent to the email linked to your account. **Your email is never linked automatically — no matter how you signed in, you must link it manually.** Until you link and verify an email, no margin warning emails are sent.
 
-* **Signed up via Yellow.com (email/social):** your email may already be linked — verify at `yellow.pro/settings`.
-* **Connected via a wallet (MetaMask, etc.):** go to `yellow.pro/settings` → **Linked Socials** → **Link** next to Email, then verify it.
+To link it, go to `yellow.pro/settings` → **Linked Socials** → **Link** next to Email, then verify it.
 
-![Email settings on Yellow.pro](../../.gitbook/assets/perp-margin-email-settings.png)
-
-![Linking an email under Linked Socials for wallet users](../../.gitbook/assets/perp-link-email-wallet.png)
+![Linking an email under Linked Socials](../../.gitbook/assets/perp-link-email-wallet.png)
 
 {% hint style="warning" %}
-If you trade with a wallet connection and haven't linked an email, you will **not** receive margin warning alerts. We strongly recommend linking one.
+If you haven't linked and verified an email, you will **not** receive any margin warning alerts — regardless of your login method. Link one as soon as possible.
 {% endhint %}
 
 ## Risk Management Basics

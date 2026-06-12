@@ -153,7 +153,7 @@ Auto-Deleveraging (ADL) is how liquidations are settled: a liquidated position i
 
 <summary>I received a margin warning email — what should I do, and how do I enable alerts?</summary>
 
-Act immediately: log in, check your margin ratio, add funds or reduce exposure. Alerts go to the email linked to your account — wallet users must link an email under `yellow.pro/settings` → Linked Socials, or they won't receive warnings. See [Margin Warnings & Risk Management](risk-and-liquidation/margin-warnings-and-risk-management.md).
+Act immediately: log in, check your margin ratio, add funds or reduce exposure. Alerts go to the email linked to your account, and your email is **never linked automatically** — whatever your login method, link it manually under `yellow.pro/settings` → Linked Socials, or you won't receive warnings. See [Margin Warnings & Risk Management](risk-and-liquidation/margin-warnings-and-risk-management.md).
 
 </details>
 
