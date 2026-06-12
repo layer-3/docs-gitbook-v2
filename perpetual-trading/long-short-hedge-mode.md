@@ -34,9 +34,9 @@ Simplified: `PnL = (Entry Price − Exit Price) × Position Size`. Losses on a s
 
 ## One-Way vs Two-Way (Hedge) Mode
 
-By default, Yellow.pro operates in **One-Way Mode**: you hold only one direction per market, and opening the opposite side reduces or closes your existing position.
+**Yellow.pro currently uses Two-Way Mode (Hedge Mode) by default** — you can hold a **long and a short on the same pair simultaneously**, independently of each other.
 
-**Two-Way Mode (Hedge Mode)** lets you hold a **long and a short on the same pair simultaneously**, independently of each other.
+**One-Way Mode** — where you hold only one direction per market, and opening the opposite side reduces or closes your existing position — **will be supported in a future update.**
 
 ![Switching between One-Way and Two-Way (Hedge) mode](../.gitbook/assets/perp-two-way-mode.png)
 
@@ -54,7 +54,7 @@ By default, Yellow.pro operates in **One-Way Mode**: you hold only one direction
 * **Reducing directional bias** — test both sides and close whichever proves wrong.
 
 {% hint style="info" %}
-Each direction is an independent position with its own entry price, size, and PnL. In cross margin, both draw from the same balance. Hedge mode does **not** eliminate risk — both positions can lose in a choppy market. You cannot switch modes while you have open positions; close them first.
+Each direction is an independent position with its own entry price, size, and PnL. In cross margin, both draw from the same balance. Hedge mode does **not** eliminate risk — both positions can lose in a choppy market.
 {% endhint %}
 
 ## Related Articles

@@ -219,7 +219,7 @@ The balance where Spot trading takes place. For external wallet users, deposits 
 
 <summary>Two-Way Mode (Hedge Mode)</summary>
 
-A position mode that lets you hold a long and a short on the same pair simultaneously. The default is One-Way Mode. See [Long, Short & Hedge Mode](../perpetual-trading/long-short-hedge-mode.md).
+A position mode that lets you hold a long and a short on the same pair simultaneously — currently the default on Yellow.pro. One-Way Mode will be added later. See [Long, Short & Hedge Mode](../perpetual-trading/long-short-hedge-mode.md).
 
 </details>
 

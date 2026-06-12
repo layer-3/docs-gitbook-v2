@@ -37,7 +37,7 @@ Cross margin uses your **entire account balance** as shared collateral for all o
 
 <summary>What is two-way mode (hedge mode), and can I hold a long and short on the same pair at once?</summary>
 
-Yes — with **Two-Way (Hedge) Mode** enabled, you can hold independent long and short positions on the same pair simultaneously. In the default **One-Way Mode**, opening the opposite side reduces or closes your existing position. See [Long, Short & Hedge Mode](long-short-hedge-mode.md).
+Yes — Yellow.pro currently uses **Two-Way (Hedge) Mode by default**, so you can hold independent long and short positions on the same pair simultaneously. **One-Way Mode** (where opening the opposite side reduces or closes your existing position) will be supported in a future update. See [Long, Short & Hedge Mode](long-short-hedge-mode.md).
 
 </details>
 
