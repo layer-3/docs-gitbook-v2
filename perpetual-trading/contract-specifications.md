@@ -36,6 +36,10 @@ The **price band** is why a limit order placed far from the current price can be
 
 The **maintenance margin rate (MMR)** is the fraction of position notional you must keep to avoid liquidation. See [Margin & Leverage](margin-and-leverage.md) and [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md) for how leverage and maintenance margin affect your positions.
 
+## Market-order slippage tolerance
+
+A market order opens immediately at the best available price, so the fill price can differ from the mark price shown at submission. To stay funded if it fills at a worse price, a market order reserves about **5% extra initial margin** on top of the normal requirement.
+
 ## Worked Examples
 
 <details>

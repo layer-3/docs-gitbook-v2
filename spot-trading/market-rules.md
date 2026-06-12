@@ -19,8 +19,9 @@ Every spot order is checked against the rules of its market **before it's accept
 | **Maximum order size** | The largest amount (in the base asset) per order. | Amount is above the maximum. |
 | **Minimum notional** | The smallest order *value* (price × amount, in USDT). | Order value is below the minimum notional. |
 | **Price band** | A limit order's price must stay within a percentage band around the current reference price. | A limit (or trigger) price is more than **25%** above or below the reference price. |
-| **Slippage tolerance** | Market orders are blocked if they would fill too far from the current price (protects you in thin liquidity). | A market order would fill beyond **5%** from the reference price. |
 | **Available balance** | You must have enough Available balance (not already committed In Orders) to cover the order. | Available balance is insufficient. |
+
+> Market orders aren't subject to a placement rule for slippage — they execute immediately, with a protective cap on spend. See [Market-order slippage tolerance](#market-order-slippage-tolerance) below.
 
 ## Spot Market Specifications
 
@@ -34,12 +35,11 @@ Prices and amounts accept up to 8 decimal places, but must still align to the **
 | **ETHUSDT** | 0.001 ETH | 50,000 ETH | 0.001 | 0.01 | 1 USDT |
 | **YELLOWUSDT** | 1 YELLOW | 10,000,000 YELLOW | 1 | 0.0001 | 5 USDT |
 
-All spot markets currently apply:
+All spot markets currently apply a **±25% price band** on limit and trigger orders — the price must stay within 25% of the current market price, so the allowed range moves with the market.
 
-* a **±25% price band** on limit and trigger orders (price must stay within 25% of the reference price), and
-* a **5% slippage tolerance** on market orders.
+## Market-order slippage tolerance
 
-The **reference price** is the current market price (the live quote, falling back to the last traded price). The price band is checked against it, so the allowed range moves with the market. On a brand-new market with no price yet, the band check is skipped.
+A market order executes immediately at the best available prices, so its average fill price can differ from the submission price. A market **buy** keeps your total spend within about **5%** of the expected amount; if the price moves further, the order fills only up to that limit. Market **sells** are unaffected, since they lock the exact amount you're selling.
 
 ## Worked Examples
 
