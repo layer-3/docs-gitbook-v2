@@ -64,7 +64,7 @@ Capture these **first**. Each path needs **end-to-end** coverage — a short vid
 | ☐ | Deposit · Gmail | `deposit-gmail-flow.gif` | gif → video | Deposit to Yellow Wallet → transfer to Trading Account → ready to trade | `deposits-and-withdrawals/how-to-deposit.md` |
 | ☐ | Deposit · Gmail | `deposit-gmail-address.png` | png | Deposit address / screen (Yellow Wallet) | `deposits-and-withdrawals/how-to-deposit.md` |
 | ☐ | Deposit · Gmail | `transfer-yellow-to-spot.png` | png | Transfer modal: Yellow Wallet → Trading (Spot) Account | `account-and-balance/transfer-funds-between-accounts.md` |
-| ☐ | Withdraw · EOA | `withdraw-eoa-flow.gif` | gif → video | Withdraw form → network + fee → confirm → on-chain | `deposits-and-withdrawals/how-to-withdraw.md` |
+| ✅ | Withdraw · EOA | `withdraw-eoa-flow.gif` | gif | Withdraw form → network + fee → confirm → on-chain (relocated from a mislabeled "spot interface" asset) | `deposits-and-withdrawals/how-to-withdraw.md` |
 | ☐ | Withdraw · EOA | `withdraw-eoa-form.png` | png | Withdrawal form (address, network, fee) | `deposits-and-withdrawals/how-to-withdraw.md` |
 | ☐ | Withdraw · Gmail | `withdraw-gmail-flow.gif` | gif → video | Transfer Trading Account → Yellow Wallet → withdraw → confirm | `deposits-and-withdrawals/how-to-withdraw.md` |
 | ☐ | Withdraw · Gmail | `transfer-spot-to-yellow.png` | png | Transfer modal: Trading (Spot) Account → Yellow Wallet | `account-and-balance/transfer-funds-between-accounts.md` |
@@ -79,7 +79,7 @@ Capture these **first**. Each path needs **end-to-end** coverage — a short vid
 
 | Status | Asset | Format | What it shows | Target page |
 | --- | --- | --- | --- | --- |
-| ☐ | `spot-trading-interface.gif` | gif → video | Main spot trading interface overview (migrate the existing 3.6 MB gif to video) | `spot-trading/what-is-spot-trading.md` |
+| ☐ | `spot-trading-interface.gif` | gif → video | Main spot trading interface overview — **still needed** (the prior file was actually an external-wallet withdraw flow, now relocated) | `spot-trading/what-is-spot-trading.md` |
 | ☐ | `perp-trading-interface-annotated.png` | png (annotated) | Perp UI overview: positions, leverage, PnL, liquidation price | `perpetual-trading/what-is-perpetual-trading.md` |
 | ☐ | `account-balances-panel.png` | png | Balances UI: Available vs Reserved, both account types | `account-and-balance/understanding-your-balances.md` |
 | ☐ | `perp-leverage-margin-selector.png` | png | Leverage slider + cross / isolated selector | `perpetual-trading/margin-and-leverage.md` |

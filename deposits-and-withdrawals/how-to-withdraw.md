@@ -19,6 +19,8 @@ Before withdrawing, review [Supported Networks, Assets & Limits](supported-netwo
 {% tab title="External Wallet" %}
 External wallet users withdraw funds **directly from the Trading Account (`Spot Account`)** to their connected wallet. No Account Balance step is involved.
 
+![Withdrawing to an external wallet on Yellow.pro](../.gitbook/assets/withdraw-eoa-flow.gif)
+
 **Prerequisites**
 
 * Your external wallet is connected.
