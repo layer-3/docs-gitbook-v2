@@ -38,7 +38,7 @@ Simplified: `PnL = (Entry Price − Exit Price) × Position Size`. Losses on a s
 
 **One-Way Mode** — where you hold only one direction per market, and opening the opposite side reduces or closes your existing position — **will be supported in a future update.**
 
-![Switching between One-Way and Two-Way (Hedge) mode](../.gitbook/assets/perp-two-way-mode.png)
+![A long and a short position held on the same market at the same time in Two-Way (Hedge) Mode](../.gitbook/assets/perp-two-way-mode.png)
 
 | | One-Way Mode | Two-Way Mode |
 | --- | --- | --- |
