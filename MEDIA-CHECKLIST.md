@@ -69,9 +69,7 @@ Capture these **first**. Each path needs **end-to-end** coverage — a short vid
 | ☐ | Withdraw · Gmail | `withdraw-gmail-flow.gif` | gif → video | Transfer Trading Account → Yellow Wallet → withdraw → confirm | `deposits-and-withdrawals/how-to-withdraw.md` |
 | ☐ | Withdraw · Gmail | `transfer-spot-to-yellow.png` | png | Transfer modal: Trading (Spot) Account → Yellow Wallet | `account-and-balance/transfer-funds-between-accounts.md` |
 | ☐ | Withdraw · Gmail | `withdraw-gmail-form.png` | png | Withdrawal form (Yellow Wallet) | `deposits-and-withdrawals/how-to-withdraw.md` |
-| ☐ | Transfer · Spot ↔ Perp | `transfer-spot-to-perp-flow.gif` | gif → video | Open transfer → Spot → Perpetual → confirm → balance in Perpetual Account | `account-and-balance/transfer-funds-between-accounts.md` |
-| ☐ | Transfer · Spot ↔ Perp | `transfer-spot-to-perp.png` | png | Transfer modal: Trading (Spot) Account → Perpetual Account | `account-and-balance/transfer-funds-between-accounts.md` |
-| ☐ | Transfer · Spot ↔ Perp | `transfer-perp-to-spot.png` | png | Transfer modal: Perpetual Account → Trading (Spot) Account | `account-and-balance/transfer-funds-between-accounts.md` |
+| ☐ | Transfer · Spot ↔ Perp | `transfer-spot-to-perp-flow.gif` | gif → video | Full transfer flow both ways (Spot → Perpetual and back), confirm, updated balance | `account-and-balance/transfer-funds-between-accounts.md` |
 
 {% hint style="info" %}
 **Reconcile existing assets:** `deposit-flow.gif` (7 MB), `withdraw-flow.gif` (3.7 MB), `transfer-flow.gif` (7 MB) — check which account type each currently shows, then replace/supplement so **both** EOA and Gmail paths are covered. Migrate these heavy GIFs to embedded video (keep the filename stem, host on Loom/YouTube, swap `![]()` for `{% embed %}`).
