@@ -5,6 +5,10 @@ description: Quick answers to common deposit and withdrawal questions on Yellow.
 
 # Deposits & Withdrawals — FAQ
 
+{% hint style="info" %}
+Having a problem with a deposit or withdrawal? See [Deposit & Withdrawal Troubleshooting](troubleshooting.md) for step-by-step fixes.
+{% endhint %}
+
 ## Deposits
 
 <details>
@@ -47,22 +51,6 @@ Usually minutes, but up to 1 hour during congestion. Deposits require 15 blockch
 
 </details>
 
-<details>
-
-<summary>I completed a deposit but my balance hasn't updated — what should I do?</summary>
-
-External wallet users: verify you completed the Deposit transaction (not just Approval). Google users: check whether funds are in Account Balance and transfer them to the Trading Account. See [Deposit & Withdrawal Troubleshooting](troubleshooting.md).
-
-</details>
-
-<details>
-
-<summary>Can I recover funds sent to the wrong network or address?</summary>
-
-No. Once confirmed on-chain, a transaction cannot be reversed. Only the Ethereum network is supported — always verify the address and network before sending.
-
-</details>
-
 ## Withdrawals
 
 <details>
@@ -83,33 +71,9 @@ For Google users: (1) transfer Perpetual → Spot (instant), (2) transfer Spot �
 
 <details>
 
-<summary>Why is my withdrawal showing insufficient balance even though I have funds?</summary>
-
-Funds may be locked in open orders or active positions, or not in the correct account for your account type. See [Deposit & Withdrawal Troubleshooting](troubleshooting.md).
-
-</details>
-
-<details>
-
 <summary>What is the minimum withdrawal amount?</summary>
 
 Each asset has its own minimum (e.g. USDT 5, ETH 0.005). There's no maximum. See the table in [Supported Networks, Assets & Limits](supported-networks-assets-limits.md).
-
-</details>
-
-<details>
-
-<summary>My withdrawal is completed on-chain but I haven't received it — what do I do?</summary>
-
-It may still be processing on the receiving platform. Check your TxID at `yellow.pro/assets/history`, then contact the receiving wallet or exchange with your TxID. See [Deposit & Withdrawal Troubleshooting](troubleshooting.md).
-
-</details>
-
-<details>
-
-<summary>I withdrew to the wrong network or wrong address — what happens?</summary>
-
-Blockchain transactions are irreversible. If sent to an incorrect address or unsupported network, recovery may not be possible. Contact the receiving platform with your TxID. See [Deposit & Withdrawal Troubleshooting](troubleshooting.md).
 
 </details>
 
@@ -126,13 +90,5 @@ Network fees are charged by the blockchain (not Yellow.pro) and deducted from yo
 <summary>Why does a Google withdrawal depend on smart wallet detection?</summary>
 
 Your Account Balance (`Yellow Wallet`) uses smart wallet abstraction, and some platforms don't automatically detect smart wallet balances. Verify the receiving platform supports Ethereum smart contracts before withdrawing. See [How to Withdraw](how-to-withdraw.md).
-
-</details>
-
-<details>
-
-<summary>What details should I provide when reporting a deposit or withdrawal issue?</summary>
-
-Include your wallet address, transaction hash (TxID), asset and amount, network, and a brief description (a screenshot helps). See [Contact Support](../community-and-resources/contact-support.md).
 
 </details>
