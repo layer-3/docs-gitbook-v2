@@ -7,7 +7,7 @@ description: >-
 
 # Order Types
 
-Yellow.pro supports **market** and **limit** orders for spot trading, plus **conditional (stop) orders** that activate at a trigger price. Understanding the difference helps you make better decisions and avoid unexpected outcomes.
+Yellow.pro supports **market** and **limit** orders, plus **conditional (stop) orders** that activate at a trigger price. The same order types and [Time in Force](#time-in-force-tif) options apply to both **Spot and Perpetual** markets (examples below use spot pairs). Understanding the difference helps you make better decisions and avoid unexpected outcomes.
 
 ## Market Order
 

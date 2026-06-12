@@ -19,6 +19,7 @@ Perpetual trading lets you speculate on the price of cryptocurrencies **without 
 * **Leverage** — you can control a position much larger than your deposited funds.
 * **Mark Price** — positions are valued using the [Mark Price](risk-and-liquidation/liquidation-and-mark-price.md), designed to reflect fair value and reduce manipulation.
 * **Liquidation** — if the market moves against you beyond your margin buffer, your position is closed automatically.
+* **Order types** — perpetual orders use the same **market, limit, and stop** types and **Time in Force** options as spot. See [Order Types](../spot-trading/order-types.md).
 
 ## Perpetual vs Spot — Key Differences
 
@@ -41,6 +42,7 @@ New to trading? Start with [What is Spot Trading?](../spot-trading/what-is-spot-
 
 ## Related Articles
 
+* [Order Types](../spot-trading/order-types.md)
 * [Long, Short & Hedge Mode](long-short-hedge-mode.md)
 * [Margin & Leverage](margin-and-leverage.md)
 * [Risk & Liquidation](risk-and-liquidation/README.md)
