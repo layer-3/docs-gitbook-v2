@@ -2,7 +2,8 @@
 icon: ruler
 description: >-
   Spot market trading rules — tick size, step size, minimum order size and
-  value, price limits, and slippage tolerance — and why orders get rejected.
+  value, price limits, price band, and slippage tolerance — and why orders get
+  rejected.
 ---
 
 # Market Rules & Limits
@@ -18,7 +19,8 @@ Every spot order is validated against the rules of its market before it's accept
 | **Minimum order size** | The smallest amount (in the base asset) you can trade. | Amount is below the minimum. |
 | **Maximum order size** | The largest amount (in the base asset) per order. | Amount is above the maximum. |
 | **Minimum notional** | The smallest order *value* (price × amount, in USDT). | Order value is below the minimum notional. |
-| **Price limits** | The price must fall within the market's allowed range. | Price is below the minimum or above the maximum. |
+| **Price limits** | The price must fall within the market's allowed absolute range. | Price is below the minimum or above the maximum. |
+| **Price band** | A limit order's price must stay within a percentage band around the current reference price. | A limit (or trigger) price is more than **25%** above or below the reference price. |
 | **Slippage tolerance** | Market orders are rejected if they would fill too far from the current price (protects you in thin liquidity). | A market order would fill beyond **5%** from the reference price. |
 | **Available balance** | You must have enough unreserved balance to cover the order. | Available balance is insufficient. |
 
@@ -34,7 +36,12 @@ Prices and amounts accept up to 8 decimal places, but must still align to the **
 | **ETHUSDT** | 0.001 ETH | 50,000 ETH | 0.001 | 0.01 | 1,000 – 100,000 | 1 USDT |
 | **YELLOWUSDT** | 1 YELLOW | 10,000,000 YELLOW | 1 | 0.0001 | 0.0001 – 100 | 5 USDT |
 
-All spot markets currently apply a **5% market-order slippage tolerance**.
+All spot markets currently apply:
+
+* a **±25% price band** on limit and trigger orders (price must stay within 25% of the reference price), and
+* a **5% slippage tolerance** on market orders.
+
+The **reference price** is the current market price (the live quote, falling back to the last traded price). The price band is checked against it, so the allowed range moves with the market. On a brand-new market with no price yet, the band check is skipped.
 
 ## Worked Examples
 
@@ -59,6 +66,14 @@ You try to sell **0.0005 ETH**. The minimum order size on ETHUSDT is **0.001** a
 <summary>Order value below the minimum notional</summary>
 
 You place a buy on **YELLOWUSDT** for **3 YELLOW** at **0.50 USDT** — an order value of `1.5 USDT`. The minimum notional is **5 USDT**, so the order is rejected. Increase the amount or price so the total value is at least 5 USDT.
+
+</details>
+
+<details>
+
+<summary>Limit price outside the ±25% price band</summary>
+
+With ETH trading around **3,000 USDT**, you place a limit buy at **2,200**. That's more than **25%** below the reference price (the floor is `3,000 × 0.75 = 2,250`), so the order is rejected. Place your limit price within 25% of the current price — between **2,250** and **3,750** in this example.
 
 </details>
 

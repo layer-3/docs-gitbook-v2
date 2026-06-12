@@ -61,6 +61,7 @@ A rejected order failed one or more validation checks and appears in Order Histo
 * **Size not aligned with step size** — adjust your quantity to a valid increment.
 * **Below minimum order size** — increase the quantity.
 * **Below minimum order value** (price × size) — increase price or quantity to meet the minimum.
+* **Limit price outside the price band** — your limit price is more than 25% from the current market price; move it closer.
 * **Insufficient available balance** — reserved funds from other open orders don't count; cancel orders or deposit more.
 * **Invalid trigger settings** — for stop orders, ensure the trigger price is on the correct side of the market and required fields are set.
 * **Market temporarily unavailable** — wait and retry; contact support if it persists.
@@ -69,6 +70,7 @@ A rejected order failed one or more validation checks and appears in Order Histo
 
 * Correct market and side (Buy vs Sell)
 * Price aligned with tick size (limit orders)
+* Limit price within 25% of the current market price
 * Amount aligned with step size
 * Total order value meets the minimum
 * Available balance is sufficient
