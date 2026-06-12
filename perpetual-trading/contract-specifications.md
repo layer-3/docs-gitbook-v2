@@ -2,17 +2,17 @@
 icon: ruler
 description: >-
   Perpetual contract specifications — tick size, step size, minimum order size
-  and value, price band, max leverage, and maintenance margin — and why orders
-  get rejected.
+  and value, price band, max leverage, and maintenance margin — and why an
+  order might not be accepted.
 ---
 
 # Contract Specifications
 
-Every perpetual order is validated against the contract's rules before it's accepted. If an order breaks any rule, it's **rejected** and the reason appears in your Order History. This page lists the rules and the current values for each perpetual contract.
+Every perpetual order is checked against the contract's rules **before it's accepted**. An order that breaks any rule is **not created** — the platform blocks it at submission, so it never enters the order book or your Order History. **If you're unable to place an order, one of the rules below is the most likely reason.** This page lists the rules and the current values for each perpetual contract.
 
 ## Order Validation Rules
 
-| Rule | What it means | Reject if… |
+| Rule | What it means | You can't place the order if… |
 | --- | --- | --- |
 | **Tick size** | The smallest allowed price increment. Your price must be an exact multiple of it. | Price is not a multiple of the tick size. |
 | **Step size** | The smallest allowed amount increment. Your amount must be an exact multiple of it. | Amount is not a multiple of the step size. |
@@ -24,7 +24,7 @@ Every perpetual order is validated against the contract's rules before it's acce
 | **Available margin** | You must have enough free margin to open or increase the position. | Available margin is insufficient. |
 
 {% hint style="info" %}
-The **price band** is why a limit order placed far from the current price can be rejected even when its price is otherwise valid. It prevents fat-finger orders and trades at unrealistic prices.
+The **price band** is why a limit order placed far from the current price can be blocked even when its price is otherwise valid. It prevents fat-finger orders and trades at unrealistic prices.
 {% endhint %}
 
 ## Contract Specifications
@@ -42,7 +42,7 @@ The **maintenance margin rate (MMR)** is the fraction of position notional you m
 
 <summary>Price not aligned to tick size</summary>
 
-You place a limit order on **BTCUSDT-PERP** at **60,000.05**. The tick size is **0.1**, so the price must end at a multiple of 0.1 (e.g. `60,000.0` or `60,000.1`). The order is rejected. Round your price to the tick size and resubmit.
+You place a limit order on **BTCUSDT-PERP** at **60,000.05**. The tick size is **0.1**, so the price must end at a multiple of 0.1 (e.g. `60,000.0` or `60,000.1`). You won't be able to place it — round your price to the tick size and try again.
 
 </details>
 
@@ -50,7 +50,7 @@ You place a limit order on **BTCUSDT-PERP** at **60,000.05**. The tick size is *
 
 <summary>Limit price outside the price band</summary>
 
-With BTC trading around **60,000**, you place a limit buy at **20,000** — below **50%** of the reference price (30,000). The order falls outside the price band and is rejected. Place the order within the allowed range around the current price.
+With BTC trading around **60,000**, you place a limit buy at **20,000** — below **50%** of the reference price (30,000). The order falls outside the price band, so it's blocked. Place the order within the allowed range around the current price.
 
 </details>
 

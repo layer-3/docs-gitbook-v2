@@ -2,16 +2,16 @@
 icon: ruler
 description: >-
   Spot market trading rules — tick size, step size, minimum order size and
-  value, price band, and slippage tolerance — and why orders get rejected.
+  value, price band, and slippage tolerance — and why an order might not be accepted.
 ---
 
 # Market Rules & Limits
 
-Every spot order is validated against the rules of its market before it's accepted. If an order breaks any rule, it's **rejected** and the reason appears in your Order History. This page lists the rules and the current values for each spot market.
+Every spot order is checked against the rules of its market **before it's accepted**. An order that breaks any rule is **not created** — the platform blocks it at submission, so it never enters the order book or your Order History. **If you're unable to place an order, one of the rules below is the most likely reason.** This page lists the rules and the current values for each spot market.
 
 ## Order Validation Rules
 
-| Rule | What it means | Reject if… |
+| Rule | What it means | You can't place the order if… |
 | --- | --- | --- |
 | **Tick size** | The smallest allowed price increment. Your price must be an exact multiple of it. | Price is not a multiple of the tick size. |
 | **Step size** | The smallest allowed amount increment. Your amount must be an exact multiple of it. | Amount is not a multiple of the step size. |
@@ -19,7 +19,7 @@ Every spot order is validated against the rules of its market before it's accept
 | **Maximum order size** | The largest amount (in the base asset) per order. | Amount is above the maximum. |
 | **Minimum notional** | The smallest order *value* (price × amount, in USDT). | Order value is below the minimum notional. |
 | **Price band** | A limit order's price must stay within a percentage band around the current reference price. | A limit (or trigger) price is more than **25%** above or below the reference price. |
-| **Slippage tolerance** | Market orders are rejected if they would fill too far from the current price (protects you in thin liquidity). | A market order would fill beyond **5%** from the reference price. |
+| **Slippage tolerance** | Market orders are blocked if they would fill too far from the current price (protects you in thin liquidity). | A market order would fill beyond **5%** from the reference price. |
 | **Available balance** | You must have enough Available balance (not already committed In Orders) to cover the order. | Available balance is insufficient. |
 
 ## Spot Market Specifications
@@ -47,7 +47,7 @@ The **reference price** is the current market price (the live quote, falling bac
 
 <summary>Price not aligned to tick size</summary>
 
-You place a limit buy on **ETHUSDT** at **2,000.005**. The tick size is **0.01**, so the price must end at a multiple of 0.01 (e.g. `2,000.00` or `2,000.01`). The order is rejected. Round your price to the tick size and resubmit.
+You place a limit buy on **ETHUSDT** at **2,000.005**. The tick size is **0.01**, so the price must end at a multiple of 0.01 (e.g. `2,000.00` or `2,000.01`). You won't be able to place it — round your price to the tick size and try again.
 
 </details>
 
@@ -63,7 +63,7 @@ You try to sell **0.0005 ETH**. The minimum order size on ETHUSDT is **0.001** a
 
 <summary>Order value below the minimum notional</summary>
 
-You place a buy on **YELLOWUSDT** for **3 YELLOW** at **0.50 USDT** — an order value of `1.5 USDT`. The minimum notional is **5 USDT**, so the order is rejected. Increase the amount or price so the total value is at least 5 USDT.
+You place a buy on **YELLOWUSDT** for **3 YELLOW** at **0.50 USDT** — an order value of `1.5 USDT`. The minimum notional is **5 USDT**, so the order can't be placed. Increase the amount or price so the total value is at least 5 USDT.
 
 </details>
 
@@ -71,7 +71,7 @@ You place a buy on **YELLOWUSDT** for **3 YELLOW** at **0.50 USDT** — an order
 
 <summary>Limit price outside the ±25% price band</summary>
 
-With ETH trading around **3,000 USDT**, you place a limit buy at **2,200**. That's more than **25%** below the reference price (the floor is `3,000 × 0.75 = 2,250`), so the order is rejected. Place your limit price within 25% of the current price — between **2,250** and **3,750** in this example.
+With ETH trading around **3,000 USDT**, you place a limit buy at **2,200**. That's more than **25%** below the reference price (the floor is `3,000 × 0.75 = 2,250`), so it's blocked. Place your limit price within 25% of the current price — between **2,250** and **3,750** in this example.
 
 </details>
 
