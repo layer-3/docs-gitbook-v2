@@ -2,8 +2,7 @@
 icon: ruler
 description: >-
   Spot market trading rules — tick size, step size, minimum order size and
-  value, price limits, price band, and slippage tolerance — and why orders get
-  rejected.
+  value, price band, and slippage tolerance — and why orders get rejected.
 ---
 
 # Market Rules & Limits
@@ -19,7 +18,6 @@ Every spot order is validated against the rules of its market before it's accept
 | **Minimum order size** | The smallest amount (in the base asset) you can trade. | Amount is below the minimum. |
 | **Maximum order size** | The largest amount (in the base asset) per order. | Amount is above the maximum. |
 | **Minimum notional** | The smallest order *value* (price × amount, in USDT). | Order value is below the minimum notional. |
-| **Price limits** | The price must fall within the market's allowed absolute range. | Price is below the minimum or above the maximum. |
 | **Price band** | A limit order's price must stay within a percentage band around the current reference price. | A limit (or trigger) price is more than **25%** above or below the reference price. |
 | **Slippage tolerance** | Market orders are rejected if they would fill too far from the current price (protects you in thin liquidity). | A market order would fill beyond **5%** from the reference price. |
 | **Available balance** | You must have enough unreserved balance to cover the order. | Available balance is insufficient. |
@@ -30,11 +28,11 @@ Every spot order is validated against the rules of its market before it's accept
 Prices and amounts accept up to 8 decimal places, but must still align to the **tick size** (price) and **step size** (amount) below.
 {% endhint %}
 
-| Market | Min order | Max order | Step size | Tick size | Price range (USDT) | Min notional |
-| --- | --- | --- | --- | --- | --- | --- |
-| **WBTCUSDT** | 0.0001 WBTC | 50,000 WBTC | 0.0001 | 0.01 | 50,000 – 1,000,000 | 1 USDT |
-| **ETHUSDT** | 0.001 ETH | 50,000 ETH | 0.001 | 0.01 | 1,000 – 100,000 | 1 USDT |
-| **YELLOWUSDT** | 1 YELLOW | 10,000,000 YELLOW | 1 | 0.0001 | 0.0001 – 100 | 5 USDT |
+| Market | Min order | Max order | Step size | Tick size | Min notional |
+| --- | --- | --- | --- | --- | --- |
+| **WBTCUSDT** | 0.0001 WBTC | 50,000 WBTC | 0.0001 | 0.01 | 1 USDT |
+| **ETHUSDT** | 0.001 ETH | 50,000 ETH | 0.001 | 0.01 | 1 USDT |
+| **YELLOWUSDT** | 1 YELLOW | 10,000,000 YELLOW | 1 | 0.0001 | 5 USDT |
 
 All spot markets currently apply:
 
