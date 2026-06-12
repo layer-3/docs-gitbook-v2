@@ -48,14 +48,7 @@ Withdrawals below the minimum amount cannot be initiated. If your available bala
 
 ## Network Fees
 
-Blockchain network fees are required to process withdrawals on-chain.
-
-* **Not charged by Yellow.pro** — they are Ethereum network transaction costs.
-* **Who pays:** you — the fee is deducted from your withdrawal amount.
-* **Who sets it:** the blockchain network (dynamic, based on congestion).
-* **When shown:** the estimated fee appears on the Withdraw page before you confirm.
-
-> **Example:** if you withdraw 100 USDT with a 1 USDT network fee, you receive 99 USDT.
+Withdrawals incur an Ethereum network fee — a blockchain transaction cost, not a Yellow.pro fee — that is deducted from your withdrawal amount and shown on the Withdraw page before you confirm. For why it applies, why it changes, and how it's deducted, see [Withdrawal Network Fees Explained](../fees/withdrawal-network-fees.md).
 
 ## Withdrawals Are Final
 
