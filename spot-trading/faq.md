@@ -5,6 +5,10 @@ description: Quick answers to common spot trading questions on Yellow.pro.
 
 # Spot Trading — FAQ
 
+{% hint style="info" %}
+For full detail, see [Order Types](order-types.md) (market, limit, and stop orders) and [Managing Orders](managing-orders.md) (open orders, history, statuses, cancellations, and rejections).
+{% endhint %}
+
 <details>
 
 <summary>What is the difference between a market order and a limit order?</summary>
@@ -33,33 +37,9 @@ A stop market order also activates at a trigger price, but submits a **market or
 
 <details>
 
-<summary>Why did my limit order execute immediately instead of waiting?</summary>
-
-A limit order fills immediately if your price matches or beats existing orders in the book. For example, a buy limit at 2,050 USDT with sell orders available at 2,040 fills right away at the better price — you took liquidity (acted as a taker). The limit price is the *worst* price you'll accept, not a guarantee the order will wait. This is expected behaviour.
-
-</details>
-
-<details>
-
-<summary>Why was my order not executed?</summary>
-
-Common reasons: the market never reached your limit price; insufficient liquidity at your price; the order was cancelled (including by IOC/FOK time-in-force settings); or it was rejected in validation. Check your Order History for the status and reason. See [Managing Orders](managing-orders.md).
-
-</details>
-
-<details>
-
 <summary>Why are my funds locked while I have an open order?</summary>
 
-When you place an order, Yellow reserves the funds needed to fill it — buy orders reserve the quote currency (e.g. USDT), sell orders reserve the base currency (e.g. BTC or ETH). They show as **Reserved** and return to **Available** when the order is filled, cancelled, or rejected. This stops you from spending the same funds on multiple orders at once.
-
-</details>
-
-<details>
-
-<summary>Why did my trade execute at a different price than expected?</summary>
-
-This typically happens with **market orders**: if your order is large or liquidity is thin, it fills across multiple price levels, producing an average price different from what was shown — this is **price slippage**, more pronounced in less liquid markets. For limit orders this is unusual; review your fill history and contact support if you suspect an error.
+When you place an order, Yellow.pro reserves the funds needed to fill it — buy orders reserve the quote currency (e.g. USDT), sell orders reserve the base currency (e.g. BTC or ETH). They show as **Reserved** and return to **Available** when the order is filled, cancelled, or rejected. This stops you from spending the same funds on multiple orders at once.
 
 </details>
 
@@ -68,14 +48,6 @@ This typically happens with **market orders**: if your order is large or liquidi
 <summary>What is the difference between Open Orders, Order History, and Trade History?</summary>
 
 **Open Orders** — currently active orders waiting to be filled or cancelled. **Order History** — a log of all orders placed (filled, partially filled, cancelled, or rejected). **Trade History** — a record of every actual fill. An order can appear in Order History with no Trade History entry if it was cancelled or rejected before filling. See [Managing Orders](managing-orders.md).
-
-</details>
-
-<details>
-
-<summary>Why was my order rejected?</summary>
-
-Orders are rejected when they fail validation — common causes include price not aligned with tick size, size not aligned with step size, below minimum order size or value, insufficient available balance, invalid trigger settings, or a temporarily unavailable market. The rejection reason appears in Order History. See [Market Rules & Limits](market-rules.md) for the exact values per market, or [Managing Orders](managing-orders.md).
 
 </details>
 
