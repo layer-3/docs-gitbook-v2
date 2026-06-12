@@ -93,7 +93,7 @@ Lower priority — produce after the screenshots above. All `.svg`.
 
 | Status | Asset | What it shows | Target page |
 | --- | --- | --- | --- |
-| ☐ | `start-how-it-works-diagram.svg` | Fund flow: wallet → deposit → Account Balance → Trading Account → trade | `getting-started/how-yellow-works.md` |
+| ☐ | `start-how-it-works-diagram.svg` | Fund flow: wallet → deposit → Account Balance → Trading Account → trade | `getting-started/users-journey.md` |
 | ☐ | `account-types-diagram.svg` | Account Balance vs Trading Account | `account-and-balance/understanding-your-balances.md` |
 | ☐ | `perp-price-levels-diagram.svg` | Entry / liquidation / bankruptcy price on one price line | `perpetual-trading/risk-and-liquidation/liquidation-and-mark-price.md` |
 | ☐ | `perp-adl-matching-diagram.svg` | Liquidated position matched against an opposing trader (no insurance fund) | `perpetual-trading/risk-and-liquidation/cross-margin-risk-and-adl.md` |

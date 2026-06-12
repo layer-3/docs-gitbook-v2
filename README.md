@@ -25,7 +25,7 @@ New to Yellow? This is the best order to follow:
 <table data-view="cards"><thead><tr><th></th><th></th><th data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>1. Connect</strong></td><td>Connect your wallet or sign in with Google.</td><td><a href="getting-started/connect-your-wallet.md">connect-your-wallet.md</a></td></tr><tr><td><strong>2. Fund</strong></td><td>Deposit funds into your account.</td><td><a href="deposits-and-withdrawals/how-to-deposit.md">how-to-deposit.md</a></td></tr><tr><td><strong>3. Transfer</strong></td><td>Move funds to your Trading Account.</td><td><a href="account-and-balance/transfer-funds-between-accounts.md">transfer-funds-between-accounts.md</a></td></tr><tr><td><strong>4. Trade</strong></td><td>Place your first spot trade.</td><td><a href="spot-trading/how-to-place-a-spot-trade.md">how-to-place-a-spot-trade.md</a></td></tr><tr><td><strong>5. Withdraw</strong></td><td>Withdraw funds to your wallet.</td><td><a href="deposits-and-withdrawals/how-to-withdraw.md">how-to-withdraw.md</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-Want the full picture first? Read [What is Yellow.pro?](getting-started/what-is-yellow.md) and [How Yellow.pro Works](getting-started/how-yellow-works.md).
+Want the full picture first? Read [What is Yellow.pro?](getting-started/what-is-yellow.md) and the [Users Journey on Yellow.pro](getting-started/users-journey.md).
 {% endhint %}
 
 ### Need Help?

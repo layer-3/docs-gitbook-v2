@@ -43,7 +43,7 @@ For more details, see [How to Connect Your Wallet](connect-your-wallet.md)
 
 A Yellow Wallet is Abstraction Account Smart Contract owned by your email address and  automatically created when you sign in using Google, serving as your Account Balance (`Yellow Wallet`) for deposits, withdrawals, and fund management. Your Yellow Wallet is also accessible and manageable on Yellow.com, giving you flexible control over your funds across both platforms.
 
-For more details, see [How Yellow.pro Works](how-yellow-works.md) and [External Wallet vs Google Account](wallet-vs-gmail.md)
+For more details, see [Users Journey on Yellow.pro](users-journey.md) and [External Wallet vs Google Account](wallet-vs-gmail.md)
 
 </details>
 

@@ -111,6 +111,6 @@ Understanding how balances and transfers work helps avoid the most common deposi
 ## Related Articles
 
 * [What is Yellow.pro?](what-is-yellow.md)
-* [How Yellow.pro Works](how-yellow-works.md)
 * [External Wallet vs Google Account](wallet-vs-gmail.md)
 * [How to Connect Your Wallet](connect-your-wallet.md)
+* [Understanding Your Balances](../account-and-balance/understanding-your-balances.md)

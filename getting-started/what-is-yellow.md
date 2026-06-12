@@ -9,14 +9,11 @@ icon: circle-info
 
 **Yellow.pro** is a hybrid crypto trading platform that pairs the speed of a centralized exchange with the self-custody and transparency of DeFi. You get fast, professional-grade order execution without handing over full control of your assets.
 
-## Flexible Access — Trade Your Way
+## Flexible Access
 
-Choose how you want to access the platform:
+Access the platform with a **Web3 wallet** (MetaMask, Rabby, Phantom, WalletConnect) for full self-custody, or **sign in with Google** for an instant start through your Yellow Wallet. Either path gives you the same trading features and a clean, beginner-friendly interface.
 
-* **Connect a Web3 wallet** — Use MetaMask, Rabby, Phantom, or WalletConnect for a fully self-custodial experience where you maintain control of your assets.
-* **Sign in with Google** — Get started instantly with a familiar login experience through your Yellow Wallet.
-
-Either path gives you a clean, beginner-friendly interface while keeping enough power for active traders.
+For how the two sign-in methods differ, see [External Wallet vs Google Account](wallet-vs-gmail.md). For the full connect → fund → trade → withdraw flow, see the [Users Journey](users-journey.md).
 
 ## What You Can Trade
 
@@ -32,7 +29,6 @@ Either path gives you a clean, beginner-friendly interface while keeping enough 
 
 ## Related Articles
 
-* [How Yellow.pro Works](how-yellow-works.md)
 * [Users Journey on Yellow.pro](users-journey.md)
 * [External Wallet vs Google Account](wallet-vs-gmail.md)
 * [Understanding Your Balances](../account-and-balance/understanding-your-balances.md)
