@@ -3,6 +3,8 @@ icon: network-wired
 description: >-
   Supported network and assets, blockchain confirmations, minimum withdrawal
   amounts, network fees, and irreversibility rules for deposits and withdrawals.
+layout:
+  width: wide
 ---
 
 # Supported Networks, Assets & Limits
@@ -19,14 +21,16 @@ Funds sent on any other network will not be credited and **cannot be recovered**
 
 ## Supported Assets
 
-| Asset | Name | Minimum Withdrawal |
-| --- | --- | --- |
-| ETH | Ether (native token) | 0.005 |
-| WBTC | Wrapped Bitcoin | 0.00015 |
-| USDT | Tether | 5 |
-| YELLOW | Platform token | 1,000 |
-| WSOL | Wrapped SOL | 0.1 |
-| BNB | BNB | 0.015 |
+All assets are ERC-20 tokens on **Ethereum mainnet**. Always verify the token's contract address before depositing — depositing a different token to a Yellow.pro address may be unrecoverable.
+
+| Asset | Name | Contract address (Ethereum) | Minimum Withdrawal |
+| --- | --- | --- | --- |
+| ETH | Ether (native token) | Native — no contract address | 0.005 |
+| WBTC | Wrapped Bitcoin | `0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599` | 0.00015 |
+| USDT | Tether | `0xdAC17F958D2ee523a2206206994597C13D831ec7` | 5 |
+| YELLOW | Platform token | `0x236eB848C95b231299B4AA9f56c73D6893462720` | 1,000 |
+| WSOL | Wrapped SOL | `0xD31a59c85aE9D8edEFeC411D448f90841571b89c` | 0.1 |
+| BNB | BNB | `0xB8c77482e45F1F44dE1745F52C74426C631bDD52` | 0.015 |
 
 When depositing, select the asset from the deposit form — the network is automatically set to Ethereum. Always confirm the asset and network before sending funds.
 
