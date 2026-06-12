@@ -1,8 +1,8 @@
 ---
-icon: scale-balanced
 description: >-
   How the two ways to access Yellow.pro — external wallet vs Google sign-in —
   differ in balance structure and deposit, transfer, and withdrawal flow.
+icon: scale-balanced
 ---
 
 # External Wallet vs Google Account
@@ -25,9 +25,11 @@ You can connect supported wallets such as MetaMask, Rabby, Phantom, or WalletCon
 Deposits go directly into the Trading Account. If you want to use funds for Perpetual trading, transfer them internally to the Perpetual Account.
 
 1. Initiate a deposit from Yellow.pro.
-2. Approve the transaction in your connected wallet.
-3. Funds appear in your Trading Account.
-4. Transfer to the Perpetual Account if needed for perpetual trading.
+2. Approve the spending limit in case of ERC20 transaction (like USDT)
+3. Approve the deposit transaction in your connected wallet.
+4. Wait for on-chain execution.
+5. Funds appear in your Trading Account.
+6. Transfer to the Perpetual Account if needed for perpetual trading.
 
 **Withdrawal flow**
 
@@ -56,10 +58,12 @@ If you sign in using Google, Yellow.pro automatically creates a Yellow Wallet li
 
 After depositing, funds must first be transferred from Account Balance to the Trading Account before trading is possible.
 
-1. Initiate a deposit to your Account Balance.
-2. Funds arrive in your Account Balance (Yellow Wallet).
-3. Transfer funds from Account Balance to the Trading Account.
-4. Once in the Trading Account, you can trade or transfer to the Perpetual Account.
+1. Initiate a deposit to your Account Balance using the shown on the interface address or by QR code.
+2. Wait for on-chain execution.
+3. Funds arrive in your Account Balance (Yellow Wallet).
+4. Transfer funds from Account Balance to the Trading Account.
+5. Wait for on-chain execution.
+6. Once in the Trading Account, you can trade or transfer to the Perpetual Account.
 
 **Withdrawal flow**
 
@@ -94,12 +98,11 @@ Your Account Balance (Yellow Wallet) is also accessible on Yellow.com. Once fund
 | Wallet setup                                | User connects their own wallet               | Yellow Wallet is created automatically                 |
 | Deposit destination                         | Trading Account                              | Account Balance (Yellow Wallet)                        |
 | Trading requirement                         | Funds can usually be traded immediately      | Funds must first be transferred to the Trading Account |
+| Spot ↔ Perpetual transfers                  | Internal and normally instant                | Internal and normally instant                          |
 | Withdrawal source                           | Trading Account (direct to connected wallet) | Account Balance (Yellow Wallet)                        |
 | Account Balance usage                       | Not used                                     | Required for deposits and withdrawals                  |
-| Recipient address on withdrawal             | Connected wallet used automatically          | User must enter recipient address manually             |
 | Account Balance ↔ Trading Account transfers | Not applicable                               | Processed on-chain                                     |
-| Spot ↔ Perpetual transfers                  | Internal and normally instant                | Internal and normally instant                          |
-| Yellow Wallet access                        | Not applicable                               | Also accessible on Yellow.com                          |
+| Recipient address on withdrawal             | Connected wallet used automatically          | User must enter recipient address manually             |
 
 ## Important Things to Know
 
@@ -107,14 +110,14 @@ Your Account Balance (Yellow Wallet) is also accessible on Yellow.com. Once fund
 * Google Sign-in users have an additional Account Balance layer (Yellow Wallet) for deposits and withdrawals.
 * Spot ↔ Perpetual transfers are internal and normally instant for both account types.
 * Account Balance ↔ Trading Account transfers are processed on-chain and may take time.
-* Funds locked in active orders or positions may not be transferable.
+* Funds locked in active orders or positions are not transferable.
 * Blockchain transactions cannot be reversed once completed.
 
 {% hint style="danger" %}
 For Google Sign-in users, withdrawals can be sent to any external wallet address on a supported blockchain. There are two separate things to keep in mind:
 
 * **Wrong address or unsupported blockchain — possible loss of funds.** If assets are withdrawn to an incorrect address, or to a blockchain Yellow.pro doesn't support, the funds may be permanently unrecoverable. Always double-check the destination address and network before confirming a withdrawal.
-* **Account-abstraction detection — a display limitation, not a loss.** Your Yellow Wallet is a smart (account-abstraction) wallet. External apps or wallets that don't support account abstraction may not automatically detect its balance, so your funds can appear "missing" in those apps even though they are safe.
+* **Account-abstraction detection — a display limitation, not a loss.** Your Yellow Wallet is a smart (account-abstraction) wallet. External apps or wallets that don't support account abstraction may not automatically detect its balance, so your funds can appear "missing" in those apps even though they are safe. Contact the destination app support for resolution.
 {% endhint %}
 
 ## Which Option Should You Choose?

@@ -1,8 +1,8 @@
 ---
-icon: wallet
 description: >-
   Step-by-step guide to connecting a supported wallet to Yellow.pro, plus
   WalletConnect tips and common connection troubleshooting.
+icon: wallet
 ---
 
 # How to Connect Your Wallet
@@ -117,9 +117,7 @@ This issue is more common with some WalletConnect-based wallets that use externa
 
 If the QR code cannot be scanned:
 
-* refresh the QR code
 * reopen the wallet app
-* try WalletConnect again
 * make sure the wallet supports WalletConnect connections
 
 </details>

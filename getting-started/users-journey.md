@@ -1,8 +1,8 @@
 ---
-icon: route
 description: >-
   The five-step Yellow.pro journey — connect, fund, transfer, trade, withdraw —
   and what to expect based on your account type.
+icon: route
 ---
 
 # Users Journey on Yellow.pro
@@ -35,7 +35,7 @@ Go to [yellow.pro](https://yellow.pro) and connect using one of these methods:
 
 **If you sign in with Google,** Yellow.pro automatically creates a Yellow Wallet linked to your account, so you can use the platform without manually connecting a wallet.
 
-Once connected, your wallet and balance become visible on the **Assets** page.
+Once connected, your Yellow Wallet and balance become visible on the **Deposit** page.
 {% endstep %}
 
 {% step %}
@@ -56,10 +56,10 @@ Both account types may need to move funds between balances.
 
 * Transfers between Trading Account (`Spot Account`) and Perpetual Account are internal and normally instant.
 * Transfers involving Account Balance (`Yellow Wallet`) are processed on-chain and may take time.
-* Funds locked in open orders or active positions may not be transferable.
+* Funds locked in open orders or active positions are not transferable.
 
 {% hint style="warning" %}
-**Perpetual trading currently uses only USDT as collateral.** To open perpetual positions, transfer USDT into your Perpetual Account — transferring other assets alone will not provide collateral.
+**Perpetual trading currently uses only USDT as collateral.** To open perpetual positions, transfer USDT into your Perpetual Account.
 {% endhint %}
 
 For complete instructions, see [How to Transfer Funds Between Accounts](../account-and-balance/transfer-funds-between-accounts.md).
@@ -90,9 +90,10 @@ Withdrawal flows depend on your account type. For complete instructions, see [Ho
 * Yellow.pro currently supports the Ethereum blockchain only. This is a temporary limitation — more chains will be added over time.
 * Spot ↔ Perpetual transfers are internal and instant.
 * Account Balance (`Yellow Wallet`) ↔ Trading Account (`Spot Account`) transfers are processed on-chain.
-* Funds locked in open orders or active positions may not be transferable.
+* Funds locked in open orders or active positions are not transferable.
 * Blockchain transactions cannot be reversed once completed.
-* Always verify the recipient wallet address before withdrawing.
+* Withdrawals and deposits are only possible to the connected wallet used to authorise to the platform.&#x20;
+* Always verify the recipient wallet address before withdrawing from Account Balance (`Yellow Wallet`).
 
 {% hint style="danger" %}
 **For Google Sign-in users especially:** if assets are withdrawn to the wrong wallet address, or to a blockchain that doesn't support smart wallet detection, the withdrawal may complete successfully on-chain but the funds may not be recoverable. Your Account Balance (`Yellow Wallet`) can also be managed on Yellow.com for flexible fund management.

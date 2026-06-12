@@ -1,15 +1,17 @@
 ---
+description: >-
+  Quick answers to the most common questions about getting started on
+  Yellow.pro.
 icon: circle-question
-description: Quick answers to the most common questions about getting started on Yellow.pro.
 ---
 
-# Getting Started — FAQ
+# FAQ
 
 <details>
 
 <summary>What is Yellow.pro and what can I trade on it?</summary>
 
-Yellow.pro is a hybrid crypto trading platform that pairs the speed of a centralized exchange with the self-custody and transparency of DeFi, giving you fast, professional-grade order execution without handing over full control of your assets. You can trade **Spot** (buy and sell assets at live market prices) and **Perpetual Futures** (trade with leverage, go long or short, and manage positions with real-time P&L and margin tracking).
+Yellow.pro is a hybrid crypto trading platform that pairs the speed of a centralized exchange with the self-custody and transparency of DeFi, giving you fast, professional-grade order execution without handing over full control of your assets. You can trade **Spot** (buy and sell assets at live market prices) and **Perpetual Futures** (trade with leverage, go long or short, and manage positions with real-time P\&L and margin tracking).
 
 For more details, see [What is Yellow.pro?](what-is-yellow.md)
 
@@ -39,7 +41,7 @@ For more details, see [How to Connect Your Wallet](connect-your-wallet.md)
 
 <summary>What is a Yellow Wallet?</summary>
 
-A Yellow Wallet is automatically created when you sign in using Google, serving as your Account Balance (`Yellow Wallet`) for deposits, withdrawals, and fund management. Your Yellow Wallet is also accessible and manageable on Yellow.com, giving you flexible control over your funds across both platforms.
+A Yellow Wallet is Abstraction Account Smart Contract owned by your email address and  automatically created when you sign in using Google, serving as your Account Balance (`Yellow Wallet`) for deposits, withdrawals, and fund management. Your Yellow Wallet is also accessible and manageable on Yellow.com, giving you flexible control over your funds across both platforms.
 
 For more details, see [How Yellow.pro Works](how-yellow-works.md) and [External Wallet vs Google Account](wallet-vs-gmail.md)
 

@@ -1,8 +1,8 @@
 ---
-icon: circle-info
 description: >-
   Yellow.pro is a hybrid crypto trading platform that pairs centralized-exchange
   speed with the self-custody and transparency of DeFi.
+icon: circle-info
 ---
 
 # What is Yellow.pro?
@@ -14,14 +14,14 @@ description: >-
 Choose how you want to access the platform:
 
 * **Connect a Web3 wallet** — Use MetaMask, Rabby, Phantom, or WalletConnect for a fully self-custodial experience where you maintain control of your assets.
-* **Sign in with Google** — Get started instantly with a familiar login experience through your Yellow Wallet, no seed phrase required.
+* **Sign in with Google** — Get started instantly with a familiar login experience through your Yellow Wallet.
 
 Either path gives you a clean, beginner-friendly interface while keeping enough power for active traders.
 
 ## What You Can Trade
 
 * **Spot Trading** — Buy and sell supported crypto assets at live market prices using market or limit orders.
-* **Perpetual Futures** — Trade with leverage on supported markets, go long or short, and manage positions with real-time P&L, margin, and liquidation tracking.
+* **Perpetual Futures** — Trade with leverage on supported markets, go long or short, and manage positions with real-time P\&L, margin, and liquidation tracking.
 
 ## Why Traders Choose Yellow.pro
 
