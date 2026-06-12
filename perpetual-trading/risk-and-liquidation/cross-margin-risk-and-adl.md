@@ -1,8 +1,8 @@
 ---
-icon: diagram-project
 description: >-
   How cross margin aggregates risk across all your positions, and how
   auto-deleveraging (ADL) settles liquidations against opposing traders.
+icon: diagram-project
 ---
 
 # Cross-Margin Risk & ADL
@@ -11,7 +11,8 @@ description: >-
 
 Yellow.pro uses **cross margin**, so all positions share one pool of collateral — your total account balance. Liquidation is assessed on your **entire account**, not a single position:
 
-`Account Equity = Total Balance + Total Unrealized PnL`
+`Account Equity = Total Balance + Total Unrealized PnL`&#x20;
+
 `Margin Ratio = Total Maintenance Margin Required / Account Equity`
 
 Liquidation occurs when the total-account margin ratio reaches 100%.
