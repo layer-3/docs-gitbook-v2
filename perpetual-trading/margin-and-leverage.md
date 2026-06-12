@@ -58,14 +58,9 @@ The **Margin Ratio** is a real-time indicator of how close you are to liquidatio
 | High (e.g. >80%) | Risk increasing — consider reducing positions |
 | 100% | Liquidation triggered |
 
-## How to Reduce Margin Risk
+## Keeping Your Margin Ratio Safe
 
-* **Add margin** — deposit more funds to increase your buffer.
-* **Reduce position size** — close part of a position to lower required maintenance.
-* **Lower leverage** — where supported, reduces liquidation risk.
-* **Use stop-loss orders** — exit automatically before liquidation.
-
-> You may receive an email warning when your margin ratio approaches critical levels. See [Margin Warnings & Risk Management](risk-and-liquidation/margin-warnings-and-risk-management.md).
+The main levers are adding margin, reducing position size, lowering leverage, and using stop-loss orders. You'll also receive an email warning as your margin ratio approaches critical levels. For the full approach and how to enable alerts, see [Margin Warnings & Risk Management](risk-and-liquidation/margin-warnings-and-risk-management.md); for how liquidation is triggered and priced, see [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
 
 ## Related Articles
 

@@ -115,21 +115,13 @@ In cross margin your liquidation price is dynamic — based on total balance, to
 
 </details>
 
-<details>
-
-<summary>What happens to my open positions if my balance drops critically?</summary>
-
-If your margin ratio approaches 100%, liquidation triggers and one or all positions may be closed automatically. Prevent it by monitoring your margin ratio, keeping free margin, and using stop-losses. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
-
-</details>
-
 ## Risk & Liquidation
 
 <details>
 
 <summary>What triggers a liquidation, and what happens to my funds?</summary>
 
-Liquidation triggers when your account margin ratio reaches 100% (equity at the maintenance margin level). Your position(s) are closed at the mark price; any balance left after losses and fees is returned. You never owe more than you deposited. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
+Liquidation triggers when your account margin ratio reaches 100% (equity at the maintenance-margin level). Your positions are then taken over and settled against opposing traders through auto-deleveraging (ADL), at your liquidation price (or the bankruptcy price as a fallback). Any balance left after settlement stays in your account, and you never owe more than you deposited. See [Liquidation & Mark Price](risk-and-liquidation/liquidation-and-mark-price.md).
 
 </details>
 
