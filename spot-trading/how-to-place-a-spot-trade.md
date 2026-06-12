@@ -53,7 +53,7 @@ Not sure which to choose? See [Order Types](order-types.md).
 
 The form shows an estimated **total value** before you confirm.
 
-> Ensure your price respects the market's **tick size** and your amount respects the **step size**, or the order will be rejected.
+> Ensure your price respects the market's **tick size** and your amount respects the **step size**, or the order will be rejected. See [Market Rules & Limits](market-rules.md) for each market's values.
 {% endstep %}
 
 {% step %}
@@ -102,3 +102,4 @@ Funds reserved for the cancelled order return to your **Available** balance imme
 
 * [Order Types](order-types.md)
 * [Managing Orders](managing-orders.md)
+* [Market Rules & Limits](market-rules.md)

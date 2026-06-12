@@ -25,8 +25,14 @@ Funds sent on any other network will not be credited and **cannot be recovered**
 | WBTC | Wrapped Bitcoin | 0.00015 |
 | USDT | Tether | 5 |
 | YELLOW | Platform token | 1,000 |
+| WSOL | Wrapped SOL | 0.1 |
+| BNB | BNB | 0.015 |
 
 When depositing, select the asset from the deposit form — the network is automatically set to Ethereum. Always confirm the asset and network before sending funds.
+
+{% hint style="info" %}
+You can deposit and withdraw all assets above, but not every asset has a spot trading pair yet. **WSOL** and **BNB** are currently deposit-and-withdraw only. See [Market Rules & Limits](../spot-trading/market-rules.md) for the markets available to trade.
+{% endhint %}
 
 ## Blockchain Confirmations
 

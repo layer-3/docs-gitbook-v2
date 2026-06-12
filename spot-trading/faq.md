@@ -75,7 +75,7 @@ This typically happens with **market orders**: if your order is large or liquidi
 
 <summary>Why was my order rejected?</summary>
 
-Orders are rejected when they fail validation — common causes include price not aligned with tick size, size not aligned with step size, below minimum order size or value, insufficient available balance, invalid trigger settings, or a temporarily unavailable market. The rejection reason appears in Order History. See [Managing Orders](managing-orders.md).
+Orders are rejected when they fail validation — common causes include price not aligned with tick size, size not aligned with step size, below minimum order size or value, insufficient available balance, invalid trigger settings, or a temporarily unavailable market. The rejection reason appears in Order History. See [Market Rules & Limits](market-rules.md) for the exact values per market, or [Managing Orders](managing-orders.md).
 
 </details>
 

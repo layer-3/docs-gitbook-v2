@@ -55,7 +55,7 @@ Buy orders reserve the **quote** currency (e.g. USDT); sell orders reserve the *
 
 ## Why Was My Order Rejected?
 
-A rejected order failed one or more validation checks and appears in Order History with a reason. Common causes:
+A rejected order failed one or more validation checks and appears in Order History with a reason. For the exact tick size, step size, and limits per market, see [Market Rules & Limits](market-rules.md). Common causes:
 
 * **Price not aligned with tick size** — round your price to a valid increment (e.g. with tick size 0.10, `2,100.05` is invalid).
 * **Size not aligned with step size** — adjust your quantity to a valid increment.
@@ -87,3 +87,4 @@ Check your Order History for the status and reason of any unfilled order. If eve
 
 * [How to Place a Spot Trade](how-to-place-a-spot-trade.md)
 * [Order Types](order-types.md)
+* [Market Rules & Limits](market-rules.md)

@@ -38,6 +38,7 @@
 * [How to Place a Spot Trade](spot-trading/how-to-place-a-spot-trade.md)
 * [Order Types](spot-trading/order-types.md)
 * [Managing Orders](spot-trading/managing-orders.md)
+* [Market Rules & Limits](spot-trading/market-rules.md)
 * [FAQ](spot-trading/faq.md)
 
 ## Perpetual Trading
@@ -54,6 +55,7 @@
 * [Position Management](perpetual-trading/position-management/README.md)
   * [Adjusting Margin & Leverage](perpetual-trading/position-management/adjusting-margin-and-leverage.md)
   * [Closing a Position](perpetual-trading/position-management/closing-a-position.md)
+* [Contract Specifications](perpetual-trading/contract-specifications.md)
 * [FAQ](perpetual-trading/faq.md)
 
 ## Fees
