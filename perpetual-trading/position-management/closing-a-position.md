@@ -7,39 +7,31 @@ description: >-
 
 # Closing a Position (Full or Partial)
 
-Closing a position locks in your **Realized PnL** and releases its margin back to your available balance. You can close fully or partially.
+Closing a position locks in your **Realized PnL** and releases its margin back to your Available Balance. There are two ways to close: a one-click market close, or a controlled close through the order form.
 
-## Closing Fully
+## Quick Close (the ✕ button)
 
-1. Go to the **Positions** panel at the bottom of the trading screen.
-2. Find the position and click **Close** (or the X icon).
-3. Choose the closing order type:
-   * **Market** — closes immediately at the best available price.
-   * **Limit** — closes at your specified price or better (may take time to fill).
+Clicking the **✕** next to a position in the **Positions** panel places an immediate **market order** to close the **entire** position — there are no order-type or amount options. It fills against the best available prices straight away; if there isn't enough liquidity to match it, it fills **partially** and the remainder **expires**. It's the fastest way out, with the least control — use it when you just need to exit.
+
+![Closing a position with the ✕ button in the Positions panel](../../.gitbook/assets/perp-close-position.png)
+
+## Controlled Close (order form → Close tab)
+
+For full control — including partial closes and specific exit prices — close through the order form instead of the ✕ button:
+
+1. Switch the order form to the **Close** tab.
+2. Choose the order type: **Market**, **Limit**, or **Stop**.
+3. Enter the **amount** to close — your full size, or less for a partial close.
 4. Confirm.
 
-Once filled, your realized PnL updates and the position's margin returns to your **Available Balance**.
+A **Limit** close lets you exit at a specific price or better (e.g. a take-profit level); a **Stop** close triggers at a price you set. A **partial** close leaves the rest of the position open at the original entry price, with margin adjusting proportionally. Resting limit or stop closes wait in **Open Orders** until they fill or you cancel them.
 
-![Closing a position from the Positions panel](../../.gitbook/assets/perp-close-position.png)
+![Closing through the order form's Close tab](../../.gitbook/assets/perp-close-partial.png)
 
-## Closing Partially
-
-1. Open the **Positions** panel and click **Close** on the target position.
-2. Enter a quantity **less than** your total position size.
-3. Choose market or limit, then confirm.
-
-Only the specified amount is closed; the rest stays open at the original entry price, and margin adjusts proportionally.
-
-![Partially closing a position](../../.gitbook/assets/perp-close-partial.png)
-
-> **Example:** you hold 2 ETH long and close 1 ETH with a market order → your position becomes 1 ETH long, and half the margin is released.
-
-## Closing with a Limit Order
-
-To close at a specific price (e.g. a take-profit level), select **Limit** in the close form, enter your exit price, and confirm. The order rests in the book until the market reaches your price; cancel it from **Open Orders** if needed.
+> **Example:** you hold 2 ETH long and close 1 ETH → your position becomes 1 ETH long, and half the margin is released.
 
 {% hint style="info" %}
-Take Profit orders must currently be set manually — they are not automatically linked to a position.
+Take Profit / Stop Loss orders must currently be set manually — they are not automatically linked to a position.
 {% endhint %}
 
 ## After Closing
@@ -48,9 +40,7 @@ Take Profit orders must currently be set manually — they are not automatically
 * The position leaves the Positions panel and the closed trade appears in **Trade History**.
 * In cross margin, closing one position can affect the others — always check your remaining balance.
 
-![Closing a position returns its margin to your Available (withdrawable) balance](../../.gitbook/assets/perp-close-position-balance.png)
-
-**Tip:** use **market close** to exit quickly (e.g. to avoid liquidation); use **limit close** when you have a target price and aren't in a rush.
+**Tip:** use the **✕ quick close** (market) to exit fast — e.g. to avoid liquidation; use a **Limit close** in the Close tab when you have a target price and aren't in a rush.
 
 ## Related Articles
 
