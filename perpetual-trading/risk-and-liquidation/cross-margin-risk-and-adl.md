@@ -41,7 +41,7 @@ When an account is liquidated, its positions are matched against **real opposing
 Your ADL priority rises with **high unrealized profit and high leverage** on a position. If you're holding a large, highly profitable, highly leveraged position, part of it may be used to close out a liquidated trader on the opposite side. To lower the chance of being deleveraged, take some profit (partially close) or reduce leverage.
 
 {% hint style="info" %}
-Being ADL'd is not a penalty. The closed portion realizes your PnL up to the settlement price, and you keep the proceeds. It simply means one of your winning positions was used to close out a liquidated trader on the other side.
+Being ADL'd isn't a fee or a penalty — it's the natural other side of a liquidation. Part of your **winning** position is closed early to absorb a liquidated trader, and you bank the profit on that portion at the settlement price. Because that price comes from the liquidated account rather than the current mark, the amount can differ slightly from closing at market yourself. The rest of your position stays open.
 {% endhint %}
 
 ## Related Articles
