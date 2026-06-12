@@ -29,7 +29,7 @@ Margin warnings are sent to the email linked to your account. **Your email is ne
 
 To link it, go to `yellow.pro/settings` → **Linked Socials** → **Link** next to Email, then verify it.
 
-![Linking an email under Linked Socials](../../.gitbook/assets/perp-link-email-wallet.png)
+![Linking an email to receive liquidation and margin-warning notifications](../../.gitbook/assets/perp-link-email-liquidation-notification.png)
 
 {% hint style="warning" %}
 If you haven't linked and verified an email, you will **not** receive any margin warning alerts — regardless of your login method. Link one as soon as possible.
