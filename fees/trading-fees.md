@@ -15,7 +15,10 @@ Yellow.pro charges a trading fee when your order is **filled** on a Spot or Perp
 
 > **Example:** buy 1 ETH at 2,000 USDT with a 0.1% taker fee → Fill Value = 2,000 USDT, Fee = 2,000 × 0.001 = **2 USDT**.
 
-Fees are charged in the **quote currency** of the pair (e.g. USDT for USDT pairs), and **only on filled orders** — cancelled or unfilled orders cost nothing, and partial fills are charged only on the filled portion.
+Fees are charged **only on filled orders** — cancelled or unfilled orders cost nothing, and partial fills are charged only on the filled portion. The fee currency differs by market:
+
+* **Spot** — charged in the asset you **receive**: the base asset when you buy (e.g. ETH on an `ETH-USDT` buy), the quote asset when you sell (e.g. USDT on an `ETH-USDT` sell).
+* **Perpetuals** — charged in the **quote currency** (e.g. USDT).
 
 ## Maker vs Taker
 

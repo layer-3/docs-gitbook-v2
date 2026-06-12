@@ -35,7 +35,7 @@ Fees are charged whenever an order is successfully filled: `Fee = Fill Value × 
 
 <summary>What currency are trading fees charged in?</summary>
 
-In the quote currency of each pair — e.g. trading USDT pairs charges fees in USDT.
+It depends on the market. On **Spot**, the fee is taken in the asset you **receive** — the base asset when you buy, the quote asset when you sell. On **Perpetuals**, fees are charged in the **quote currency** (e.g. USDT). See [Trading Fees (Maker & Taker)](trading-fees.md).
 
 </details>
 
