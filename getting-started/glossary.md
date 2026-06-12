@@ -217,6 +217,14 @@ The balance where Spot trading takes place. For external wallet users, deposits 
 
 <details>
 
+<summary>Time in Force (TIF)</summary>
+
+How long an order stays active before it's cancelled. **GTC** (Good 'Til Cancelled) rests until filled or cancelled — the default for limit orders; **IOC** (Immediate Or Cancel) fills what it can immediately and cancels the rest; **FOK** (Fill Or Kill) must fill completely and immediately or not at all. Market orders are always IOC. See [Order Types](../spot-trading/order-types.md#time-in-force-tif).
+
+</details>
+
+<details>
+
 <summary>Two-Way Mode (Hedge Mode)</summary>
 
 A position mode that lets you hold a long and a short on the same pair simultaneously — currently the default on Yellow.pro. One-Way Mode will be added later. See [Long, Short & Hedge Mode](../perpetual-trading/long-short-hedge-mode.md).

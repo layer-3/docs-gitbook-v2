@@ -79,6 +79,18 @@ Take Profit and Stop Loss must currently be created **manually** through the ord
 
 ![Setting a Take Profit / Stop Loss order in the order form](../.gitbook/assets/spot-take-profit-stop-loss.png)
 
+## Time in Force (TIF)
+
+**Time in Force** controls how long an order stays active. Pick it from the **TIF** dropdown in the order form — it applies to both Spot and Perpetual orders.
+
+| TIF | Name | Behaviour |
+| --- | --- | --- |
+| **GTC** | Good 'Til Cancelled | Rests in the book until it fully fills or you cancel it. **Default for limit orders.** |
+| **IOC** | Immediate Or Cancel | Fills as much as possible right away; any unfilled remainder is cancelled. |
+| **FOK** | Fill Or Kill | Must fill **completely and immediately**, or the entire order is cancelled. |
+
+**Market orders are always IOC** — they execute immediately against available liquidity and cancel any unfilled remainder. The TIF selector applies to limit (and limit-style) orders, where **GTC is the default**.
+
 ## Maker vs Taker
 
 Your order type affects whether you are a **maker** or a **taker**:

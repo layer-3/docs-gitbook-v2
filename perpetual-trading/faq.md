@@ -73,6 +73,14 @@ Open positions and orders reserve a portion of your balance as margin. **Total B
 
 </details>
 
+<details>
+
+<summary>What time-in-force (TIF) options can I use?</summary>
+
+The order form's **TIF** dropdown supports **GTC** (Good 'Til Cancelled — the default for limit orders), **IOC** (Immediate Or Cancel), and **FOK** (Fill Or Kill). Market orders are always IOC. See [Order Types](../spot-trading/order-types.md#time-in-force-tif).
+
+</details>
+
 ## Position Management
 
 <details>
