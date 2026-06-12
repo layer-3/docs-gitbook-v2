@@ -90,3 +90,7 @@
 * [Overview](community-and-resources/overview.md)
 * [Community Channels](community-and-resources/community-channels.md)
 * [Contact Support](community-and-resources/contact-support.md)
+
+## Internal
+
+* [Media Checklist](MEDIA-CHECKLIST.md)
